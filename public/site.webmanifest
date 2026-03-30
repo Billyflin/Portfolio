@@ -1,0 +1,16 @@
+{
+  "name": "Billyflin",
+  "short_name": "Billyflin",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#050816",
+  "theme_color": "#050816",
+  "lang": "es-CL",
+  "icons": [
+    {
+      "src": "/BF.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

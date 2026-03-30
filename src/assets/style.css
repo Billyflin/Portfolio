@@ -1,3 +1,47 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #050816;
+  --primary: #7dd3fc;
+  --page-bg: #050816;
+  --panel: rgba(12, 18, 34, 0.72);
+  --panel-strong: rgba(10, 15, 28, 0.9);
+  --ink: #f5f7ff;
+  --muted: #94a3b8;
+  --accent: #60a5fa;
+  --accent-2: #22d3ee;
+  --line: rgba(148, 163, 184, 0.16);
+  --line-strong: rgba(125, 211, 252, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(96, 165, 250, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 20%, rgba(34, 211, 238, 0.1), transparent 25%),
+    linear-gradient(180deg, #050816 0%, #070b1a 45%, #04070f 100%);
+  color: var(--ink);
+}
+
+#app {
+  min-height: 100vh;
+}
+
+.font-display {
+  font-family: 'Sora', sans-serif;
+}
+
+.font-mono-ui {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.scramble-dud {
+  color: rgba(34, 211, 238, 0.85);
+  opacity: 0.72;
+  text-shadow: 0 0 14px rgba(34, 211, 238, 0.22);
+}
