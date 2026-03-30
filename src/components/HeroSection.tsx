@@ -4,29 +4,31 @@ import { ScrambleText } from '@/components/ui/text-scramble';
 import { cn } from '@/lib/utils';
 
 const stats = [
-  { kicker: 'Enfoque', value: 'Producto', label: 'Sistemas pensados para usarse de verdad, no solo para verse bien.' },
-  { kicker: 'Escala', value: 'Arquitectura', label: 'Me interesa entender cómo se conectan las piezas y cómo sostenerlas en el tiempo.' },
-  { kicker: 'Curiosidad', value: 'Hardware', label: 'También exploro sensores, automatización y módulos físicos por interés genuino.' },
+  { kicker: 'Enfoque', value: 'Producto', label: 'Sistemas pensados para operar bien, no solo para verse bien.' },
+  { kicker: 'Escala', value: 'Arquitectura', label: 'Me interesa cómo se conectan las piezas y cómo sostenerlas con criterio.' },
+  { kicker: 'Curiosidad', value: 'Hardware', label: 'También exploro sensores, automatización y módulos físicos por interés real.' },
 ];
 
 type HeroSectionProps = {
-  introDone: boolean;
+  titleVisible: boolean;
+  restVisible: boolean;
 };
 
-export function HeroSection({ introDone }: HeroSectionProps) {
+export function HeroSection({ titleVisible, restVisible }: HeroSectionProps) {
   return (
     <section id="top" className="relative px-4 pb-10 pt-24 md:px-6 md:pb-18 md:pt-36">
       <div
         className={cn(
-          'relative z-10 mx-auto w-full max-w-7xl transition-all duration-[1600] ease-out',
-          introDone ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0'
+          'relative z-10 mx-auto w-full max-w-7xl transition-all duration-[1200] ease-out',
+          titleVisible ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0'
         )}
       >
-        <div className="max-w-5xl space-y-6 md:space-y-8">
+        <div className="max-w-5xl">
           <motion.div
-            initial={{ opacity: 0, y: 18 }}
-            animate={introDone ? { opacity: 1, y: 0 } : { opacity: 0, y: 18 }}
-            transition={{ duration: 1.1, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
+            initial={false}
+            animate={restVisible ? { opacity: 1, y: 0, height: 'auto', marginBottom: 24 } : { opacity: 0, y: 18, height: 0, marginBottom: 0 }}
+            transition={{ duration: 0.2, delay: 0.04, ease: [0.22, 1, 0.36, 1] }}
+            style={{ overflow: 'hidden' }}
             className="inline-flex max-w-full items-center gap-3 rounded-full border border-[var(--line)] bg-[rgba(15,23,42,0.55)] px-3 py-2 backdrop-blur md:px-4"
           >
             <span className="h-2 w-2 rounded-full bg-[var(--accent-2)]" />
@@ -35,41 +37,49 @@ export function HeroSection({ introDone }: HeroSectionProps) {
             </span>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 28 }}
-            animate={introDone ? { opacity: 1, y: 0 } : { opacity: 0, y: 28 }}
-            transition={{ duration: 1.25, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
-            className="space-y-5 md:space-y-6"
-          >
-            <p className="font-mono-ui text-[10px] uppercase tracking-[0.16em] text-[var(--muted)] sm:text-xs sm:tracking-[0.24em] md:tracking-[0.32em]">
+          <div className="space-y-5 md:space-y-6">
+            <motion.p
+              initial={false}
+              animate={restVisible ? { opacity: 1, y: 0, height: 'auto' } : { opacity: 0, y: 16, height: 0 }}
+              transition={{ duration: 0.8, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
+              style={{ overflow: 'hidden' }}
+              className="font-mono-ui text-[10px] uppercase tracking-[0.16em] text-[var(--muted)] sm:text-xs sm:tracking-[0.24em] md:tracking-[0.32em]"
+            >
               Billy Martínez / Software / Producto / Arquitectura
-            </p>
+            </motion.p>
             <h1 className="max-w-4xl font-display text-[2rem] font-semibold leading-[1] tracking-[-0.05em] text-[var(--ink)] sm:text-5xl md:text-6xl lg:text-[5.35rem]">
-              Me interesa construir
+              Me interesa diseñar y construir
               <ScrambleText
                 as="span"
                 className="mt-2 block max-w-[16ch] text-[var(--accent-2)] sm:max-w-[18ch] md:mt-1 md:max-w-[19ch]"
                 phrases={[
-                  'software que resuelva problemas reales.',
-                  'interfaces que se sientan claras y firmes.',
-                  'sistemas que conecten negocio y tecnología.',
-                  'productos que aguanten más que una demo.',
+                  'software que ordene operación real.',
+                  'interfaces claras, sobrias y firmes.',
+                  'sistemas que unan negocio y tecnología.',
+                  'productos que resistan el paso del tiempo.',
                 ]}
-                interval={3000}
+                interval={4200}
                 stableWidth
               />
             </h1>
-            <p className="max-w-2xl text-[15px] leading-7 text-[var(--muted)] md:text-xl md:leading-8">
-              Este portfolio reúne una forma de pensar el software: diseño con intención, criterio técnico
-              y gusto por los sistemas completos. Me atraen los productos que mezclan interfaz, operación,
-              automatización y arquitectura en una sola solución.
-            </p>
-          </motion.div>
+            <motion.p
+              initial={false}
+              animate={restVisible ? { opacity: 1, y: 0, height: 'auto' } : { opacity: 0, y: 18, height: 0 }}
+              transition={{ duration: 0.9, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
+              style={{ overflow: 'hidden' }}
+              className="max-w-2xl text-[15px] leading-7 text-[var(--muted)] md:text-xl md:leading-8"
+            >
+              Este portfolio resume una forma de pensar el software: diseño con intención,
+              criterio técnico y gusto por los sistemas completos. Me interesan los productos
+              donde interfaz, operación, automatización y arquitectura conviven de verdad.
+            </motion.p>
+          </div>
 
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={introDone ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
-            transition={{ duration: 1.2, delay: 0.48, ease: [0.22, 1, 0.36, 1] }}
+            initial={false}
+            animate={restVisible ? { opacity: 1, y: 0, height: 'auto', marginTop: 24 } : { opacity: 0, y: 24, height: 0, marginTop: 0 }}
+            transition={{ duration: 0.9, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
+            style={{ overflow: 'hidden' }}
             className="flex flex-col gap-3 sm:flex-row"
           >
             <a
@@ -91,9 +101,10 @@ export function HeroSection({ introDone }: HeroSectionProps) {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={introDone ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
-            transition={{ duration: 1.2, delay: 0.68, ease: [0.22, 1, 0.36, 1] }}
+            initial={false}
+            animate={restVisible ? { opacity: 1, y: 0, height: 'auto', marginTop: 32 } : { opacity: 0, y: 24, height: 0, marginTop: 0 }}
+            transition={{ duration: 0.95, delay: 0.42, ease: [0.22, 1, 0.36, 1] }}
+            style={{ overflow: 'hidden' }}
             className="hidden max-w-3xl gap-3 sm:grid-cols-3 md:grid md:gap-4"
           >
             {stats.map((stat) => (
@@ -112,15 +123,15 @@ export function HeroSection({ introDone }: HeroSectionProps) {
 
       <div
         className={cn(
-          'relative z-10 mx-auto mt-8 w-full max-w-7xl transition-all duration-[1800] ease-out md:mt-12',
-          introDone ? 'translate-y-0 opacity-100' : 'translate-y-2 opacity-0'
+          'relative z-10 mx-auto w-full max-w-7xl transition-all duration-[1200] ease-out md:mt-12',
+          restVisible ? 'mt-8 translate-y-0 opacity-100 md:mt-12' : 'mt-0 translate-y-2 opacity-0'
         )}
       >
         <div className="grid gap-3 rounded-[1.35rem] border border-[var(--line)] bg-[rgba(7,11,26,0.42)] p-3.5 shadow-[0_20px_60px_rgba(0,0,0,0.16)] backdrop-blur-xl md:grid-cols-[0.9fr_1.1fr_1fr] md:gap-4 md:rounded-[2rem] md:p-6">
           <div className="rounded-[1rem] border border-white/8 bg-white/[0.025] p-4 md:rounded-[1.35rem]">
-            <p className="font-mono-ui text-[11px] uppercase tracking-[0.24em] text-white/40">Now</p>
+            <p className="font-mono-ui text-[11px] uppercase tracking-[0.24em] text-white/40">Approach</p>
             <p className="mt-3 text-base font-medium text-white md:text-lg">
-              Construyendo sistemas útiles con foco en operación real
+              Diseño y desarrollo con foco en uso real, mantenimiento y claridad.
             </p>
           </div>
           <div className="rounded-[1rem] border border-white/8 bg-white/[0.025] p-4 md:rounded-[1.35rem]">

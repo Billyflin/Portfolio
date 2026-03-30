@@ -2,7 +2,18 @@ import { ArrowUpRight, Camera, BriefcaseBusiness, GitBranch } from 'lucide-react
 import billyflin from '@/assets/img/Billyflin.jpg';
 import { Reveal } from '@/components/ui/reveal';
 
-const tags = ['SAP CAP', 'CDS', 'SAP Fiori', 'Google Cloud', 'Mistral', 'Seeeduino XIAO C6'];
+const tags = [
+  'SAP CAP',
+  'CDS',
+  'SAP Fiori',
+  'AWS',
+  'Google Cloud',
+  'Machine Learning',
+  'Python',
+  'Automation',
+  'Software Architecture',
+  'Data Analysis',
+];
 const links = [
   { label: 'GitHub', href: 'https://github.com/Billyflin', Icon: GitBranch },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/billyflin', Icon: BriefcaseBusiness },
@@ -32,19 +43,17 @@ export function AboutSection() {
             <p className="font-mono-ui text-xs uppercase tracking-[0.24em] text-[var(--muted)]">About</p>
             <div className="mt-5 space-y-4 text-[15px] leading-7 text-[var(--muted)] md:mt-6 md:space-y-5 md:text-lg md:leading-8">
               <p>
-                Este portfolio nació hace casi tres años y ya no representa bien en qué estoy hoy.
-                Ahora estoy mucho más metido en sistemas reales, producto y decisiones técnicas que en
-                mostrar proyectos bonitos por mostrar.
+                Me interesa el software cuando deja de ser solo interfaz y empieza a tocar operación,
+                criterios técnicos y decisiones que importan en el tiempo.
               </p>
               <p>
-                Mi experiencia principal ha sido en BeCloud, una empresa orientada a soluciones SAP,
-                donde he participado en preventa, diseño de arquitectura, CAP con CDS, despliegues
-                distribuidos, balanceo de carga e interfaces con SAP Fiori.
+                Una parte importante de mi experiencia ha pasado por BeCloud, trabajando en torno a
+                soluciones SAP, CAP con CDS, SAP Fiori, despliegues distribuidos y arquitectura.
               </p>
               <p>
-                Paralelamente he construido Clinipets, un sistema veterinario bastante completo:
-                agenda, fichas, servicios, mascotas, insumos, OTP, agentes de WhatsApp, Google Cloud
-                e IA autohosteada con Mistral.
+                En paralelo también me he metido en sistemas propios como Clinipets y en exploración
+                con hardware, sensores y automatización. Me gusta entender cómo se conectan las cosas,
+                no quedarme solo en una capa.
               </p>
             </div>
           </Reveal>
@@ -56,9 +65,9 @@ export function AboutSection() {
               <p className="mt-2 text-sm text-[var(--muted)]">Ingeniería Informática · Chile</p>
             </Reveal>
             <Reveal className="rounded-[1.35rem] border border-[var(--line)] bg-[var(--panel)] p-5 md:rounded-[1.5rem] md:p-6" delay={0.18}>
-              <p className="font-mono-ui text-xs uppercase tracking-[0.24em] text-[var(--muted)]">Actualidad</p>
-              <p className="mt-3 text-lg font-medium text-[var(--ink)]">2 años en BeCloud</p>
-              <p className="mt-2 text-sm text-[var(--muted)]">SAP, arquitectura y soluciones empresariales</p>
+              <p className="font-mono-ui text-xs uppercase tracking-[0.24em] text-[var(--muted)]">Focus</p>
+              <p className="mt-3 text-lg font-medium text-[var(--ink)]">Producto y arquitectura</p>
+              <p className="mt-2 text-sm text-[var(--muted)]">Interfaces, operación, integración y sistemas empresariales</p>
             </Reveal>
             <Reveal className="rounded-[1.35rem] border border-[var(--line)] bg-[var(--panel)] p-5 md:col-span-2 md:rounded-[1.5rem] md:p-6" delay={0.24}>
               <p className="font-mono-ui text-xs uppercase tracking-[0.24em] text-[var(--muted)]">Mail</p>
