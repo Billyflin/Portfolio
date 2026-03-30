@@ -5,21 +5,21 @@ const workAreas = [
   {
     title: 'BeCloud',
     description:
-      'Mi experiencia laboral más importante ha sido en BeCloud, una empresa que vende soluciones SAP. Ahí he ido pasando de desarrollar interfaces a entender mejor arquitectura, preventa y decisiones de plataforma.',
+      'Trabajo ligado a soluciones SAP, donde la interfaz convive con decisiones de arquitectura, despliegue, integración y plataforma.',
     points: ['SAP CAP + CDS', 'SAP Fiori', 'Despliegues distribuidos', 'Balanceo de carga'],
     Icon: Building2,
   },
   {
     title: 'Clinipets',
     description:
-      'Es uno de los sistemas donde más he trabajado. Nació para la veterinaria de mi pareja y terminó creciendo bastante en módulos, automatizaciones e integración con servicios reales.',
+      'Un ERP veterinario que fue creciendo en módulos, automatización e integración con servicios reales hasta volverse un sistema bastante completo.',
     points: ['Agenda y fichas', 'Stock e insumos', 'WhatsApp + recordatorios', 'OTP + Google Cloud + Mistral'],
     Icon: ShieldCheck,
   },
   {
     title: 'Ingeniería por hobby',
     description:
-      'Fuera del trabajo sigo metido en informática igual. Me gusta explorar hardware, circuitos y automatización con Seeeduino XIAO C6 y módulos de todo tipo, porque disfruto entender cómo se conectan las cosas.',
+      'Fuera del trabajo sigo explorando hardware, sensores y automatización con Seeeduino XIAO C6 y módulos de todo tipo.',
     points: ['Seeeduino XIAO C6', 'Partículas de aire', 'Regadores automáticos', 'Presencia y cámaras WiFi'],
     Icon: Rocket,
   },
@@ -33,11 +33,11 @@ export function ProjectsSection() {
           <div className="max-w-4xl">
             <p className="font-mono-ui text-xs uppercase tracking-[0.24em] text-[var(--muted)]">Experience</p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-[-0.04em] text-[var(--ink)] md:text-6xl">
-              Hoy me representa más hablar del tipo de sistemas que he construido.
+              Prefiero mostrar el tipo de sistemas en los que me gusta trabajar.
             </h2>
           </div>
           <p className="max-w-xl text-base leading-7 text-[var(--muted)]">
-            Prefiero contar en qué tipo de sistemas he trabajado y qué cosas he ido aprendiendo, antes que llenar esto con proyectos antiguos que ya no me representan mucho.
+            Más que una colección de demos, esto apunta a producto, operación real, automatización e integración.
           </p>
         </Reveal>
 
@@ -53,7 +53,7 @@ export function ProjectsSection() {
                   <Icon className="h-5 w-5 text-[var(--accent-2)]" />
                 </span>
                 <span className="rounded-full border border-[var(--line)] px-3 py-1 font-mono-ui text-[10px] uppercase tracking-[0.16em] text-[var(--muted)] md:text-[11px] md:tracking-[0.22em]">
-                  Current level
+                  Work area
                 </span>
               </div>
 
@@ -84,10 +84,10 @@ export function ProjectsSection() {
             </div>
             <div className="space-y-4 text-sm leading-7 text-[var(--muted)] md:text-base">
               <p>
-                Varias de las soluciones en las que he trabajado son internas, empresariales o demasiado ligadas a operación real como para convertirlas en “case study” público sin empezar a exagerar.
+                Varias de las soluciones en las que he trabajado son internas, empresariales o demasiado ligadas a operación real como para convertirlas en un case study público sin forzar el relato.
               </p>
               <p>
-                Por eso prefiero que este portfolio muestre mejor hacia dónde estoy apuntando: producto serio, arquitectura, automatización y sistemas que realmente se usan.
+                Por eso prefiero mostrar dirección, criterio y tipo de trabajo antes que llenar la página con proyectos publicados a medias.
               </p>
               <div className="pt-2">
                 <a

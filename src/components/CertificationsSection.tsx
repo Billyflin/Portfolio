@@ -6,6 +6,7 @@ import {
   Layers3,
   LineChart,
 } from 'lucide-react';
+import { useEffect, useRef } from 'react';
 import { Reveal } from '@/components/ui/reveal';
 
 const featuredCertifications = [
@@ -34,6 +35,19 @@ const featuredCertifications = [
     badge: '',
     skills: ['AWS', 'Data Lakes', 'Architecture', 'Certification Prep'],
     Icon: Cloud,
+  },
+  {
+    name: 'AWS Academy Graduate - Machine Learning Foundations',
+    date: 'Septiembre 2025',
+    description: 'Badge orientado a fundamentos de machine learning sobre AWS y bases de inteligencia artificial aplicada.',
+    imageSrc: '/AWS-MLF.png',
+    imageAlt: 'Badge AWS Academy Graduate - Machine Learning Foundations',
+    link: 'https://www.credly.com/earner/earned/badge/481d0f69-e4bd-4f1f-9933-301a8ba2f255',
+    badgeImg: null,
+    badgeAlt: '',
+    badge: '',
+    skills: ['Machine Learning', 'AI', 'AWS', 'AWS Cloud Computing', 'ML Foundations'],
+    Icon: BarChart3,
   },
   {
     name: 'Google Advanced Data Analytics',
@@ -91,8 +105,39 @@ const supportingCertifications = [
 ];
 
 export function CertificationsSection() {
+  const sectionRef = useRef<HTMLElement | null>(null);
+
+  useEffect(() => {
+    const element = sectionRef.current;
+    if (!element) return;
+
+    let loaded = false;
+    const loadCredly = () => {
+      if (loaded || document.querySelector('script[data-credly="true"]')) return;
+      loaded = true;
+      const script = document.createElement('script');
+      script.src = 'https://cdn.credly.com/assets/utilities/embed.js';
+      script.async = true;
+      script.dataset.credly = 'true';
+      document.body.appendChild(script);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          loadCredly();
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '300px 0px' }
+    );
+
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="certifications" className="scroll-mt-28 px-4 py-10 md:scroll-mt-32 md:px-6 md:py-16">
+    <section ref={sectionRef} id="certifications" className="scroll-mt-28 px-4 py-10 md:scroll-mt-32 md:px-6 md:py-16">
       <div className="mx-auto w-full max-w-7xl">
         <Reveal className="mb-10 grid gap-4 lg:grid-cols-[1fr_0.8fr] lg:items-end">
           <div>
@@ -117,17 +162,15 @@ export function CertificationsSection() {
               >
                 <div className="grid h-full md:grid-cols-[0.95fr_1.05fr]">
                   <div className="border-b border-[var(--line)] bg-[rgba(15,23,42,0.55)] p-4 md:border-b-0 md:border-r md:p-5">
-                    <img src={cert.imageSrc} alt={cert.imageAlt} className="h-full w-full rounded-[1.25rem] object-cover" />
-                    {cert.badgeImg ? (
-                      <a
-                        href={cert.badge}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="mt-4 block rounded-[1rem] border border-[var(--line)] bg-[rgba(15,23,42,0.55)] p-3"
-                      >
-                        <img src={cert.badgeImg} alt={cert.badgeAlt} className="mx-auto max-h-24 w-auto object-contain" />
-                      </a>
-                    ) : null}
+                    <div className="flex aspect-[1.22/1] items-center justify-center rounded-[1.25rem] border border-[var(--line)] bg-[rgba(255,255,255,0.03)] p-3 md:p-4">
+                      <img
+                        src={cert.imageSrc}
+                        alt={cert.imageAlt}
+                        loading="lazy"
+                        decoding="async"
+                        className="max-h-full w-full rounded-[0.9rem] object-contain"
+                      />
+                    </div>
                   </div>
 
                   <div className="flex flex-col p-5 md:p-6">
@@ -136,7 +179,24 @@ export function CertificationsSection() {
                         <p className="font-mono-ui text-xs uppercase tracking-[0.22em] text-[var(--muted)]">{cert.date}</p>
                         <h3 className="mt-3 text-xl font-semibold leading-tight text-[var(--ink)] md:text-3xl">{cert.name}</h3>
                       </div>
-                      <Icon className="h-8 w-8 text-[var(--accent-2)]" />
+                      {cert.badgeImg ? (
+                        <a
+                          href={cert.badge}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="flex h-16 w-16 shrink-0 items-center justify-center rounded-[1rem] border border-[var(--line)] bg-[rgba(255,255,255,0.03)] p-2"
+                        >
+                          <img
+                            src={cert.badgeImg}
+                            alt={cert.badgeAlt}
+                            loading="lazy"
+                            decoding="async"
+                            className="max-h-full w-full object-contain"
+                          />
+                        </a>
+                      ) : (
+                        <Icon className="h-8 w-8 shrink-0 text-[var(--accent-2)]" />
+                      )}
                     </div>
 
                     <p className="mt-5 text-sm leading-7 text-[var(--muted)] md:text-base">{cert.description}</p>

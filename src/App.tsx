@@ -4,26 +4,84 @@ import { CertificationsSection } from '@/components/CertificationsSection';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import { HeroSection } from '@/components/HeroSection';
+import { PlainResumePage } from '@/components/PlainResumePage';
 import { ProjectsSection } from '@/components/ProjectsSection';
 import { SkillsSection } from '@/components/SkillsSection';
 import { Waves } from '@/components/ui/wave-background';
 
+const INTRO_TIMINGS = {
+  waves: 220,
+  title: 950,
+  dim: 3400,
+  header: 4300,
+  content: 4900,
+} as const;
+
+type IntroStage = 'idle' | 'waves' | 'title' | 'dim' | 'header' | 'content';
+
 export default function App() {
-  const [wavesVisible, setWavesVisible] = useState(false);
-  const [headerVisible, setHeaderVisible] = useState(false);
-  const [contentVisible, setContentVisible] = useState(false);
+  const pathname = typeof window !== 'undefined' ? window.location.pathname : '/';
+  const [introStage, setIntroStage] = useState<IntroStage>('idle');
 
   useEffect(() => {
-    const showWavesTimeout = window.setTimeout(() => setWavesVisible(true), 180);
-    const showHeaderTimeout = window.setTimeout(() => setHeaderVisible(true), 2350);
-    const showContentTimeout = window.setTimeout(() => setContentVisible(true), 3300);
+    if (pathname === '/plain') {
+      setIntroStage('content');
+      return;
+    }
+
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (isMobile || prefersReducedMotion) {
+      setIntroStage('content');
+      return;
+    }
+
+    const timeline: Array<[number, IntroStage]> = [
+      [INTRO_TIMINGS.waves, 'waves'],
+      [INTRO_TIMINGS.title, 'title'],
+      [INTRO_TIMINGS.dim, 'dim'],
+      [INTRO_TIMINGS.header, 'header'],
+      [INTRO_TIMINGS.content, 'content'],
+    ];
+
+    const timeouts = timeline.map(([delay, stage]) =>
+      window.setTimeout(() => setIntroStage(stage), delay)
+    );
+
+    return () => timeouts.forEach((timeoutId) => window.clearTimeout(timeoutId));
+  }, [pathname]);
+
+  const wavesVisible = introStage !== 'idle';
+  const titleVisible = introStage === 'title' || introStage === 'dim' || introStage === 'header' || introStage === 'content';
+  const dimVisible = introStage === 'dim' || introStage === 'header' || introStage === 'content';
+  const headerVisible = introStage === 'header' || introStage === 'content';
+  const contentVisible = introStage === 'content';
+
+  useEffect(() => {
+    if (pathname === '/plain') return;
+
+    const shouldLockScroll = introStage !== 'content';
+    const html = document.documentElement;
+    const body = document.body;
+    const previousHtmlOverflow = html.style.overflow;
+    const previousBodyOverflow = body.style.overflow;
+
+    if (shouldLockScroll) {
+      window.scrollTo({ top: 0, behavior: 'auto' });
+      html.style.overflow = 'hidden';
+      body.style.overflow = 'hidden';
+    }
 
     return () => {
-      window.clearTimeout(showWavesTimeout);
-      window.clearTimeout(showHeaderTimeout);
-      window.clearTimeout(showContentTimeout);
+      html.style.overflow = previousHtmlOverflow;
+      body.style.overflow = previousBodyOverflow;
     };
-  }, []);
+  }, [introStage, pathname]);
+
+  if (pathname === '/plain') {
+    return <PlainResumePage />;
+  }
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-[var(--page-bg)] text-[var(--ink)]">
@@ -38,16 +96,16 @@ export default function App() {
         style={{ opacity: wavesVisible ? 1 : 0 }}
       >
         <div
-          className="absolute inset-0 transition-all duration-[2400] ease-[cubic-bezier(0.22,1,0.36,1)]"
+          className="absolute inset-0 transition-all duration-[2200] ease-[cubic-bezier(0.22,1,0.36,1)]"
           style={{
             opacity: wavesVisible ? 1 : 0,
-            transform: wavesVisible ? 'scale(1)' : 'scale(1.04)',
-            filter: wavesVisible ? 'blur(0px)' : 'blur(12px)',
+            transform: wavesVisible ? 'scale(1)' : 'scale(1.035)',
+            filter: wavesVisible ? 'blur(0px)' : 'blur(10px)',
           }}
         >
         <Waves
           className="h-full w-full"
-          strokeColor={contentVisible ? 'rgba(34,211,238,0.18)' : 'rgba(34,211,238,0.52)'}
+          strokeColor={dimVisible ? 'rgba(34,211,238,0.18)' : 'rgba(34,211,238,0.48)'}
           backgroundColor="#050816"
           pointerSize={0.26}
         />
@@ -60,29 +118,29 @@ export default function App() {
           }}
         />
         <div
-          className="absolute inset-0 transition-all duration-[1900] ease-[cubic-bezier(0.22,1,0.36,1)]"
+          className="absolute inset-0 transition-all duration-[2200] ease-[cubic-bezier(0.22,1,0.36,1)]"
           style={{
             background:
               'radial-gradient(circle at 50% 18%, rgba(5,8,22,0.04) 0%, rgba(5,8,22,0.22) 24%, rgba(5,8,22,0.48) 48%, rgba(5,8,22,0.76) 72%, rgba(5,8,22,0.9) 100%)',
-            clipPath: contentVisible
+            clipPath: dimVisible
               ? 'circle(165% at 50% 18%)'
-              : 'circle(2% at 50% 18%)',
-            opacity: contentVisible ? 1 : 0.12,
+              : 'circle(0% at 50% 18%)',
+            opacity: dimVisible ? 1 : 0,
           }}
         />
         <div
-          className="absolute inset-0 transition-all duration-[2200] ease-out"
+          className="absolute inset-0 transition-all duration-[2000] ease-out"
           style={{
             background:
               'radial-gradient(circle at 50% 18%, rgba(255,255,255,0.05), transparent 28%)',
-            opacity: wavesVisible ? 0.18 : 0,
+            opacity: dimVisible ? 0.06 : wavesVisible ? 0.16 : 0,
           }}
         />
       </div>
 
       <div className="relative z-10">
         <Header introDone={headerVisible} />
-        <HeroSection introDone={contentVisible} />
+        <HeroSection titleVisible={titleVisible} restVisible={contentVisible} />
 
         <main className="relative z-10 pb-10">
           <AboutSection />

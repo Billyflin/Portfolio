@@ -19,7 +19,26 @@ export function Header({ introDone }: HeaderProps) {
   const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 20);
+        const sections = ['certifications', 'skills', 'projects', 'about'];
+        for (const section of sections) {
+          const element = document.getElementById(section);
+          if (element && window.scrollY >= element.offsetTop - 180) {
+            setActiveSection(section);
+            break;
+          }
+        }
+        ticking = false;
+      });
+    };
+
+    const syncScroll = () => {
       setScrolled(window.scrollY > 20);
       const sections = ['certifications', 'skills', 'projects', 'about'];
       for (const section of sections) {
@@ -31,7 +50,7 @@ export function Header({ introDone }: HeaderProps) {
       }
     };
 
-    handleScroll();
+    syncScroll();
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);

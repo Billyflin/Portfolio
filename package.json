@@ -12,6 +12,9 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "overrides": {
+    "yaml": "^2.8.3"
+  },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
