@@ -1,5 +1,5 @@
 import { ArrowUpRight, Camera, BriefcaseBusiness, GitBranch } from 'lucide-react';
-import billyflin from '@/assets/img/Billyflin.jpg';
+import billyflin from '@/assets/img/BillyReciente.jpeg';
 import { Reveal } from '@/components/ui/reveal';
 
 const tags = [
