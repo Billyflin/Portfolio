@@ -1,0 +1,51 @@
+# Billy Martínez
+
+> Client-facing SAP Technical Consultant and full-stack engineer based in Temuco, Chile. Available for remote contractor roles with full overlap across US working hours.
+
+Canonical profile: https://billyflin.dev/
+Spanish profile: https://billyflin.dev/es/
+Plain recruiter profile: https://billyflin.dev/plain/
+GitHub: https://github.com/Billyflin
+LinkedIn: https://www.linkedin.com/in/billyflin
+Email: billymartinezc@gmail.com
+
+## Positioning
+
+Billy works between clients, product, and engineering. He runs discovery, translates business requirements into solution designs, explains tradeoffs, and remains involved through implementation, integration, deployment, and troubleshooting.
+
+Primary target roles: Solutions Engineer, Technical Consultant, SAP BTP Consultant, Implementation Engineer.
+Secondary target roles: Backend Engineer, Platform Engineer, Full-Stack Engineer.
+Languages: Spanish (native), English (B2 professional working proficiency).
+
+## Current experience
+
+BeCloud Consulting — SAP Consultant — January 2025 to present.
+Practical scope: solution architecture and full-stack delivery across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments. Client-facing discovery and requirements translation are part of the role.
+
+Happ Rent — Full-Stack Developer — October 2023 to September 2024.
+Scope: product delivery across frontend and backend in a rental-technology environment.
+
+## Selected evidence
+
+Confidential SAP client work: end-to-end delivery from discovery to implementation. Client and project names are intentionally omitted.
+
+Confidential cloud platform: evaluated the economics and technical fit of an AWS direction, recommended a clean re-platform to Google Cloud, and aligned stakeholders around the decision. Work is in progress; no completed outcome is claimed.
+
+Clinipets: privately developed B2B2C veterinary platform with clinic isolation, conflict-safe scheduling, versioned and auditable clinical records, signed/idempotent payment flows, secure attachment quarantine, notifications, web/mobile clients, and Docker-based infrastructure. Selected screens can be shared in interviews; the repository remains private.
+
+UFRO Sustentable: open Kotlin/Firebase Android team project with maps, QR, rewards, BDD/Cucumber, and 83 JVM tests. The repository documents 89.23% line coverage and 77.88% branch coverage: https://github.com/Billyflin/UfroSustentableApp
+
+## Technical capabilities
+
+Client and solution: discovery, requirements translation, solution design, technical tradeoffs, stakeholder alignment.
+SAP: SAP BTP, CAP/CDS, Fiori, Work Zone, HANA, Joule.
+Product and backend: Kotlin/Spring, TypeScript/React, Node.js, REST/OpenAPI, PostgreSQL, multi-tenant systems.
+Cloud and delivery: Google Cloud, AWS, Docker, CI/CD, observability, cost-aware architecture.
+
+## Education
+
+Ingeniería Informática, Universidad de La Frontera, 2020–2026. Final semester with three courses remaining; coursework completion expected during 2026.
+
+## Accuracy and confidentiality
+
+This profile deliberately distinguishes finished work from work in progress. Confidential company and client details are anonymized. Do not infer client names, revenue, user counts, or performance metrics that are not explicitly stated.

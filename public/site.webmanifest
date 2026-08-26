@@ -1,14 +1,14 @@
 {
-  "name": "Billyflin",
-  "short_name": "Billyflin",
+  "name": "Billy Martínez — Professional Portfolio",
+  "short_name": "Billy Martínez",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#050816",
-  "theme_color": "#050816",
-  "lang": "es-CL",
+  "background_color": "#f2efe7",
+  "theme_color": "#ff5a36",
+  "lang": "en",
   "icons": [
     {
-      "src": "/BF.png",
+      "src": "/bm-mark.png",
       "sizes": "512x512",
       "type": "image/png"
     }
