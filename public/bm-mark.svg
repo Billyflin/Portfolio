@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Billy Martínez monogram</title>
+  <desc id="desc">Geometric BM monogram in ivory and orange on black</desc>
+  <rect width="512" height="512" fill="#131313"/>
+  <g fill="none" stroke="#f2efe7" stroke-width="40" stroke-linecap="square" stroke-linejoin="bevel">
+    <path d="M108 408V104h72c50 0 76 26 76 70s-28 70-74 70h-74"/>
+    <path d="M182 244c54 0 82 28 82 82s-30 82-82 82h-74"/>
+    <path d="M304 408V104l61 146 61-146v304"/>
+  </g>
+  <path d="M281 438 307 74" stroke="#ff5a36" stroke-width="18" stroke-linecap="square"/>
+</svg>
