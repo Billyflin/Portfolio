@@ -1,0 +1,29 @@
+{
+  "$schema": "https://schema.org/Person",
+  "name": "Billy Martínez",
+  "alternateName": "Billyflin",
+  "url": "https://billyflin.dev/",
+  "location": "Temuco, Chile",
+  "currentRole": {
+    "organization": "BeCloud Consulting",
+    "contractTitle": "SAP Consultant",
+    "workingScope": "Solution architecture and full-stack SAP delivery",
+    "startDate": "2025-01"
+  },
+  "targetRoles": ["Solutions Engineer", "Technical Consultant", "SAP BTP Consultant", "Implementation Engineer", "Backend Engineer", "Platform Engineer"],
+  "workPreference": {
+    "engagement": "Remote contractor",
+    "timezone": "Full US-hours overlap",
+    "searchVisibility": "Discreet and selective"
+  },
+  "languages": [
+    { "name": "Spanish", "level": "Native" },
+    { "name": "English", "level": "B2 professional working proficiency" }
+  ],
+  "skills": ["Client discovery", "Requirements translation", "Solution architecture", "SAP BTP", "SAP Fiori", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Kotlin", "Spring", "TypeScript", "React", "Node.js", "PostgreSQL", "Google Cloud", "AWS", "Docker", "CI/CD"],
+  "profiles": {
+    "github": "https://github.com/Billyflin",
+    "linkedin": "https://www.linkedin.com/in/billyflin"
+  },
+  "lastUpdated": "2026-08-26"
+}

@@ -1,0 +1,23 @@
+# Billy Martínez
+
+SAP Technical Consultant and full-stack engineer working between clients, product, and engineering.
+
+I turn ambiguous requirements into solution architecture and working software, then stay involved through integration, deployment, and troubleshooting. My current scope includes SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, Joule, Kotlin/Spring, TypeScript/React, PostgreSQL, Google Cloud, AWS, and Docker.
+
+## Selected work
+
+- **SAP solution delivery** - Client discovery and full-stack delivery across the SAP BTP ecosystem. Client details remain confidential.
+- **Clinipets** - Private B2B2C veterinary platform with tenant isolation, scheduling, auditable clinical records, secure attachments, payments, notifications, and web/mobile clients.
+- **[UFRO Sustentable](https://github.com/Billyflin/UfroSustentableApp)** - Kotlin/Firebase Android team project with QR and location flows, 83 JVM tests, and documented repository coverage.
+
+## What I am good at
+
+- Client discovery and requirements translation
+- Solution architecture and technical tradeoffs
+- SAP BTP full-stack delivery
+- Secure multi-tenant backend systems
+- Cost-aware cloud decisions and production troubleshooting
+
+Based in Temuco, Chile. Remote contractor with full US-hours overlap. Spanish native, English B2.
+
+[Portfolio](https://billyflin.dev/) · [LinkedIn](https://www.linkedin.com/in/billyflin) · [Email](mailto:billymartinezc@gmail.com)
