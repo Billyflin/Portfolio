@@ -47,7 +47,7 @@ Vivo en Temuco, Chile. Disponible para roles contractor remotos con jornada comp
 
 1. Portfolio: https://billyflin.dev/
 2. Plain recruiter profile: https://billyflin.dev/plain/
-3. UFRO Sustentable: https://github.com/Billyflin/UfroSustentableApp
+3. UFRO Sustentable: https://github.com/Billyflin/ufro-sustentable
 4. AWS Cloud Solutions Architect credential
 
 ## Search settings

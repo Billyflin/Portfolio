@@ -8,7 +8,7 @@ I turn ambiguous requirements into solution architecture and working software, t
 
 - **SAP solution delivery** - Client discovery and full-stack delivery across the SAP BTP ecosystem. Client details remain confidential.
 - **Clinipets** - Private B2B2C veterinary platform with tenant isolation, scheduling, auditable clinical records, secure attachments, payments, notifications, and web/mobile clients.
-- **[UFRO Sustentable](https://github.com/Billyflin/UfroSustentableApp)** - Kotlin/Firebase Android team project with QR and location flows, 83 JVM tests, and documented repository coverage.
+- **[UFRO Sustentable](https://github.com/Billyflin/ufro-sustentable)** - Kotlin/Firebase Android team project with QR and location flows, 83 JVM tests, and documented repository coverage.
 
 ## What I am good at
 
