@@ -5,11 +5,12 @@ from pypdf import PdfReader
 
 root = Path(__file__).resolve().parents[1]
 files = sorted((root / "output" / "pdf").glob("*.pdf"))
-assert len(files) == 4, f"Expected four resumes, found {len(files)}"
+assert len(files) == 5, f"Expected five resumes, found {len(files)}"
 
 public_names = {
     "Billy_Martinez_Resume_Solutions_EN.pdf",
     "Billy_Martinez_Resume_Backend_EN.pdf",
+    "Billy_Martinez_Resume_Quality_EN.pdf",
     "Billy_Martinez_CV_Soluciones_ES.pdf",
     "Billy_Martinez_CV_Backend_ES.pdf",
     "Billy_Martinez_CV.pdf",

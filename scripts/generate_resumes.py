@@ -103,6 +103,49 @@ DATA = {
         "languages": "Spanish: Native | English: B2 professional working proficiency | Remote contractor | Full US-hours overlap",
         "labels": {"experience": "EXPERIENCE", "projects": "SELECTED TECHNICAL WORK", "skills": "TECHNICAL CAPABILITIES", "education": "EDUCATION, CREDENTIALS AND LANGUAGES"},
     },
+    "quality_en": {
+        "filename": "Billy_Martinez_Resume_Quality_EN.pdf",
+        "role": "Software Development Engineer in Test | TypeScript, APIs, CI/CD",
+        "summary": "Quality-focused software engineer with 2+ years of professional product delivery. I turn requirements and production risks into automated checks, testable system boundaries, QA workflows, and release evidence across SAP BTP, web, API, and cloud-native systems.",
+        "experience": [
+            {
+                "heading": "BeCloud Consulting | SAP Consultant",
+                "date": "Jan 2025 - Present",
+                "bullets": [
+                    "Introduced automated testing and a dedicated QA stage in a workflow that previously relied on direct dev/production fixes.",
+                    "Refine requirements with a functional consultant, implement SAP BTP solutions, and guide validation with QA and design before delivery.",
+                    "Work across Fiori/UI5, CAP/CDS services, HANA, Work Zone, integrations, deployment, and environment troubleshooting, keeping quality connected to implementation.",
+                    "Improve process flows and UX within UI5 standards, identifying failure paths and acceptance risks across interface, service, data, and platform layers.",
+                ],
+            },
+            {
+                "heading": "Happ Rent | Full-Stack Developer",
+                "date": "Oct 2023 - Sep 2024",
+                "bullets": ["Delivered product work across frontend and backend in a rental-technology environment."],
+            },
+        ],
+        "projects": [
+            {
+                "heading": "UFRO Sustentable | Automated quality evidence",
+                "bullets": [
+                    "Built Kotlin/Firebase Android flows for maps, QR scanning, and rewards in a team project using BDD/Cucumber.",
+                    "The public repository documents 83 JVM tests with 89.23% line coverage and 77.88% branch coverage.",
+                ],
+            },
+            {
+                "heading": "Clinipets | Reliability-oriented product architecture",
+                "bullets": [
+                    "Designed clinic-scoped tenancy, role-based access, conflict-safe scheduling, versioned clinical records, and auditable corrections.",
+                    "Defined signed idempotent payment flows, secure attachment quarantine, reliable outbox notifications, OpenAPI contracts, and Docker-based delivery across web and mobile clients.",
+                ],
+            },
+        ],
+        "skills": "Test automation; unit and integration testing; API and contract testing; QA workflow design; defect analysis; TypeScript/JavaScript; React; Kotlin; REST/OpenAPI; SAP BTP; CAP/CDS; AWS; Docker; Git; CI/CD; PostgreSQL; authentication and authorization.",
+        "education": "Ingenieria Informatica, Universidad de La Frontera | 2020 - 2026 | Final semester, three courses remaining; coursework completion expected in 2026.",
+        "credentials": "AWS Cloud Solutions Architect; AWS Cloud Technology Consultant; AWS Academy Machine Learning Foundations; Google Advanced Data Analytics.",
+        "languages": "Spanish: Native | English: B2 professional working proficiency | Remote contractor | Full US-hours overlap",
+        "labels": {"experience": "EXPERIENCE", "projects": "QUALITY EVIDENCE", "skills": "TEST AND ENGINEERING CAPABILITIES", "education": "EDUCATION, CREDENTIALS AND LANGUAGES"},
+    },
     "solutions_es": {
         "filename": "Billy_Martinez_CV_Soluciones_ES.pdf",
         "role": "Consultor técnico SAP BTP | Arquitectura | Entrega full-stack",
