@@ -33,7 +33,7 @@ Confidential cloud platform: evaluated the economics and technical fit of an AWS
 
 Clinipets: privately developed B2B2C veterinary platform with clinic isolation, conflict-safe scheduling, versioned and auditable clinical records, signed/idempotent payment flows, secure attachment quarantine, notifications, web/mobile clients, and Docker-based infrastructure. Selected screens can be shared in interviews; the repository remains private.
 
-SAP CAP + Fiori Reference Application: independent open SAP BTP reference with CDS modeling, OData V4, Fiori Elements, XSUAA/HANA deployment design, an external OData service with controlled degradation, two architecture decision records, and 11 service tests covering role authorization and provider-failure behavior; lint, production build, and GitHub Actions CI pass: https://github.com/Billyflin/sap-cap-fiori-btp
+SAP CAP + Fiori Reference Application: independent open SAP BTP reference with CDS modeling, OData V4, Fiori Elements, XSUAA/HANA deployment design, an external OData service with controlled degradation, two architecture decision records, and 12 service tests covering role authorization, concurrent stock protection, and provider-failure behavior; lint, production build, and GitHub Actions CI pass: https://github.com/Billyflin/sap-cap-fiori-btp
 
 UFRO Sustentable: open Kotlin/Firebase Android team project with maps, QR, rewards, BDD/Cucumber, and 83 JVM tests. The repository documents 89.23% line coverage and 77.88% branch coverage: https://github.com/Billyflin/ufro-sustentable
 

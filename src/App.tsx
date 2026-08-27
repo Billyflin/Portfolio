@@ -68,7 +68,7 @@ const content = {
             'Refine requirements with the functional consultant and propose architecture, flow, and UX improvements',
             'Design and build across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, and Joule',
             'Introduced automated testing and a QA stage beyond direct dev-to-production fixes',
-            'Independent public CAP/Fiori reference with 11 service tests covering role authorization and resilient OData integration, plus green CI',
+            'Independent public CAP/Fiori reference with 12 service tests covering role authorization, concurrent stock protection, and resilient OData integration, plus green CI',
           ],
           tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Automated testing', 'QA delivery'],
           tone: 'orange',
@@ -191,7 +191,7 @@ const content = {
         {
           number: '01', kind: 'Rol actual · Trabajo confidencial', name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
           body: 'Mi contrato dice Consultor SAP. En la práctica convierto requisitos funcionales en arquitectura y entrega full-stack: interfaz y UX, modelo de dominio, integraciones, despliegue, automatización de pruebas y resolución de problemas del ambiente.',
-          evidence: ['Refino requerimientos con el consultor funcional y propongo mejoras de arquitectura, flujo y UX', 'Diseño y construyo con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción', 'Referencia CAP/Fiori pública e independiente con 11 pruebas sobre autorización por roles e integración OData resiliente, más CI verde'],
+          evidence: ['Refino requerimientos con el consultor funcional y propongo mejoras de arquitectura, flujo y UX', 'Diseño y construyo con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción', 'Referencia CAP/Fiori pública e independiente con 12 pruebas sobre autorización por roles, protección de stock concurrente e integración OData resiliente, más CI verde'],
           tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Pruebas automatizadas', 'Entrega con QA'], tone: 'orange', label: 'Ver referencia CAP independiente', href: 'https://github.com/Billyflin/sap-cap-fiori-btp',
         },
         {
