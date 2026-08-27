@@ -250,7 +250,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .portrait img {
   object-fit: cover;
-  object-position: 63% center;
+  object-position: 50% center;
   filter: saturate(0.88) contrast(1.04);
   transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -812,7 +812,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-title { margin: 3.5rem 0 2.5rem; font-size: clamp(3.6rem, 18vw, 6rem); }
   .hero-actions { flex-wrap: wrap; }
   .portrait { min-height: 28rem; border-top: 1px solid var(--ink); border-left: 0; }
-  .portrait img { object-position: 62% center; }
+  .portrait img { object-position: 50% center; }
   .discipline-strip { grid-template-columns: repeat(2, 1fr); }
   .discipline-strip span { border-bottom: 1px solid var(--ink); }
   .discipline-strip span:nth-child(2n) { border-right: 0; }

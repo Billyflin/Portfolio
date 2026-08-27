@@ -45,7 +45,7 @@ const content = {
       intro: 'SAP Technical Consultant and full-stack engineer. I work directly with clients, turn ambiguity into architecture, and stay through implementation and delivery.',
       primaryCta: 'See selected work',
       resumeCta: 'Solutions CV',
-      portraitAlt: 'Billy Martínez with a dog in front of a colorful mural',
+      portraitAlt: 'Billy Martínez with Oliver outdoors in Temuco',
       disciplines: ['Solution discovery', 'SAP BTP', 'Full-stack delivery', 'Cloud decisions', 'Client communication'],
     },
     proof: [
@@ -163,7 +163,7 @@ const content = {
       intro: 'Consultor técnico SAP e ingeniero full-stack. Trabajo directamente con clientes, convierto ambigüedad en arquitectura y sigo involucrado hasta la implementación y entrega.',
       primaryCta: 'Ver trabajo',
       resumeCta: 'CV de soluciones',
-      portraitAlt: 'Billy Martínez junto a un perro frente a un mural colorido',
+      portraitAlt: 'Billy Martínez junto a Oliver al aire libre en Temuco',
       disciplines: ['Descubrimiento', 'SAP BTP', 'Entrega full-stack', 'Decisiones cloud', 'Comunicación con clientes'],
     },
     proof: [
@@ -237,7 +237,7 @@ function Header({ locale }: { locale: Locale }) {
 function Hero({ locale }: { locale: Locale }) {
   const t = content[locale];
   const resumeHref = locale === 'en' ? '/Billy_Martinez_Resume_Solutions_EN.pdf' : '/Billy_Martinez_CV_Soluciones_ES.pdf';
-  return <><section className="hero" id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeHref} target="_blank" rel="noreferrer">{t.hero.resumeCta}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></div></div><figure className="portrait hero-enter hero-enter--4"><picture><source srcSet="/billy-martinez-480.webp 480w, /billy-martinez-960.webp 960w" sizes="(max-width: 760px) 100vw, 44vw" type="image/webp" /><img src="/billy-martinez-960.webp" alt={t.hero.portraitAlt} width="960" height="640" fetchPriority="high" decoding="async" /></picture><figcaption><span>Billy Martínez</span><span><span aria-hidden="true">●</span> Temuco, CL</span></figcaption></figure><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
+  return <><section className="hero" id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeHref} target="_blank" rel="noreferrer">{t.hero.resumeCta}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></div></div><figure className="portrait hero-enter hero-enter--4"><picture><source srcSet="/billy-martinez-480.webp 480w, /billy-martinez-960.webp 960w, /billy-martinez-1440.webp 1440w, /billy-martinez-2160.webp 2160w" sizes="(max-width: 760px) 100vw, 44vw" type="image/webp" /><img src="/billy-martinez-1440.webp" alt={t.hero.portraitAlt} width="1440" height="960" fetchPriority="high" decoding="async" /></picture><figcaption><span>Billy Martínez</span><span><span aria-hidden="true">●</span> Temuco, CL</span></figcaption></figure><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
 }
 
 function WorkSection({ locale }: { locale: Locale }) {
