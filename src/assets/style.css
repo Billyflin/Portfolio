@@ -249,13 +249,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .portrait picture, .portrait img { width: 100%; height: 100%; }
 
 .portrait img {
+  display: block;
   object-fit: cover;
   object-position: 50% center;
-  filter: saturate(0.88) contrast(1.04);
-  transition: transform 700ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-
-.portrait:hover img { transform: scale(1.025); }
 
 .portrait::after {
   position: absolute;
@@ -331,7 +328,6 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-enter--1 { animation-delay: 80ms; }
 .hero-enter--2 { animation-delay: 140ms; }
 .hero-enter--3 { animation-delay: 220ms; }
-.hero-enter--4 { animation-delay: 100ms; }
 
 @keyframes enter-up {
   from { opacity: 0; transform: translateY(18px); }
