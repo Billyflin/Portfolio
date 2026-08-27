@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (() => {
+      const { protocol, hostname, pathname, search, hash } = window.location;
+      const isPortfolioHost = hostname === 'billyflin.dev' || hostname === 'www.billyflin.dev';
+      if (isPortfolioHost && (protocol !== 'https:' || hostname !== 'billyflin.dev' || pathname.endsWith('/index.html'))) {
+        const cleanPath = pathname.replace(/index\.html$/, '');
+        window.location.replace(`https://billyflin.dev${cleanPath}${search}${hash}`);
+      }
+    })();
+  </script>
   <title>Billy Martínez — Consultor técnico SAP e ingeniero full-stack</title>
   <meta name="description" content="Consultor técnico SAP e ingeniero full-stack que convierte requisitos complejos en arquitectura y software funcionando con SAP BTP, cloud, web y backend." />
   <meta name="author" content="Billy Martínez" />
+  <meta name="application-name" content="Billy Martínez — Portafolio profesional" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
   <meta name="theme-color" content="#ff5a36" />
   <link rel="canonical" href="https://billyflin.dev/es/" />
@@ -13,11 +24,17 @@
   <link rel="alternate" hreflang="es" href="https://billyflin.dev/es/" />
   <link rel="alternate" hreflang="x-default" href="https://billyflin.dev/" />
   <link rel="alternate" type="text/plain" title="Perfil legible por máquinas" href="/llms.txt" />
+  <link rel="alternate" type="application/json" title="Perfil profesional estructurado" href="/profile.json" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="me" href="https://github.com/Billyflin" />
+  <link rel="me" href="https://www.linkedin.com/in/billyflin" />
   <link rel="icon" type="image/svg+xml" href="/bm-mark.svg" />
   <link rel="icon" type="image/png" href="/bm-mark.png" />
   <link rel="manifest" href="/site.webmanifest" />
-  <link rel="preload" as="image" href="/billy-martinez-960.webp" imagesrcset="/billy-martinez-480.webp 480w, /billy-martinez-960.webp 960w" imagesizes="(max-width: 760px) 100vw, 44vw" type="image/webp" />
+  <link rel="preload" as="image" href="/billy-martinez-oliver-portrait-2026-1440.webp" imagesrcset="/billy-martinez-oliver-portrait-2026-640.webp 640w, /billy-martinez-oliver-portrait-2026-960.webp 960w, /billy-martinez-oliver-portrait-2026-1440.webp 1440w, /billy-martinez-oliver-portrait-2026-1920.webp 1920w" imagesizes="(max-width: 760px) 100vw, 44vw" type="image/webp" />
   <meta property="og:type" content="profile" />
+  <meta property="profile:first_name" content="Billy" />
+  <meta property="profile:last_name" content="Martínez" />
   <meta property="og:locale" content="es_CL" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:site_name" content="Billy Martínez" />
@@ -25,11 +42,63 @@
   <meta property="og:description" content="Convierto requisitos complejos del negocio en software que el equipo puede entregar: desde discovery y SAP BTP hasta cloud y backend." />
   <meta property="og:url" content="https://billyflin.dev/es/" />
   <meta property="og:image" content="https://billyflin.dev/bm-mark.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
   <meta property="og:image:alt" content="Monograma de Billy Martínez" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Billy Martínez — Consultor técnico SAP e ingeniero full-stack" />
   <meta name="twitter:description" content="Arquitectura de soluciones y entrega full-stack con clientes, SAP BTP, cloud, web y backend." />
   <meta name="twitter:image" content="https://billyflin.dev/bm-mark.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://billyflin.dev/#website",
+        "url": "https://billyflin.dev/",
+        "name": "Billy Martínez",
+        "inLanguage": ["en", "es-CL"],
+        "publisher": { "@id": "https://billyflin.dev/#person" }
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "https://billyflin.dev/es/#profile",
+        "url": "https://billyflin.dev/es/",
+        "name": "Billy Martínez — Perfil profesional",
+        "inLanguage": "es-CL",
+        "dateModified": "2026-08-26",
+        "mainEntity": { "@id": "https://billyflin.dev/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://billyflin.dev/#person",
+        "name": "Billy Martínez",
+        "alternateName": "Billyflin",
+        "url": "https://billyflin.dev/",
+        "image": "https://billyflin.dev/billy-martinez-oliver-portrait-2026-1440.webp",
+        "email": "mailto:billymartinezc@gmail.com",
+        "jobTitle": "Consultor técnico SAP e ingeniero full-stack",
+        "description": "Consultor técnico que trabaja con clientes, arquitectura de soluciones, SAP BTP, desarrollo full-stack y decisiones cloud.",
+        "worksFor": { "@type": "Organization", "name": "BeCloud Consulting" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad de La Frontera", "url": "https://www.ufro.cl/" },
+        "hasCredential": [
+          { "@type": "EducationalOccupationalCredential", "name": "Cloud Technology Consultant", "recognizedBy": { "@type": "Organization", "name": "AWS / Coursera" }, "url": "https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d" },
+          { "@type": "EducationalOccupationalCredential", "name": "Cloud Solutions Architect", "recognizedBy": { "@type": "Organization", "name": "AWS / Coursera" }, "url": "https://coursera.org/share/e39b52b82410a6d0327ac715e3fb971c" },
+          { "@type": "EducationalOccupationalCredential", "name": "Machine Learning Foundations", "recognizedBy": { "@type": "Organization", "name": "AWS Academy" }, "url": "https://www.credly.com/earner/earned/badge/481d0f69-e4bd-4f1f-9933-301a8ba2f255" },
+          { "@type": "EducationalOccupationalCredential", "name": "Advanced Data Analytics", "recognizedBy": { "@type": "Organization", "name": "Google / Coursera" }, "url": "https://coursera.org/share/b44ac3af30dd271b9fc0933a3eb26f48" }
+        ],
+        "knowsLanguage": [
+          { "@type": "Language", "name": "Español" },
+          { "@type": "Language", "name": "Inglés", "alternateName": "B2" }
+        ],
+        "knowsAbout": ["Arquitectura de soluciones", "SAP BTP", "SAP Fiori", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Kotlin", "Spring", "TypeScript", "React", "Node.js", "PostgreSQL", "Google Cloud", "AWS", "Docker", "CI/CD"],
+        "sameAs": ["https://github.com/Billyflin", "https://www.linkedin.com/in/billyflin"]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <div id="app"><!--app-html--></div>

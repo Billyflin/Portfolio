@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (() => {
+      const { protocol, hostname, pathname, search, hash } = window.location;
+      const isPortfolioHost = hostname === 'billyflin.dev' || hostname === 'www.billyflin.dev';
+      if (isPortfolioHost && (protocol !== 'https:' || hostname !== 'billyflin.dev' || pathname.endsWith('/index.html'))) {
+        const cleanPath = pathname.replace(/index\.html$/, '');
+        window.location.replace(`https://billyflin.dev${cleanPath}${search}${hash}`);
+      }
+    })();
+  </script>
   <title>Billy Martínez — Perfil simple para reclutamiento</title>
   <meta name="description" content="Perfil simple de Billy Martínez para reclutamiento: consultoría SAP, arquitectura de soluciones, desarrollo full-stack, cloud, experiencia y evidencia seleccionada." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://billyflin.dev/es/plain/" />
   <link rel="alternate" hreflang="en" href="https://billyflin.dev/plain/" />
   <link rel="alternate" hreflang="es" href="https://billyflin.dev/es/plain/" />
+  <link rel="alternate" hreflang="x-default" href="https://billyflin.dev/plain/" />
+  <link rel="alternate" type="application/json" title="Perfil profesional estructurado" href="/profile.json" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="me" href="https://github.com/Billyflin" />
+  <link rel="me" href="https://www.linkedin.com/in/billyflin" />
   <link rel="icon" type="image/svg+xml" href="/bm-mark.svg" />
 </head>
 <body>

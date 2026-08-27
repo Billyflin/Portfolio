@@ -35,6 +35,13 @@ Clinipets: privately developed B2B2C veterinary platform with clinic isolation, 
 
 UFRO Sustentable: open Kotlin/Firebase Android team project with maps, QR, rewards, BDD/Cucumber, and 83 JVM tests. The repository documents 89.23% line coverage and 77.88% branch coverage: https://github.com/Billyflin/ufro-sustentable
 
+## Verified credentials
+
+AWS / Coursera — Cloud Technology Consultant (2024): https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d
+AWS / Coursera — Cloud Solutions Architect (2024): https://coursera.org/share/e39b52b82410a6d0327ac715e3fb971c
+AWS Academy — Machine Learning Foundations (2025): https://www.credly.com/earner/earned/badge/481d0f69-e4bd-4f1f-9933-301a8ba2f255
+Google / Coursera — Advanced Data Analytics (2024): https://coursera.org/share/b44ac3af30dd271b9fc0933a3eb26f48
+
 ## Technical capabilities
 
 Client and solution: discovery, requirements translation, solution design, technical tradeoffs, stakeholder alignment.

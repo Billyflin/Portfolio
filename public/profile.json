@@ -21,6 +21,15 @@
     { "name": "English", "level": "B2 professional working proficiency" }
   ],
   "skills": ["Client discovery", "Requirements translation", "Solution architecture", "SAP BTP", "SAP Fiori", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Kotlin", "Spring", "TypeScript", "React", "Node.js", "PostgreSQL", "Google Cloud", "AWS", "Docker", "CI/CD"],
+  "verifiedCredentials": [
+    { "issuer": "AWS / Coursera", "name": "Cloud Technology Consultant", "year": 2024, "url": "https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d" },
+    { "issuer": "AWS / Coursera", "name": "Cloud Solutions Architect", "year": 2024, "url": "https://coursera.org/share/e39b52b82410a6d0327ac715e3fb971c" },
+    { "issuer": "AWS Academy", "name": "Machine Learning Foundations", "year": 2025, "url": "https://www.credly.com/earner/earned/badge/481d0f69-e4bd-4f1f-9933-301a8ba2f255" },
+    { "issuer": "Google / Coursera", "name": "Advanced Data Analytics", "year": 2024, "url": "https://coursera.org/share/b44ac3af30dd271b9fc0933a3eb26f48" }
+  ],
+  "publicEvidence": [
+    { "name": "UFRO Sustentable", "type": "Android team project", "url": "https://github.com/Billyflin/ufro-sustentable", "evidence": ["83 JVM tests", "89.23% line coverage", "77.88% branch coverage"] }
+  ],
   "profiles": {
     "github": "https://github.com/Billyflin",
     "linkedin": "https://www.linkedin.com/in/billyflin"
