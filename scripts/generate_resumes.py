@@ -32,8 +32,8 @@ DATA = {
                 "bullets": [
                     "Refine requirements with a functional consultant and translate them into architecture and implementation work.",
                     "Design and build full-stack SAP solutions across BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments.",
-                    "Improve process flow and UX within UI5 standards; own interface, domain model, platform configuration, delivery, and environment troubleshooting.",
-                    "Introduced automated testing and a dedicated QA stage beyond direct dev/production fixes; guide validation with QA and design.",
+                    "Improve process flow and UX within UI5 standards; contribute to SAP migration and modernization work for large organizations in energy and consumer goods.",
+                    "Introduced automated testing and a dedicated QA stage beyond direct development/production fixes; coordinate validation with QA and design.",
                     "For a confidential product, evaluated cloud economics and technical fit, recommended an AWS-to-Google-Cloud re-platform, and aligned stakeholders around the change; implementation is in progress.",
                 ],
             },
@@ -113,7 +113,7 @@ DATA = {
                 "date": "Jan 2025 - Present",
                 "bullets": [
                     "Introduced automated testing and a dedicated QA stage in a workflow that previously relied on direct dev/production fixes.",
-                    "Refine requirements with a functional consultant, implement SAP BTP solutions, and guide validation with QA and design before delivery.",
+                    "Refine requirements with a functional consultant, implement SAP BTP solutions, and coordinate validation with QA and design before delivery.",
                     "Work across Fiori/UI5, CAP/CDS services, HANA, Work Zone, integrations, deployment, and environment troubleshooting, keeping quality connected to implementation.",
                     "Improve process flows and UX within UI5 standards, identifying failure paths and acceptance risks across interface, service, data, and platform layers.",
                 ],
@@ -149,7 +149,7 @@ DATA = {
     "solutions_es": {
         "filename": "Billy_Martinez_CV_Soluciones_ES.pdf",
         "role": "Consultor técnico SAP BTP | Arquitectura | Entrega full-stack",
-        "summary": "Ingeniero hands-on con más de 2 años de entrega profesional de productos. Refino requerimientos funcionales en arquitectura de soluciones y software funcionando, y sigo involucrado durante implementación, pruebas automatizadas, QA, despliegue y resolución de problemas.",
+        "summary": "Ingeniero hands-on con más de 2 años de entrega profesional. Convierto requerimientos funcionales en arquitectura y software, y sigo involucrado durante implementación, pruebas, QA, despliegue y resolución de problemas.",
         "experience": [
             {
                 "heading": "BeCloud Consulting | Consultor SAP",
@@ -157,9 +157,9 @@ DATA = {
                 "bullets": [
                     "Refino requerimientos con el consultor funcional y los traduzco en arquitectura y trabajo de implementación.",
                     "Diseño y construyo soluciones SAP full-stack con BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integraciones y despliegues distribuidos.",
-                    "Mejoro flujos y UX dentro de los estándares UI5; me hago cargo de interfaz, modelo de dominio, configuración, entrega y resolución de problemas del ambiente.",
-                    "Introduje pruebas automatizadas y una etapa dedicada de QA más allá de correcciones directas entre desarrollo y producción; guío la validación con QA y diseño.",
-                    "Para un producto confidencial, evalué economía cloud y encaje técnico, recomendé migrar desde AWS a Google Cloud y alineé a los involucrados; la implementación está en curso.",
+                    "Mejoro flujos y UX UI5 y contribuyo a modernizaciones SAP para grandes empresas de energía y consumo.",
+                    "Introduje pruebas automatizadas y una etapa de QA donde antes había correcciones directas entre desarrollo y producción; coordino QA y diseño.",
+                    "Para un producto confidencial evalué costo y encaje técnico, recomendé migrar de AWS a Google Cloud y alineé a los involucrados; está en implementación.",
                 ],
             },
             {
