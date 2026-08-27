@@ -521,11 +521,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .architecture-layer + .architecture-layer { position: relative; }
 .architecture-layer + .architecture-layer::before {
   position: absolute;
-  top: -0.55rem;
-  left: 1rem;
-  content: '↓';
-  font-weight: 900;
-  line-height: 0.55rem;
+  top: -0.46rem;
+  left: 1.08rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  content: '';
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
 }
 
 .architecture-layer > strong,
@@ -552,8 +555,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .architecture-layer li:not(:last-child)::after,
 .architecture-transversal li:not(:last-child)::after {
+  display: inline-block;
+  width: 0.22rem;
+  height: 0.22rem;
   margin-left: 0.75rem;
-  content: '·';
+  content: '';
+  background: currentColor;
+  border-radius: 50%;
+  vertical-align: middle;
 }
 
 .architecture-transversal {
