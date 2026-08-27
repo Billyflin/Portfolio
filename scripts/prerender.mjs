@@ -8,13 +8,28 @@ const pages = [
   ['dist/plain/index.html', 'en', 'plain'],
   ['dist/es/plain/index.html', 'es', 'plain'],
 ];
+const clientAssets = new Set();
 
 for (const [file, locale, page] of pages) {
   const target = resolve(file);
   const html = await readFile(target, 'utf8');
   const marker = '<!--app-html-->';
   if (!html.includes(marker)) throw new Error(`Missing prerender marker in ${file}`);
-  await writeFile(target, html.replace(marker, render(locale, page)), 'utf8');
+  const clientEntry = /\s*<script type="module" crossorigin src="(\/assets\/main-[^"]+\.js)"><\/script>/;
+  const clientEntryMatch = html.match(clientEntry);
+  if (!clientEntryMatch) throw new Error(`Missing client entry in ${file}`);
+  clientAssets.add(clientEntryMatch[1]);
+
+  // Every page is fully rendered HTML and has no client-side interactions.
+  // Removing the React entry avoids shipping and hydrating an unnecessary bundle.
+  const prerendered = html
+    .replace(marker, render(locale, page))
+    .replace(clientEntry, '');
+  await writeFile(target, prerendered, 'utf8');
+}
+
+for (const asset of clientAssets) {
+  await rm(resolve('dist', asset.replace(/^\//, '')), { force: true });
 }
 
 const workerDir = resolve('dist/server');

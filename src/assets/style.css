@@ -819,7 +819,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero { display: flex; min-height: 0; flex-direction: column; }
   .hero-copy { padding-top: 2.5rem; }
   .hero-enter { animation: none; }
-  .hero-title { margin: 3.5rem 0 2.5rem; font-size: clamp(3.6rem, 18vw, 6rem); }
+  .hero-title {
+    max-width: 100%;
+    margin: 3rem 0 2.25rem;
+    font-size: clamp(2.7rem, 13.5vw, 4.5rem);
+  }
   .hero-actions { flex-wrap: wrap; }
   .portrait { min-height: 28rem; border-top: 1px solid var(--ink); border-left: 0; }
   .portrait img { object-position: 50% center; }

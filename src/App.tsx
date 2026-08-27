@@ -151,7 +151,7 @@ const content = {
       facts: [['Current focus', 'Solutions Engineering / Technical Consulting'], ['Location', 'Temuco, Chile · Remote'], ['Education', 'Ingeniería Informática · Final semester']],
     },
     credentials: { kicker: '05 / Verified learning', title: 'Cloud and data credentials.', intro: 'Credentials support the work; they are not a substitute for it. Each item links to a verifiable record.' },
-    contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Remote contractor · Full US-hours overlap · Discreetly exploring selected roles', backendCv: 'Backend / Platform CV' },
+    contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Remote contractor · Full US-hours overlap · Discreetly exploring selected roles', backendCv: 'Backend / Platform CV', recruiterProfile: 'Recruiter profile' },
   },
   es: {
     nav: { work: 'Trabajo', experience: 'Experiencia', capabilities: 'Capacidades', contact: 'Conversemos' },
@@ -225,7 +225,7 @@ const content = {
       facts: [['Enfoque actual', 'Solutions Engineering / Consultoría técnica'], ['Ubicación', 'Temuco, Chile · Remoto'], ['Formación', 'Ingeniería Informática · Último semestre']],
     },
     credentials: { kicker: '05 / Aprendizaje verificable', title: 'Credenciales de cloud y datos.', intro: 'Las credenciales respaldan el trabajo; no lo reemplazan. Cada elemento enlaza a un registro verificable.' },
-    contact: { kicker: '06 / Contacto', title: '¿Necesitas a alguien que entienda la operación y construya la solución?', note: 'Contractor remoto · Jornada completa US · Explorando oportunidades de forma discreta', backendCv: 'CV Backend / Platform' },
+    contact: { kicker: '06 / Contacto', title: '¿Necesitas a alguien que entienda la operación y construya la solución?', note: 'Contractor remoto · Jornada completa US · Explorando oportunidades de forma discreta', backendCv: 'CV Backend / Platform', recruiterProfile: 'Perfil para reclutamiento' },
   },
 } as const;
 
@@ -267,7 +267,7 @@ function CredentialsSection({ locale }: { locale: Locale }) {
 
 function ContactSection({ locale }: { locale: Locale }) {
   const t = content[locale].contact;
-  return <footer className="contact-section" id="contact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><a className="contact-email" href="mailto:billymartinezc@gmail.com">billymartinezc@gmail.com<span className="icon-arrow" aria-hidden="true">↗</span></a><p className="contact-note">{t.note}</p><div className="footer-row"><p>© {new Date().getFullYear()} Billy Martínez</p><div className="social-links"><a href="https://github.com/Billyflin" target="_blank" rel="me noreferrer">GitHub</a><a href="https://www.linkedin.com/in/billyflin" target="_blank" rel="me noreferrer">LinkedIn</a><a href={locale === 'en' ? '/Billy_Martinez_Resume_Backend_EN.pdf' : '/Billy_Martinez_CV_Backend_ES.pdf'} target="_blank" rel="noreferrer">{t.backendCv}</a><a href="mailto:billymartinezc@gmail.com">Email</a></div></div></footer>;
+  return <footer className="contact-section" id="contact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><a className="contact-email" href="mailto:billymartinezc@gmail.com">billymartinezc@gmail.com<span className="icon-arrow" aria-hidden="true">↗</span></a><p className="contact-note">{t.note}</p><div className="footer-row"><p>© {new Date().getFullYear()} Billy Martínez</p><div className="social-links"><a href="https://github.com/Billyflin" target="_blank" rel="me noreferrer">GitHub</a><a href="https://www.linkedin.com/in/billyflin" target="_blank" rel="me noreferrer">LinkedIn</a><a href={locale === 'en' ? '/plain/' : '/es/plain/'}>{t.recruiterProfile}</a><a href={locale === 'en' ? '/Billy_Martinez_Resume_Backend_EN.pdf' : '/Billy_Martinez_CV_Backend_ES.pdf'} target="_blank" rel="noreferrer">{t.backendCv}</a><a href="mailto:billymartinezc@gmail.com">Email</a></div></div></footer>;
 }
 
 export default function App({ locale = 'en', page = 'portfolio' }: AppProps) {

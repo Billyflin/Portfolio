@@ -1,16 +1,21 @@
 {
   "name": "Billy Martínez — Professional Portfolio",
   "short_name": "Billy Martínez",
+  "description": "SAP technical consulting, solution architecture, and full-stack delivery across SAP BTP, cloud, web, and backend systems.",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#f2efe7",
   "theme_color": "#ff5a36",
   "lang": "en",
+  "categories": ["business", "productivity"],
   "icons": [
     {
       "src": "/bm-mark.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }
