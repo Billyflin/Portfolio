@@ -10,7 +10,7 @@ I turn complex business requirements into software teams can ship and operate.
 
 At BeCloud Consulting, my contract title is SAP Consultant, but my practical scope spans requirement refinement, solution architecture, Fiori/UI5 UX, full-stack implementation, integration, automated testing, deployment, and platform troubleshooting. I work across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, and Joule.
 
-Outside enterprise SAP, I design cloud-native products end to end. Clinipets is a private B2B2C veterinary platform with tenant isolation, conflict-safe scheduling, auditable clinical records, secure files, payments, notifications, and web/mobile clients. My public Grounded Knowledge Assistant is an independent Next.js/TypeScript RAG reference with evidence gating, safe refusals, validated citations, 12 automated tests, deterministic evaluations, and an optional OpenAI provider.
+Outside enterprise SAP, I design cloud-native products end to end. Clinipets is a private B2B2C veterinary platform with tenant isolation, conflict-safe scheduling, auditable clinical records, secure files, payments, notifications, and web/mobile clients. My public Grounded Knowledge Assistant is an independent Next.js/TypeScript RAG reference with evidence gating, safe refusals, validated citations, 12 unit/adversarial tests, 4 Playwright Chromium E2E checks, deterministic evaluations, and an optional OpenAI provider.
 
 I am strongest between a functional requirement and a production delivery: refining the requirement with functional consulting, questioning the initial solution, choosing a defensible architecture, implementing it, and coordinating validation with QA and design.
 
@@ -24,7 +24,7 @@ En BeCloud Consulting mi cargo contractual es Consultor SAP, pero mi alcance rea
 
 Fuera de SAP empresarial diseño productos cloud-native de punta a punta. Clinipets es una plataforma veterinaria B2B2C privada con aislamiento entre clínicas, agenda sin conflictos, fichas clínicas auditables, archivos seguros, pagos, notificaciones y clientes web/móvil.
 
-Como evidencia pública construí Grounded Knowledge Assistant, una referencia RAG independiente en Next.js/TypeScript con umbral de evidencia, rechazo seguro, citas validadas, 12 pruebas automatizadas, evaluaciones deterministas y un proveedor OpenAI opcional.
+Como evidencia pública construí Grounded Knowledge Assistant, una referencia RAG independiente en Next.js/TypeScript con umbral de evidencia, rechazo seguro, citas validadas, 12 pruebas unitarias/adversariales, 4 checks E2E en Chromium con Playwright, evaluaciones deterministas y un proveedor OpenAI opcional.
 
 Mi mejor aporte ocurre entre un requerimiento funcional y una entrega productiva: refinar el requerimiento junto a consultoría funcional, cuestionar la solución inicial, elegir una arquitectura defendible, implementarla y coordinar su validación con QA y diseño.
 
