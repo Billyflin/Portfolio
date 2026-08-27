@@ -60,7 +60,7 @@ const content = {
       cases: [
         {
           number: '01',
-          kind: 'Current role · BeCloud',
+          kind: 'Current role · Confidential work',
           name: 'SAP solution delivery',
           headline: 'From refined requirements to a testable SAP delivery.',
           body: 'My contract says SAP Consultant. In practice, I turn functional requirements into architecture and full-stack delivery: interface and UX, domain model, integration, deployment, test automation, and environment troubleshooting.',
@@ -68,10 +68,12 @@ const content = {
             'Refine requirements with the functional consultant and propose architecture, flow, and UX improvements',
             'Design and build across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, and Joule',
             'Introduced automated testing and a QA stage beyond direct dev-to-production fixes',
+            'Independent public CAP/Fiori reference with 6 service tests and green CI',
           ],
           tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Automated testing', 'QA delivery'],
           tone: 'orange',
-          label: 'Confidential enterprise work',
+          label: 'Inspect independent CAP reference',
+          href: 'https://github.com/Billyflin/sap-cap-fiori-btp',
         },
         {
           number: '02',
@@ -187,10 +189,10 @@ const content = {
       intro: 'El trabajo más importante suele ser privado. Estos casos explican el problema, mi responsabilidad y el criterio técnico sin exponer información del cliente ni inventar impacto.',
       cases: [
         {
-          number: '01', kind: 'Rol actual · BeCloud', name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
+          number: '01', kind: 'Rol actual · Trabajo confidencial', name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
           body: 'Mi contrato dice Consultor SAP. En la práctica convierto requisitos funcionales en arquitectura y entrega full-stack: interfaz y UX, modelo de dominio, integraciones, despliegue, automatización de pruebas y resolución de problemas del ambiente.',
-          evidence: ['Refino requerimientos con el consultor funcional y propongo mejoras de arquitectura, flujo y UX', 'Diseño y construyo con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción'],
-          tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Pruebas automatizadas', 'Entrega con QA'], tone: 'orange', label: 'Trabajo empresarial confidencial',
+          evidence: ['Refino requerimientos con el consultor funcional y propongo mejoras de arquitectura, flujo y UX', 'Diseño y construyo con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción', 'Referencia CAP/Fiori pública e independiente con 6 pruebas de servicio y CI verde'],
+          tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Pruebas automatizadas', 'Entrega con QA'], tone: 'orange', label: 'Ver referencia CAP independiente', href: 'https://github.com/Billyflin/sap-cap-fiori-btp',
         },
         {
           number: '02', kind: 'Decisión de arquitectura · En curso', name: 'Plataforma cloud confidencial', headline: 'Cambiar la base cuando la economía deja de tener sentido.',
