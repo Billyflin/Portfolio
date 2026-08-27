@@ -64,7 +64,7 @@ export function PlainResumePage({ locale }: { locale: Locale }) {
           <h2>{t.headline}</h2>
           <p>{t.summary}</p>
           <div className="plain-links">
-            <a href="mailto:billymartinezc@gmail.com">billymartinezc@gmail.com</a>
+            <a href="mailto:hello@billyflin.dev">hello@billyflin.dev</a>
             <a href="https://www.linkedin.com/in/billyflin">LinkedIn</a>
             <a href="https://github.com/Billyflin">GitHub</a>
             <a href={cv}>{t.cv}</a>

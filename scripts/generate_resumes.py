@@ -1,4 +1,5 @@
 from pathlib import Path
+from shutil import copy2
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
@@ -11,6 +12,7 @@ from reportlab.platypus import KeepTogether, Paragraph, SimpleDocTemplate, Space
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "output" / "pdf"
 OUTPUT.mkdir(parents=True, exist_ok=True)
+PUBLIC = ROOT / "public"
 
 INK = colors.HexColor("#151515")
 MUTED = colors.HexColor("#4f4d48")
@@ -185,15 +187,15 @@ DATA = {
 def styles():
     base = getSampleStyleSheet()
     return {
-        "name": ParagraphStyle("Name", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=23, leading=25, textColor=INK, spaceAfter=2),
-        "role": ParagraphStyle("Role", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=9.2, leading=11.2, textColor=ORANGE, spaceAfter=4),
-        "contact": ParagraphStyle("Contact", parent=base["Normal"], fontName="Helvetica", fontSize=7.7, leading=9.2, textColor=MUTED, spaceAfter=8),
-        "summary": ParagraphStyle("Summary", parent=base["Normal"], fontName="Helvetica", fontSize=8.7, leading=11, textColor=INK, spaceAfter=6),
-        "section": ParagraphStyle("Section", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=7.8, leading=9.2, textColor=ORANGE, borderColor=LINE, borderWidth=0, borderPadding=0, spaceBefore=4, spaceAfter=3),
-        "job": ParagraphStyle("Job", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=9.2, leading=10.8, textColor=INK, spaceAfter=1),
-        "date": ParagraphStyle("Date", parent=base["Normal"], fontName="Helvetica", fontSize=7.5, leading=8.5, textColor=MUTED, spaceAfter=2),
-        "bullet": ParagraphStyle("Bullet", parent=base["Normal"], fontName="Helvetica", fontSize=8.15, leading=10.05, leftIndent=9, firstLineIndent=-6, bulletIndent=0, textColor=INK, spaceAfter=1.2),
-        "body": ParagraphStyle("Body", parent=base["Normal"], fontName="Helvetica", fontSize=8.15, leading=10.1, textColor=INK, spaceAfter=2),
+        "name": ParagraphStyle("Name", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=22, leading=23.5, textColor=INK, spaceAfter=1.5),
+        "role": ParagraphStyle("Role", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=8.8, leading=10.4, textColor=ORANGE, spaceAfter=3),
+        "contact": ParagraphStyle("Contact", parent=base["Normal"], fontName="Helvetica", fontSize=7.35, leading=8.6, textColor=MUTED, spaceAfter=6),
+        "summary": ParagraphStyle("Summary", parent=base["Normal"], fontName="Helvetica", fontSize=8.3, leading=10.25, textColor=INK, spaceAfter=4),
+        "section": ParagraphStyle("Section", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=7.5, leading=8.8, textColor=ORANGE, borderColor=LINE, borderWidth=0, borderPadding=0, spaceBefore=3, spaceAfter=2),
+        "job": ParagraphStyle("Job", parent=base["Normal"], fontName="Helvetica-Bold", fontSize=8.8, leading=10.15, textColor=INK, spaceAfter=0.7),
+        "date": ParagraphStyle("Date", parent=base["Normal"], fontName="Helvetica", fontSize=7.2, leading=8, textColor=MUTED, spaceAfter=1.5),
+        "bullet": ParagraphStyle("Bullet", parent=base["Normal"], fontName="Helvetica", fontSize=7.85, leading=9.45, leftIndent=9, firstLineIndent=-6, bulletIndent=0, textColor=INK, spaceAfter=0.8),
+        "body": ParagraphStyle("Body", parent=base["Normal"], fontName="Helvetica", fontSize=7.85, leading=9.5, textColor=INK, spaceAfter=1.5),
     }
 
 
@@ -221,7 +223,7 @@ def build_resume(data):
         Paragraph(data["role"], s["role"]),
         Paragraph(
             "Temuco, Chile | Remote contractor | Full US-hours overlap | "
-            "<link href='mailto:billymartinezc@gmail.com'>billymartinezc@gmail.com</link> | "
+            "<link href='mailto:hello@billyflin.dev'>hello@billyflin.dev</link> | "
             "<link href='https://billyflin.dev'>billyflin.dev</link> | "
             "<link href='https://www.linkedin.com/in/billyflin'>linkedin.com/in/billyflin</link> | "
             "<link href='https://github.com/Billyflin'>github.com/Billyflin</link>",
@@ -263,5 +265,10 @@ def build_resume(data):
     return file_path
 
 
-for resume in DATA.values():
-    build_resume(resume)
+generated = [build_resume(resume) for resume in DATA.values()]
+for file_path in generated:
+    copy2(file_path, PUBLIC / file_path.name)
+
+# Keep the historical URL working while making it identical to the canonical
+# Spanish solutions resume.
+copy2(OUTPUT / "Billy_Martinez_CV_Soluciones_ES.pdf", PUBLIC / "Billy_Martinez_CV.pdf")

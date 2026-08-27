@@ -16,20 +16,4 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://billyflin.dev/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://billyflin.dev/es/" />
   </url>
-  <url>
-    <loc>https://billyflin.dev/plain/</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://billyflin.dev/plain/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://billyflin.dev/es/plain/" />
-  </url>
-  <url>
-    <loc>https://billyflin.dev/es/plain/</loc>
-    <lastmod>2026-08-26</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://billyflin.dev/plain/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://billyflin.dev/es/plain/" />
-  </url>
 </urlset>

@@ -20,4 +20,4 @@ I turn ambiguous requirements into solution architecture and working software, t
 
 Based in Temuco, Chile. Remote contractor with full US-hours overlap. Spanish native, English B2.
 
-[Portfolio](https://billyflin.dev/) · [LinkedIn](https://www.linkedin.com/in/billyflin) · [Email](mailto:billymartinezc@gmail.com)
+[Portfolio](https://billyflin.dev/) · [LinkedIn](https://www.linkedin.com/in/billyflin) · [Email](mailto:hello@billyflin.dev)

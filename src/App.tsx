@@ -4,7 +4,7 @@ export type Locale = 'en' | 'es';
 
 type AppProps = {
   locale?: Locale;
-  page?: 'portfolio' | 'plain';
+  page?: 'portfolio' | 'plain' | 'notFound';
 };
 
 const credentials = [
@@ -102,6 +102,16 @@ const content = {
           tags: ['Kotlin / Spring', 'KMP', 'Next.js', 'PostgreSQL', 'R2', 'Docker'],
           tone: 'acid',
           label: 'Selected screens available in interviews',
+          architecture: {
+            summary: 'View simplified system map',
+            title: 'Clinipets public architecture map',
+            layers: [
+              { label: 'Clients', items: ['KMP mobile', 'Next.js web'] },
+              { label: 'Domain API', items: ['Kotlin / Spring', 'Multi-tenant boundaries', 'Clinic-scoped roles'] },
+              { label: 'Data & services', items: ['PostgreSQL', 'R2', 'Idempotent payments', 'Outbox notifications'] },
+            ],
+            transversal: { label: 'Cross-cutting trust', items: ['Audit trail', 'Versioned clinical records', 'Clinical integrity'] },
+          },
         },
         {
           number: '04',
@@ -193,6 +203,16 @@ const content = {
           body: 'Sistema B2B2C que conecta clínicas, equipos veterinarios, tutores y mascotas. Me hago cargo del producto y la arquitectura de punta a punta: límites entre tenants, integridad clínica, aplicaciones e infraestructura.',
           evidence: ['Agenda sin conflictos y roles aislados por clínica', 'Fichas versionadas, firmas y correcciones auditables', 'Pagos firmados e idempotentes, cuarentena de archivos y notificaciones outbox'],
           tags: ['Kotlin / Spring', 'KMP', 'Next.js', 'PostgreSQL', 'R2', 'Docker'], tone: 'acid', label: 'Capturas seleccionadas disponibles en entrevistas',
+          architecture: {
+            summary: 'Ver mapa simplificado del sistema',
+            title: 'Mapa público de arquitectura de Clinipets',
+            layers: [
+              { label: 'Clientes', items: ['KMP móvil', 'Next.js web'] },
+              { label: 'API de dominio', items: ['Kotlin / Spring', 'Límites multi-tenant', 'Roles por clínica'] },
+              { label: 'Datos y servicios', items: ['PostgreSQL', 'R2', 'Pagos idempotentes', 'Notificaciones outbox'] },
+            ],
+            transversal: { label: 'Integridad transversal', items: ['Auditoría', 'Fichas clínicas versionadas', 'Integridad clínica'] },
+          },
         },
         {
           number: '04', kind: 'Proyecto abierto · Equipo universitario', name: 'UFRO Sustentable', headline: 'Convertir el reciclaje universitario en una experiencia móvil probada.',
@@ -231,7 +251,7 @@ const content = {
 
 function Header({ locale }: { locale: Locale }) {
   const t = content[locale];
-  return <header className="site-header"><a className="brand" href="#top" aria-label={locale === 'en' ? 'Go to the top' : 'Ir al inicio'}>BM<span>/26</span></a><nav className="desktop-nav" aria-label={locale === 'en' ? 'Primary navigation' : 'Navegación principal'}><a href="#work">{t.nav.work}</a><a href="#experience">{t.nav.experience}</a><a href="#capabilities">{t.nav.capabilities}</a></nav><div className="header-actions"><a className="locale-link" href={t.localeHref} lang={locale === 'en' ? 'es' : 'en'}>{t.localeLabel}</a><a className="header-cta" href="mailto:billymartinezc@gmail.com">{t.nav.contact}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></header>;
+  return <header className="site-header"><a className="brand" href="#top" aria-label={locale === 'en' ? 'Go to the top' : 'Ir al inicio'}>BM<span>/26</span></a><nav className="desktop-nav" aria-label={locale === 'en' ? 'Primary navigation' : 'Navegación principal'}><a href="#work">{t.nav.work}</a><a href="#experience">{t.nav.experience}</a><a href="#capabilities">{t.nav.capabilities}</a></nav><div className="header-actions"><a className="locale-link" href={t.localeHref} lang={locale === 'en' ? 'es' : 'en'}>{t.localeLabel}</a><a className="header-cta" href="mailto:hello@billyflin.dev">{t.nav.contact}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></header>;
 }
 
 function Hero({ locale }: { locale: Locale }) {
@@ -242,7 +262,7 @@ function Hero({ locale }: { locale: Locale }) {
 
 function WorkSection({ locale }: { locale: Locale }) {
   const t = content[locale].work;
-  return <section className="section work-section" id="work"><div className="section-heading"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><p className="section-intro">{t.intro}</p></div><div className="case-list">{t.cases.map((item) => <article className={`case-study case-study--${item.tone}`} key={item.number}><div className="case-meta"><span>{item.number}</span><span>{item.kind}</span></div><div className="case-body"><div className="case-copy"><p className="case-name">{item.name}</p><h3>{item.headline}</h3><p>{item.body}</p></div><ul className="case-evidence" aria-label={locale === 'en' ? `Evidence from ${item.name}` : `Evidencia de ${item.name}`}>{item.evidence.map((point) => <li key={point}>{point}</li>)}</ul></div><div className="case-footer"><ul aria-label={locale === 'en' ? `Technologies used in ${item.name}` : `Tecnologías utilizadas en ${item.name}`}>{item.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>{'href' in item ? <a href={item.href} target="_blank" rel="noreferrer">{item.label}<span className="icon-arrow" aria-hidden="true">↗</span></a> : <span className="private-label">{item.label}</span>}</div></article>)}</div></section>;
+  return <section className="section work-section" id="work"><div className="section-heading"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><p className="section-intro">{t.intro}</p></div><div className="case-list">{t.cases.map((item) => <article className={`case-study case-study--${item.tone}`} key={item.number}><div className="case-meta"><span>{item.number}</span><span>{item.kind}</span></div><div className="case-body"><div className="case-copy"><p className="case-name">{item.name}</p><h3>{item.headline}</h3><p>{item.body}</p></div><div className="case-aside"><ul className="case-evidence" aria-label={locale === 'en' ? `Evidence from ${item.name}` : `Evidencia de ${item.name}`}>{item.evidence.map((point) => <li key={point}>{point}</li>)}</ul>{'architecture' in item && <details className="architecture-details"><summary>{item.architecture.summary}</summary><section className="architecture-map" aria-label={item.architecture.title}><h4>{item.architecture.title}</h4><div className="architecture-flow">{item.architecture.layers.map((layer) => <div className="architecture-layer" key={layer.label}><strong>{layer.label}</strong><ul>{layer.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div>)}</div><div className="architecture-transversal"><strong>{item.architecture.transversal.label}</strong><ul>{item.architecture.transversal.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div></section></details>}</div></div><div className="case-footer"><ul aria-label={locale === 'en' ? `Technologies used in ${item.name}` : `Tecnologías utilizadas en ${item.name}`}>{item.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>{'href' in item ? <a href={item.href} target="_blank" rel="noreferrer">{item.label}<span className="icon-arrow" aria-hidden="true">↗</span></a> : <span className="private-label">{item.label}</span>}</div></article>)}</div></section>;
 }
 
 function ExperienceSection({ locale }: { locale: Locale }) {
@@ -267,10 +287,15 @@ function CredentialsSection({ locale }: { locale: Locale }) {
 
 function ContactSection({ locale }: { locale: Locale }) {
   const t = content[locale].contact;
-  return <footer className="contact-section" id="contact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><a className="contact-email" href="mailto:billymartinezc@gmail.com">billymartinezc@gmail.com<span className="icon-arrow" aria-hidden="true">↗</span></a><p className="contact-note">{t.note}</p><div className="footer-row"><p>© {new Date().getFullYear()} Billy Martínez</p><div className="social-links"><a href="https://github.com/Billyflin" target="_blank" rel="me noreferrer">GitHub</a><a href="https://www.linkedin.com/in/billyflin" target="_blank" rel="me noreferrer">LinkedIn</a><a href={locale === 'en' ? '/plain/' : '/es/plain/'}>{t.recruiterProfile}</a><a href={locale === 'en' ? '/Billy_Martinez_Resume_Backend_EN.pdf' : '/Billy_Martinez_CV_Backend_ES.pdf'} target="_blank" rel="noreferrer">{t.backendCv}</a><a href="mailto:billymartinezc@gmail.com">Email</a></div></div></footer>;
+  return <footer className="contact-section" id="contact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><a className="contact-email" href="mailto:hello@billyflin.dev">hello@billyflin.dev<span className="icon-arrow" aria-hidden="true">↗</span></a><p className="contact-note">{t.note}</p><div className="footer-row"><p>© {new Date().getFullYear()} Billy Martínez</p><div className="social-links"><a href="https://github.com/Billyflin" target="_blank" rel="me noreferrer">GitHub</a><a href="https://www.linkedin.com/in/billyflin" target="_blank" rel="me noreferrer">LinkedIn</a><a href={locale === 'en' ? '/plain/' : '/es/plain/'}>{t.recruiterProfile}</a><a href={locale === 'en' ? '/Billy_Martinez_Resume_Backend_EN.pdf' : '/Billy_Martinez_CV_Backend_ES.pdf'} target="_blank" rel="noreferrer">{t.backendCv}</a><a href="mailto:hello@billyflin.dev">Email</a></div></div></footer>;
+}
+
+function NotFoundPage() {
+  return <main className="not-found-page"><div className="not-found-mark" aria-hidden="true">404</div><div className="not-found-copy"><p className="section-kicker">Lost route · Ruta no encontrada</p><h1>This page does not exist.<span>Esta página no existe.</span></h1><p>The useful part is still here. Choose your language and return to Billy Martínez’s professional portfolio.</p><div className="not-found-actions"><a className="button button--primary" href="/">Continue in English <span aria-hidden="true">↗</span></a><a className="button button--light" href="/es/">Continuar en español <span aria-hidden="true">↗</span></a></div></div></main>;
 }
 
 export default function App({ locale = 'en', page = 'portfolio' }: AppProps) {
   if (page === 'plain') return <PlainResumePage locale={locale} />;
+  if (page === 'notFound') return <NotFoundPage />;
   return <><a className="skip-link" href="#main-content">{locale === 'en' ? 'Skip to content' : 'Saltar al contenido'}</a><Header locale={locale} /><main id="main-content"><Hero locale={locale} /><WorkSection locale={locale} /><ExperienceSection locale={locale} /><CapabilitiesSection locale={locale} /><AboutSection locale={locale} /><CredentialsSection locale={locale} /></main><ContactSection locale={locale} /></>;
 }

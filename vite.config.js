@@ -11,6 +11,7 @@ export default defineConfig({
         es: fileURLToPath(new URL('./es/index.html', import.meta.url)),
         plain: fileURLToPath(new URL('./plain/index.html', import.meta.url)),
         esPlain: fileURLToPath(new URL('./es/plain/index.html', import.meta.url)),
+        notFound: fileURLToPath(new URL('./404.html', import.meta.url)),
       },
     },
   },
