@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,follow" />
     <title>Grounded AI Engineering Evidence — Billy Martínez</title>
-    <meta name="description" content="Public Next.js and TypeScript RAG reference with evidence gates, safe refusals, validated citations, human-verified AI delivery controls, tests and CI." />
+    <meta name="description" content="Public Next.js and TypeScript RAG reference with evidence gates, safe refusals, human-verified delivery and an explicit prototype-to-production readiness review." />
     <link rel="canonical" href="https://billyflin.dev/proof/grounded-knowledge-assistant/" />
     <link rel="icon" href="/bm-mark.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="/proof/proof.css" />
+    <link rel="stylesheet" href="/proof/proof.css?v=20260827-3" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Grounded AI Engineering Evidence" />
-    <meta property="og:description" content="A public, testable RAG reference by Billy Martínez." />
+    <meta property="og:description" content="A public, testable RAG reference with explicit production-readiness gates by Billy Martínez." />
     <meta property="og:url" content="https://billyflin.dev/proof/grounded-knowledge-assistant/" />
     <meta property="og:image" content="https://billyflin.dev/og.png" />
     <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Grounded Knowledge Assistant","description":"Public Next.js and TypeScript RAG reference with evidence gates, safe refusals, validated citations, human-verified AI delivery controls, tests and CI.","codeRepository":"https://github.com/Billyflin/grounded-knowledge-assistant","programmingLanguage":["TypeScript"],"author":{"@type":"Person","name":"Billy Martínez","url":"https://billyflin.dev"}}
+      {"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Grounded Knowledge Assistant","description":"Public Next.js and TypeScript RAG reference with evidence gates, safe refusals, human-verified delivery and explicit prototype-to-production readiness gates.","codeRepository":"https://github.com/Billyflin/grounded-knowledge-assistant","programmingLanguage":["TypeScript"],"author":{"@type":"Person","name":"Billy Martínez","url":"https://billyflin.dev"}}
     </script>
   </head>
   <body>
@@ -28,7 +28,7 @@
       <section class="hero">
         <p class="eyebrow">Public engineering evidence · Grounded AI</p>
         <h1>Answers require evidence.</h1>
-        <p class="lede">A Next.js and TypeScript RAG reference that treats retrieval as an untrusted input, refuses unsupported claims, validates citations and keeps external AI providers behind server-only typed boundaries.</p>
+        <p class="lede">A Next.js and TypeScript RAG reference that treats retrieval as an untrusted input, refuses unsupported claims, validates citations, keeps providers behind server-only typed boundaries, and states exactly what is still missing before production.</p>
         <div class="actions">
           <a class="button primary" href="https://github.com/Billyflin/grounded-knowledge-assistant">Inspect the repository</a>
           <a class="button" href="https://billyflin.dev">View Billy's portfolio</a>
@@ -70,12 +70,22 @@
           </ul>
           <p><a href="https://github.com/Billyflin/grounded-knowledge-assistant/blob/main/docs/adr/003-human-verified-ai-delivery.md">Read ADR 003 and its trade-offs</a></p>
         </article>
+        <article class="card">
+          <h2>Prototype-to-production decision</h2>
+          <ul>
+            <li>Current classification: independent reference prototype; production is explicitly not approved</li>
+            <li>Exit gates cover quality, security and privacy, tenant isolation, scale and latency, cost, reliability, observability, and release safety</li>
+            <li>No performance, scalability, availability, or cost-reduction claim exists without reproducible measurement conditions</li>
+            <li>The public review names the missing work and evidence required to approve each gate</li>
+          </ul>
+          <p><a href="https://github.com/Billyflin/grounded-knowledge-assistant/blob/main/docs/production-readiness-review.md">Inspect the production-readiness review</a></p>
+        </article>
       </section>
 
       <div class="tags" aria-label="Technologies">
         <span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">RAG</span><span class="tag">OpenAI Responses API</span><span class="tag">Embeddings</span><span class="tag">Adversarial testing</span><span class="tag">GitHub Actions</span>
       </div>
-      <p class="note"><strong>Scope note:</strong> this is independent public evidence, not a claim of client-production RAG ownership. Percentages refer only to committed deterministic fixtures and are labeled accordingly.</p>
+      <p class="note"><strong>Scope note:</strong> this is independent public evidence, not a claim of client-production RAG ownership. Percentages refer only to committed deterministic fixtures; the readiness review records a not-approved production decision until representative evidence exists.</p>
     </main>
   </body>
 </html>

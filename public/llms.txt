@@ -38,6 +38,8 @@ Integration Suite boundary: ADR 0003 is explicitly a proposed, non-deployed desi
 
 Grounded Knowledge Assistant: independent Next.js/TypeScript RAG engineering reference with evidence gating, safe refusals, validated citations, 12 automated and adversarial tests, deterministic committed-fixture evaluations at 100% hit@3, support/refusal accuracy, and citation validity, plus an optional server-only OpenAI provider and a human-verified AI delivery protocol requiring reproducible evidence, complete diff review, no sensitive prompts, and explicit limitations; lint, strict types, tests, evaluations, production build, and GitHub Actions CI pass. These are fixture metrics, not production claims: https://github.com/Billyflin/grounded-knowledge-assistant
 
+AI prototype hardening: the repository publishes a prototype-to-production readiness review with an explicit `not approved` decision and exit evidence for product quality, security/privacy, identity and tenant isolation, scale/latency, cost, reliability/abuse, observability/audit and release safety. It makes no unmeasured performance, scalability, availability or savings claim: https://github.com/Billyflin/grounded-knowledge-assistant/blob/main/docs/production-readiness-review.md
+
 UFRO Sustentable: open Kotlin/Firebase Android team project with maps, QR, rewards, BDD/Cucumber, and 83 JVM tests. The repository documents 89.23% line coverage and 77.88% branch coverage: https://github.com/Billyflin/ufro-sustentable
 
 ## Verified credentials
