@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex,follow" />
     <title>Grounded AI Engineering Evidence — Billy Martínez</title>
-    <meta name="description" content="Public Next.js and TypeScript RAG reference with evidence gates, safe refusals, validated citations, OpenAI provider boundaries, tests and CI." />
+    <meta name="description" content="Public Next.js and TypeScript RAG reference with evidence gates, safe refusals, validated citations, human-verified AI delivery controls, tests and CI." />
     <link rel="canonical" href="https://billyflin.dev/proof/grounded-knowledge-assistant/" />
     <link rel="icon" href="/bm-mark.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="/proof/proof.css" />
@@ -15,7 +15,7 @@
     <meta property="og:url" content="https://billyflin.dev/proof/grounded-knowledge-assistant/" />
     <meta property="og:image" content="https://billyflin.dev/og.png" />
     <script type="application/ld+json">
-      {"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Grounded Knowledge Assistant","description":"Public Next.js and TypeScript RAG reference with evidence gates, safe refusals, validated citations, tests and CI.","codeRepository":"https://github.com/Billyflin/grounded-knowledge-assistant","programmingLanguage":["TypeScript"],"author":{"@type":"Person","name":"Billy Martínez","url":"https://billyflin.dev"}}
+      {"@context":"https://schema.org","@type":"SoftwareSourceCode","name":"Grounded Knowledge Assistant","description":"Public Next.js and TypeScript RAG reference with evidence gates, safe refusals, validated citations, human-verified AI delivery controls, tests and CI.","codeRepository":"https://github.com/Billyflin/grounded-knowledge-assistant","programmingLanguage":["TypeScript"],"author":{"@type":"Person","name":"Billy Martínez","url":"https://billyflin.dev"}}
     </script>
   </head>
   <body>
@@ -38,7 +38,7 @@
       <section class="metrics" aria-label="Evidence summary">
         <div class="metric"><strong>12</strong><span>automated and adversarial tests</span></div>
         <div class="metric"><strong>100%</strong><span>committed-fixture citation validity</span></div>
-        <div class="metric"><strong>3</strong><span>CI gates: lint, test, build</span></div>
+        <div class="metric"><strong>5</strong><span>verification gates: lint, types, tests, evals, build</span></div>
       </section>
 
       <section class="grid">
@@ -59,6 +59,16 @@
             <li>Local deterministic behavior for repeatable tests</li>
             <li>Production build and GitHub Actions verification</li>
           </ul>
+        </article>
+        <article class="card">
+          <h2>Human-verified AI delivery</h2>
+          <ul>
+            <li>AI may assist research, implementation, tests and review, but cannot approve its own output</li>
+            <li>Every accepted change requires reproducible evidence and a complete human diff review</li>
+            <li>Generated code is treated as an untrusted contribution</li>
+            <li>Secrets, client material, production logs and personal data stay outside prompts</li>
+          </ul>
+          <p><a href="https://github.com/Billyflin/grounded-knowledge-assistant/blob/main/docs/adr/003-human-verified-ai-delivery.md">Read ADR 003 and its trade-offs</a></p>
         </article>
       </section>
 

@@ -125,6 +125,7 @@ const content = {
             '12 automated tests, including prompt-like source content and invented citations',
             '100% hit@3, support/refusal accuracy, and citation validity on the committed fixture evaluation',
             'Zero-key deterministic CI plus an optional server-only OpenAI provider boundary',
+            'Human-verified AI delivery protocol: reproducible evidence, complete diff review, no sensitive prompts, and explicit limitations',
           ],
           tags: ['Next.js', 'TypeScript', 'RAG', 'OpenAI', 'Evaluation', 'CI'],
           tone: 'paper',
@@ -219,7 +220,7 @@ const content = {
         {
           number: '04', kind: 'Referencia independiente · Código abierto', name: 'Grounded Knowledge Assistant', headline: 'Hacer que las respuestas de IA fallen de forma segura cuando falta evidencia.',
           body: 'Referencia RAG deliberadamente acotada en TypeScript que vuelve inspeccionables y comprobables la recuperación, el uso de fuentes, la validación de citas y el rechazo seguro.',
-          evidence: ['12 pruebas automatizadas, incluyendo contenido con apariencia de prompt y citas inventadas', '100% de hit@3, precisión de respuesta/rechazo y validez de citas en la evaluación versionada', 'CI determinista sin claves y un adaptador OpenAI opcional que sólo corre en el servidor'],
+          evidence: ['12 pruebas automatizadas, incluyendo contenido con apariencia de prompt y citas inventadas', '100% de hit@3, precisión de respuesta/rechazo y validez de citas en la evaluación versionada', 'CI determinista sin claves y un adaptador OpenAI opcional que sólo corre en el servidor', 'Protocolo de entrega con IA validada por humanos: evidencia reproducible, revisión completa del diff, sin datos sensibles en prompts y con límites explícitos'],
           tags: ['Next.js', 'TypeScript', 'RAG', 'OpenAI', 'Evaluación', 'CI'], tone: 'paper', label: 'Ver referencia RAG comprobable', href: 'https://github.com/Billyflin/grounded-knowledge-assistant',
         },
       ],
