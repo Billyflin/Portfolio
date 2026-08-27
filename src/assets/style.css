@@ -312,11 +312,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .proof-strip > div {
   display: flex;
-  min-height: 8.5rem;
+  min-height: 7.25rem;
   flex-direction: column;
   justify-content: center;
   gap: 0.45rem;
-  padding: 1.5rem var(--page-pad);
+  padding: 1.25rem var(--page-pad);
   border-right: 1px solid var(--ink);
 }
 
@@ -334,14 +334,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
   to { opacity: 1; transform: translateY(0); }
 }
 
-.section { padding: clamp(5rem, 10vw, 10rem) var(--page-pad); }
+.section { padding: clamp(4rem, 7vw, 7rem) var(--page-pad); }
 
 .section-heading {
   display: grid;
   grid-template-columns: minmax(0, 0.6fr) minmax(0, 2fr) minmax(240px, 0.8fr);
   gap: 2rem;
   align-items: start;
-  margin-bottom: clamp(3rem, 6vw, 6rem);
+  margin-bottom: clamp(2.5rem, 4.5vw, 4.5rem);
 }
 
 .section-heading h2, .credentials-heading h2 {
@@ -367,7 +367,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .case-study {
   display: flex;
-  min-height: 31rem;
+  min-height: 29rem;
   flex-direction: column;
   padding: clamp(1.25rem, 2.5vw, 2rem);
   border: 1px solid var(--ink);
@@ -406,10 +406,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .case-body {
   display: grid;
   grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
-  gap: clamp(2rem, 6vw, 7rem);
+  gap: clamp(2rem, 4vw, 5rem);
   align-items: end;
   margin: auto 0;
-  padding: clamp(3rem, 7vw, 7rem) 0;
+  padding: clamp(2.5rem, 4vw, 4rem) 0;
 }
 
 .case-name {
@@ -507,15 +507,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .experience-section {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(420px, 1.05fr);
-  gap: clamp(4rem, 9vw, 10rem);
-  padding: clamp(5rem, 10vw, 10rem) var(--page-pad);
+  gap: clamp(3.5rem, 6vw, 6rem);
+  padding: clamp(4rem, 7vw, 7rem) var(--page-pad);
   background: var(--ink);
   color: var(--white);
 }
 
 .experience-lead h2 {
   max-width: 12ch;
-  margin: clamp(3rem, 6vw, 5rem) 0 2rem;
+  margin: clamp(2.5rem, 4vw, 4rem) 0 1.75rem;
   font-size: clamp(3rem, 6vw, 6.75rem);
   font-weight: 900;
   letter-spacing: -0.07em;
@@ -557,8 +557,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .about-section {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
-  gap: clamp(4rem, 9vw, 10rem);
-  padding: clamp(5rem, 10vw, 10rem) var(--page-pad);
+  gap: clamp(3.5rem, 6vw, 6rem);
+  padding: clamp(4rem, 7vw, 7rem) var(--page-pad);
   background: var(--ink);
   color: var(--white);
 }
@@ -567,7 +567,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .about-lead blockquote {
   max-width: 14ch;
-  margin: clamp(3rem, 6vw, 6rem) 0 0;
+  margin: clamp(2.5rem, 4vw, 4rem) 0 0;
   font-size: clamp(3rem, 6vw, 6.75rem);
   font-weight: 900;
   letter-spacing: -0.07em;
@@ -584,7 +584,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .about-copy > p:first-child { color: white; }
-.profile-facts { display: grid; gap: 0; margin: clamp(3rem, 6vw, 5rem) 0 0; }
+.profile-facts { display: grid; gap: 0; margin: clamp(2.5rem, 4vw, 4rem) 0 0; }
 
 .profile-facts div {
   display: grid;
@@ -614,8 +614,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .skill-group {
-  min-height: 26rem;
-  padding: 1.5rem;
+  min-height: 20rem;
+  padding: 1.25rem;
   border-right: 1px solid var(--ink);
 }
 
@@ -634,8 +634,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .skill-group h3 {
-  min-height: 5rem;
-  margin: 3rem 0 2rem;
+  min-height: 4rem;
+  margin: 2rem 0 1.25rem;
   font-size: clamp(1.5rem, 2vw, 2.2rem);
   letter-spacing: -0.04em;
   line-height: 1;
@@ -644,7 +644,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .skill-group ul { margin: 0; padding: 0; list-style: none; }
 
 .skill-group li {
-  padding: 0.72rem 0;
+  padding: 0.6rem 0;
   border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.9rem;
@@ -657,10 +657,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
   grid-template-columns: minmax(0, 2fr) minmax(280px, 0.75fr);
   gap: 3rem;
   align-items: end;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
-.credentials-heading .section-kicker { margin-bottom: 2.5rem; }
+.credentials-heading .section-kicker { margin-bottom: 2rem; }
 .credential-list { border-top: 1px solid var(--ink); }
 
 .credential-list a {
@@ -668,7 +668,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   grid-template-columns: minmax(150px, 0.7fr) minmax(300px, 1.5fr) 4rem 2rem;
   gap: 2rem;
   align-items: center;
-  min-height: 6rem;
+  min-height: 5.25rem;
   border-bottom: 1px solid var(--ink);
   transition: background-color 180ms ease, padding 180ms ease;
 }
@@ -686,21 +686,30 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .credential-list strong { font-size: clamp(1.15rem, 2vw, 1.65rem); letter-spacing: -0.035em; }
 
 .contact-section {
-  padding: clamp(4rem, 8vw, 8rem) var(--page-pad) 1.5rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  column-gap: clamp(3rem, 6vw, 6rem);
+  align-items: end;
+  padding: clamp(4rem, 6vw, 6rem) var(--page-pad) 1.5rem;
   background: var(--orange);
   color: var(--ink);
 }
 
+.contact-section > .section-kicker { grid-column: 1 / -1; }
+
 .contact-section h2 {
+  grid-column: 1;
   max-width: 11ch;
-  margin: clamp(3rem, 6vw, 6rem) 0;
-  font-size: clamp(3.5rem, 8vw, 9rem);
+  margin: clamp(3rem, 4.5vw, 4.5rem) 0 0;
+  font-size: clamp(3.25rem, 6vw, 7rem);
   font-weight: 900;
   letter-spacing: -0.08em;
   line-height: 0.86;
 }
 
 .contact-email {
+  grid-column: 2;
+  grid-row: 2;
   display: flex;
   width: 100%;
   align-items: center;
@@ -710,7 +719,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   overflow-wrap: anywhere;
   border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
-  font-size: clamp(1.15rem, 3.5vw, 4rem);
+  font-size: clamp(1.15rem, 2.3vw, 2.6rem);
   font-weight: 900;
   letter-spacing: -0.05em;
 }
@@ -723,6 +732,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .contact-note {
+  grid-column: 2;
+  grid-row: 3;
   margin: 1.5rem 0 0;
   font-family: "Courier New", Courier, monospace;
   font-size: 0.7rem;
@@ -733,11 +744,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .footer-row {
+  grid-column: 1 / -1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   font-family: "Courier New", Courier, monospace;
   font-size: 0.7rem;
   font-weight: 700;
@@ -837,14 +849,14 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .section-heading, .section-heading--compact, .credentials-heading, .about-section, .experience-section { grid-template-columns: 1fr; }
   .section-heading h2, .credentials-heading h2 { font-size: clamp(2.8rem, 13vw, 4.5rem); }
   .case-study { min-height: 0; }
-  .case-body { grid-template-columns: 1fr; padding: 4rem 0; }
+  .case-body { grid-template-columns: 1fr; padding: 3rem 0; }
   .case-body h3 { font-size: clamp(2.5rem, 12vw, 4rem); }
   .case-footer { align-items: flex-start; flex-direction: column; }
   .case-footer ul { max-width: 100%; }
   .private-label { max-width: none; text-align: left; }
   .case-study:hover { transform: none; box-shadow: none; }
-  .about-section { gap: 4rem; }
-  .experience-section { gap: 4rem; }
+  .about-section { gap: 3rem; }
+  .experience-section { gap: 3rem; }
   .timeline article { grid-template-columns: 1fr; gap: 0.75rem; }
   .skill-grid { grid-template-columns: 1fr; }
   .skill-group, .skill-group:nth-child(2) { min-height: 0; border-right: 0; border-bottom: 1px solid var(--ink); }
@@ -855,6 +867,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .credential-list strong { grid-column: 1; }
   .credential-year { grid-column: 1; }
   .credential-list .icon-arrow { grid-column: 2; grid-row: 1 / span 3; }
+  .contact-section { display: block; }
+  .contact-section h2 { margin-bottom: 3rem; }
   .footer-row { align-items: flex-start; flex-direction: column; }
   .social-links { flex-wrap: wrap; }
 }
