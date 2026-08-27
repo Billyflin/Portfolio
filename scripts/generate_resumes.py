@@ -53,7 +53,7 @@ DATA = {
             },
             {
                 "heading": "SAP CAP + Fiori Reference | github.com/Billyflin/sap-cap-fiori-btp",
-                "bullets": ["Published CDS/OData V4 and Fiori Elements delivery with XSUAA/HANA deployment design, an architecture decision record, and 8 CAP service tests including admin authorization and non-admin 403 enforcement; lint, production build, and CI pass."],
+                "bullets": ["Published CDS/OData V4 and Fiori Elements delivery with XSUAA/HANA design, two architecture decisions, and 11 CAP service tests covering role authorization and resilient external OData behavior; lint, production build, and CI pass."],
             },
         ],
         "skills": "Requirement refinement; solution architecture; Fiori/UI5 UX; automated testing; QA and design coordination; SAP BTP, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
@@ -94,7 +94,7 @@ DATA = {
             },
             {
                 "heading": "SAP CAP + Fiori Reference | github.com/Billyflin/sap-cap-fiori-btp",
-                "bullets": ["Published CDS/OData V4 and Fiori Elements delivery with XSUAA/HANA deployment design, an architecture decision record, and 8 CAP service tests including admin authorization and non-admin 403 enforcement; lint, production build, and CI pass."],
+                "bullets": ["Published CDS/OData V4 and Fiori Elements delivery with XSUAA/HANA design, two architecture decisions, and 11 CAP service tests covering role authorization and resilient external OData behavior; lint, production build, and CI pass."],
             },
         ],
         "skills": "Kotlin; Spring Boot; SAP CAP/CDS; Node.js; TypeScript; REST/OpenAPI; PostgreSQL; multi-tenant architecture; authentication and authorization; payments and webhooks; Docker; CI/CD; Google Cloud; AWS; observability.",
@@ -135,8 +135,8 @@ DATA = {
             {
                 "heading": "SAP CAP + Fiori Reference | Public test evidence",
                 "bullets": [
-                    "Published 8 service tests covering business rules and role boundaries, including positive admin access and non-admin 403 enforcement.",
-                    "GitHub Actions verifies lint, the CAP suite, and production build; the repository also documents XSUAA/HANA deployment and security decisions.",
+                    "Published 11 service tests covering business rules, role boundaries, and degraded external OData behavior without provider-error leakage.",
+                    "GitHub Actions verifies lint, the CAP suite, and production build; two records document XSUAA/HANA security and external-service failure strategy.",
                 ],
             },
         ],
@@ -178,7 +178,7 @@ DATA = {
             },
             {
                 "heading": "Referencia SAP CAP + Fiori | github.com/Billyflin/sap-cap-fiori-btp",
-                "bullets": ["Publiqué una solución CDS/OData V4 y Fiori Elements con diseño de despliegue XSUAA/HANA, una decisión de arquitectura y 8 pruebas CAP, incluyendo autorización administrativa y rechazo 403 sin rol; lint, build productivo y CI pasan."],
+                "bullets": ["Publiqué una solución CDS/OData V4 y Fiori Elements con diseño XSUAA/HANA, dos decisiones de arquitectura y 11 pruebas CAP sobre autorización por roles e integración OData externa resiliente; lint, build productivo y CI pasan."],
             },
         ],
         "skills": "Refinamiento de requisitos; arquitectura de soluciones; UX Fiori/UI5; pruebas automatizadas; coordinación de QA y diseño; SAP BTP, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
@@ -219,7 +219,7 @@ DATA = {
             },
             {
                 "heading": "Referencia SAP CAP + Fiori | github.com/Billyflin/sap-cap-fiori-btp",
-                "bullets": ["Publiqué una solución CDS/OData V4 y Fiori Elements con diseño de despliegue XSUAA/HANA, una decisión de arquitectura y 8 pruebas CAP, incluyendo autorización administrativa y rechazo 403 sin rol; lint, build productivo y CI pasan."],
+                "bullets": ["Publiqué una solución CDS/OData V4 y Fiori Elements con diseño XSUAA/HANA, dos decisiones de arquitectura y 11 pruebas CAP sobre autorización por roles e integración OData externa resiliente; lint, build productivo y CI pasan."],
             },
         ],
         "skills": "Kotlin; Spring Boot; SAP CAP/CDS; Node.js; TypeScript; REST/OpenAPI; PostgreSQL; arquitectura multi-tenant; autenticación y autorización; pagos y webhooks; Docker; CI/CD; Google Cloud; AWS; observabilidad.",
