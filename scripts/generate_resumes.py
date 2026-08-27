@@ -52,8 +52,8 @@ DATA = {
                 ],
             },
             {
-                "heading": "UFRO Sustentable | Open university team project",
-                "bullets": ["Built Kotlin/Firebase Android flows for maps, QR scanning, and rewards; the repository documents 83 JVM tests, 89.23% line coverage, and 77.88% branch coverage."],
+                "heading": "SAP CAP + Fiori Reference | github.com/Billyflin/sap-cap-fiori-btp",
+                "bullets": ["Published CDS/OData V4 and Fiori Elements delivery with XSUAA/HANA deployment design, an architecture decision record, and 8 CAP service tests including admin authorization and non-admin 403 enforcement; lint, production build, and CI pass."],
             },
         ],
         "skills": "Requirement refinement; solution architecture; Fiori/UI5 UX; automated testing; QA and design coordination; SAP BTP, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
@@ -93,8 +93,8 @@ DATA = {
                 ],
             },
             {
-                "heading": "UFRO Sustentable | Quality-focused Android delivery",
-                "bullets": ["Kotlin/Firebase team project with BDD/Cucumber, 83 JVM tests, and repository-reported coverage of 89.23% lines and 77.88% branches."],
+                "heading": "SAP CAP + Fiori Reference | github.com/Billyflin/sap-cap-fiori-btp",
+                "bullets": ["Published CDS/OData V4 and Fiori Elements delivery with XSUAA/HANA deployment design, an architecture decision record, and 8 CAP service tests including admin authorization and non-admin 403 enforcement; lint, production build, and CI pass."],
             },
         ],
         "skills": "Kotlin; Spring Boot; SAP CAP/CDS; Node.js; TypeScript; REST/OpenAPI; PostgreSQL; multi-tenant architecture; authentication and authorization; payments and webhooks; Docker; CI/CD; Google Cloud; AWS; observability.",
@@ -133,10 +133,10 @@ DATA = {
                 ],
             },
             {
-                "heading": "Clinipets | Reliability-oriented product architecture",
+                "heading": "SAP CAP + Fiori Reference | Public test evidence",
                 "bullets": [
-                    "Designed clinic-scoped tenancy, role-based access, conflict-safe scheduling, versioned clinical records, and auditable corrections.",
-                    "Defined signed idempotent payment flows, secure attachment quarantine, reliable outbox notifications, OpenAPI contracts, and Docker-based delivery across web and mobile clients.",
+                    "Published 8 service tests covering business rules and role boundaries, including positive admin access and non-admin 403 enforcement.",
+                    "GitHub Actions verifies lint, the CAP suite, and production build; the repository also documents XSUAA/HANA deployment and security decisions.",
                 ],
             },
         ],
@@ -177,8 +177,8 @@ DATA = {
                 ],
             },
             {
-                "heading": "UFRO Sustentable | Proyecto abierto de equipo universitario",
-                "bullets": ["Construí flujos Android Kotlin/Firebase para mapas, QR y recompensas; el repositorio documenta 83 pruebas JVM, 89,23% de cobertura de líneas y 77,88% de ramas."],
+                "heading": "Referencia SAP CAP + Fiori | github.com/Billyflin/sap-cap-fiori-btp",
+                "bullets": ["Publiqué una solución CDS/OData V4 y Fiori Elements con diseño de despliegue XSUAA/HANA, una decisión de arquitectura y 8 pruebas CAP, incluyendo autorización administrativa y rechazo 403 sin rol; lint, build productivo y CI pasan."],
             },
         ],
         "skills": "Refinamiento de requisitos; arquitectura de soluciones; UX Fiori/UI5; pruebas automatizadas; coordinación de QA y diseño; SAP BTP, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
@@ -218,8 +218,8 @@ DATA = {
                 ],
             },
             {
-                "heading": "UFRO Sustentable | Entrega Android enfocada en calidad",
-                "bullets": ["Proyecto de equipo Kotlin/Firebase con BDD/Cucumber, 83 pruebas JVM y cobertura reportada de 89,23% de líneas y 77,88% de ramas."],
+                "heading": "Referencia SAP CAP + Fiori | github.com/Billyflin/sap-cap-fiori-btp",
+                "bullets": ["Publiqué una solución CDS/OData V4 y Fiori Elements con diseño de despliegue XSUAA/HANA, una decisión de arquitectura y 8 pruebas CAP, incluyendo autorización administrativa y rechazo 403 sin rol; lint, build productivo y CI pasan."],
             },
         ],
         "skills": "Kotlin; Spring Boot; SAP CAP/CDS; Node.js; TypeScript; REST/OpenAPI; PostgreSQL; arquitectura multi-tenant; autenticación y autorización; pagos y webhooks; Docker; CI/CD; Google Cloud; AWS; observabilidad.",

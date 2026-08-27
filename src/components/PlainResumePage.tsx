@@ -13,7 +13,7 @@ const pages = {
     sectionEvidence: 'Selected evidence',
     evidence: [
       ['Confidential SAP solutions', 'Convert functional requirements into architecture and delivery across SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, and Joule; introduced automated tests and a dedicated QA stage.'],
-      ['SAP CAP/Fiori public reference', 'Open SAP BTP reference with CDS modeling, OData V4 services, Fiori Elements, XSUAA/HANA deployment design, 6 CAP service tests, lint, production build, and green GitHub Actions CI.'],
+      ['SAP CAP/Fiori public reference', 'Open SAP BTP reference with CDS modeling, OData V4 services, Fiori Elements, XSUAA/HANA deployment design, 8 CAP service tests including role authorization checks, lint, production build, and green GitHub Actions CI.'],
       ['Confidential cloud platform', 'Recommended and aligned an AWS-to-Google-Cloud re-platform after evaluating cost and technical fit; implementation is in progress.'],
       ['Clinipets', 'Designed a multi-tenant veterinary platform with scheduling, auditable clinical records, payments, secure attachments, notifications, web/mobile clients, and infrastructure.'],
       ['UFRO Sustentable', 'Kotlin/Firebase Android project with QR and location flows, 83 JVM tests, 89.23% line coverage, and 77.88% branch coverage reported in the repository.'],
@@ -38,7 +38,7 @@ const pages = {
     sectionEvidence: 'Evidencia seleccionada',
     evidence: [
       ['Soluciones SAP confidenciales', 'Convierto requerimientos funcionales en arquitectura y entrega con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule; introduje pruebas automatizadas y una etapa dedicada de QA.'],
-      ['Referencia pública SAP CAP/Fiori', 'Referencia abierta de SAP BTP con modelado CDS, servicios OData V4, Fiori Elements, diseño de despliegue XSUAA/HANA, 6 pruebas de servicio CAP, lint, build productivo y CI verde en GitHub Actions.'],
+      ['Referencia pública SAP CAP/Fiori', 'Referencia abierta de SAP BTP con modelado CDS, servicios OData V4, Fiori Elements, diseño de despliegue XSUAA/HANA, 8 pruebas de servicio CAP incluyendo autorización por roles, lint, build productivo y CI verde en GitHub Actions.'],
       ['Plataforma cloud confidencial', 'Recomendé y alineé una migración AWS a Google Cloud después de evaluar costo y encaje técnico; la implementación está en curso.'],
       ['Clinipets', 'Diseñé una plataforma veterinaria multi-tenant con agenda, fichas clínicas auditables, pagos, archivos seguros, notificaciones, aplicaciones web/móvil e infraestructura.'],
       ['UFRO Sustentable', 'Proyecto Android Kotlin/Firebase con flujos QR y ubicación, 83 pruebas JVM, 89,23% de cobertura de líneas y 77,88% de ramas reportadas en el repositorio.'],

@@ -34,7 +34,7 @@
     { "issuer": "Google / Coursera", "name": "Advanced Data Analytics", "year": 2024, "url": "https://coursera.org/share/b44ac3af30dd271b9fc0933a3eb26f48" }
   ],
   "publicEvidence": [
-    { "name": "SAP CAP + Fiori Reference Application", "type": "Independent SAP BTP reference", "url": "https://github.com/Billyflin/sap-cap-fiori-btp", "evidence": ["CDS and OData V4", "Fiori Elements", "6 CAP service tests", "GitHub Actions CI", "Production build"] },
+    { "name": "SAP CAP + Fiori Reference Application", "type": "Independent SAP BTP reference", "url": "https://github.com/Billyflin/sap-cap-fiori-btp", "evidence": ["CDS and OData V4", "Fiori Elements", "8 CAP service tests", "Role authorization checks", "GitHub Actions CI", "Production build"] },
     { "name": "UFRO Sustentable", "type": "Android team project", "url": "https://github.com/Billyflin/ufro-sustentable", "evidence": ["83 JVM tests", "89.23% line coverage", "77.88% branch coverage"] }
   ],
   "profiles": {
