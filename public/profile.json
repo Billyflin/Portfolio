@@ -11,7 +11,7 @@
     "workingScope": "Solution architecture and full-stack SAP delivery",
     "startDate": "2025-01"
   },
-  "targetRoles": ["Solutions Engineer", "Technical Consultant", "SAP BTP Consultant", "Implementation Engineer", "Backend Engineer", "Platform Engineer"],
+  "targetRoles": ["SAP BTP Technical Consultant", "SAP Fiori / CAP Developer", "SAP Full-Stack Engineer", "Technical Delivery Engineer", "Backend Engineer", "Platform Engineer"],
   "workPreference": {
     "engagement": "Remote contractor",
     "timezone": "Full US-hours overlap",
@@ -21,7 +21,12 @@
     { "name": "Spanish", "level": "Native" },
     { "name": "English", "level": "B2 professional working proficiency" }
   ],
-  "skills": ["Client discovery", "Requirements translation", "Solution architecture", "SAP BTP", "SAP Fiori", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Kotlin", "Spring", "TypeScript", "React", "Node.js", "PostgreSQL", "Google Cloud", "AWS", "Docker", "CI/CD"],
+  "deliveryModel": {
+    "requirements": "Refines requirements with a functional consultant after client needs have been captured",
+    "ownership": "Proposes architecture, process flow, Fiori/UI5 UX, implementation, integration, automated testing, and environment improvements",
+    "coordination": "Guides QA validation and collaborates with design; does not claim direct client discovery or sales ownership"
+  },
+  "skills": ["Requirements refinement", "Solution architecture", "SAP BTP", "SAP Fiori", "SAP UI5", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Automated testing", "QA coordination", "UX flow design", "Kotlin", "Spring", "TypeScript", "React", "Node.js", "PostgreSQL", "Google Cloud", "AWS", "Docker", "CI/CD"],
   "verifiedCredentials": [
     { "issuer": "AWS / Coursera", "name": "Cloud Technology Consultant", "year": 2024, "url": "https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d" },
     { "issuer": "AWS / Coursera", "name": "Cloud Solutions Architect", "year": 2024, "url": "https://coursera.org/share/e39b52b82410a6d0327ac715e3fb971c" },
@@ -35,5 +40,5 @@
     "github": "https://github.com/Billyflin",
     "linkedin": "https://www.linkedin.com/in/billyflin"
   },
-  "lastUpdated": "2026-08-26"
+  "lastUpdated": "2026-08-27"
 }

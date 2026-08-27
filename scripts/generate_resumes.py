@@ -23,16 +23,17 @@ LINE = colors.HexColor("#d8d4ca")
 DATA = {
     "solutions_en": {
         "filename": "Billy_Martinez_Resume_Solutions_EN.pdf",
-        "role": "SAP Technical Consultant | Solutions Engineering | Full-Stack Delivery",
-        "summary": "Client-facing engineer with 2+ years of professional product delivery. I translate business requirements into solution architecture and working software, then stay involved through implementation, integration, deployment, and troubleshooting. Current scope spans SAP BTP and cloud-native product systems.",
+        "role": "SAP BTP Technical Consultant | Architecture | Full-Stack Delivery",
+        "summary": "Hands-on engineer with 2+ years of professional product delivery. I refine functional requirements into solution architecture and working software, then stay involved through implementation, automated testing, QA, deployment, and troubleshooting across SAP BTP and cloud-native systems.",
         "experience": [
             {
                 "heading": "BeCloud Consulting | SAP Consultant",
                 "date": "Jan 2025 - Present",
                 "bullets": [
-                    "Run discovery with clients, clarify requirements, and translate operational needs into solution designs and implementation work.",
-                    "Design and build full-stack SAP solutions across BTP, Fiori, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments.",
-                    "Stay responsible across interface, domain model, platform configuration, delivery, and environment troubleshooting.",
+                    "Refine requirements with a functional consultant and translate them into architecture and implementation work.",
+                    "Design and build full-stack SAP solutions across BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments.",
+                    "Improve process flow and UX within UI5 standards; own interface, domain model, platform configuration, delivery, and environment troubleshooting.",
+                    "Introduced automated testing and a dedicated QA stage beyond direct dev/production fixes; guide validation with QA and design.",
                     "For a confidential product, evaluated cloud economics and technical fit, recommended an AWS-to-Google-Cloud re-platform, and aligned stakeholders around the change; implementation is in progress.",
                 ],
             },
@@ -55,7 +56,7 @@ DATA = {
                 "bullets": ["Built Kotlin/Firebase Android flows for maps, QR scanning, and rewards; the repository documents 83 JVM tests, 89.23% line coverage, and 77.88% branch coverage."],
             },
         ],
-        "skills": "Discovery and requirements translation; solution design; stakeholder alignment; SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
+        "skills": "Requirement refinement; solution architecture; Fiori/UI5 UX; automated testing; QA and design coordination; SAP BTP, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
         "education": "Ingenieria Informatica, Universidad de La Frontera | 2020 - 2026 | Final semester, three courses remaining; coursework completion expected in 2026.",
         "credentials": "AWS Cloud Technology Consultant; AWS Cloud Solutions Architect; AWS Academy Machine Learning Foundations; Google Advanced Data Analytics.",
         "languages": "Spanish: Native | English: B2 professional working proficiency | Remote contractor | Full US-hours overlap",
@@ -72,6 +73,7 @@ DATA = {
                 "bullets": [
                     "Design domain models and service logic with SAP CAP/CDS, integrate Fiori and Work Zone experiences, and work across HANA, Joule, and BTP environments.",
                     "Own implementation, integration, deployment, and environment troubleshooting across distributed enterprise solutions.",
+                    "Introduced automated testing and a QA stage; coordinate validation with QA and design before delivery.",
                     "Evaluated cost and technical fit for a confidential platform and drove an in-progress AWS-to-Google-Cloud re-platform decision.",
                 ],
             },
@@ -103,16 +105,17 @@ DATA = {
     },
     "solutions_es": {
         "filename": "Billy_Martinez_CV_Soluciones_ES.pdf",
-        "role": "Consultor técnico SAP | Solutions Engineering | Entrega full-stack",
-        "summary": "Ingeniero con experiencia directa con clientes y más de 2 años de entrega profesional de productos. Traduzco requisitos del negocio en arquitectura de soluciones y software funcionando, y sigo involucrado durante implementación, integración, despliegue y resolución de problemas.",
+        "role": "Consultor técnico SAP BTP | Arquitectura | Entrega full-stack",
+        "summary": "Ingeniero hands-on con más de 2 años de entrega profesional de productos. Refino requerimientos funcionales en arquitectura de soluciones y software funcionando, y sigo involucrado durante implementación, pruebas automatizadas, QA, despliegue y resolución de problemas.",
         "experience": [
             {
                 "heading": "BeCloud Consulting | Consultor SAP",
                 "date": "Ene 2025 - Actualidad",
                 "bullets": [
-                    "Realizo discovery con clientes, aclaro requisitos y traduzco necesidades operacionales en diseño de soluciones y trabajo de implementación.",
-                    "Diseño y construyo soluciones SAP full-stack con BTP, Fiori, CAP/CDS, Work Zone, HANA, Joule, integraciones y despliegues distribuidos.",
-                    "Me hago cargo de interfaz, modelo de dominio, configuración de plataforma, entrega y resolución de problemas del ambiente.",
+                    "Refino requerimientos con el consultor funcional y los traduzco en arquitectura y trabajo de implementación.",
+                    "Diseño y construyo soluciones SAP full-stack con BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integraciones y despliegues distribuidos.",
+                    "Mejoro flujos y UX dentro de los estándares UI5; me hago cargo de interfaz, modelo de dominio, configuración, entrega y resolución de problemas del ambiente.",
+                    "Introduje pruebas automatizadas y una etapa dedicada de QA más allá de correcciones directas entre desarrollo y producción; guío la validación con QA y diseño.",
                     "Para un producto confidencial, evalué economía cloud y encaje técnico, recomendé migrar desde AWS a Google Cloud y alineé a los involucrados; la implementación está en curso.",
                 ],
             },
@@ -135,7 +138,7 @@ DATA = {
                 "bullets": ["Construí flujos Android Kotlin/Firebase para mapas, QR y recompensas; el repositorio documenta 83 pruebas JVM, 89,23% de cobertura de líneas y 77,88% de ramas."],
             },
         ],
-        "skills": "Discovery y traducción de requisitos; diseño de soluciones; alineamiento; SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
+        "skills": "Refinamiento de requisitos; arquitectura de soluciones; UX Fiori/UI5; pruebas automatizadas; coordinación de QA y diseño; SAP BTP, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
         "education": "Ingeniería Informática, Universidad de La Frontera | 2020 - 2026 | Último semestre, tres ramos pendientes; finalización académica esperada en 2026.",
         "credentials": "AWS Cloud Technology Consultant; AWS Cloud Solutions Architect; AWS Academy Machine Learning Foundations; Google Advanced Data Analytics.",
         "languages": "Español: Nativo | Inglés: B2 profesional | Contractor remoto | Jornada completa compatible con EE. UU.",
@@ -152,6 +155,7 @@ DATA = {
                 "bullets": [
                     "Diseño modelos de dominio y lógica de servicios con SAP CAP/CDS, integro experiencias Fiori y Work Zone y trabajo con HANA, Joule y ambientes BTP.",
                     "Me hago cargo de implementación, integración, despliegue y resolución de problemas en soluciones empresariales distribuidas.",
+                    "Introduje pruebas automatizadas y una etapa de QA; coordino la validación con QA y diseño antes de la entrega.",
                     "Evalué costo y encaje técnico de una plataforma confidencial e impulsé una decisión de migración AWS a Google Cloud actualmente en implementación.",
                 ],
             },

@@ -1,6 +1,6 @@
 # Billy Martínez
 
-> Client-facing SAP Technical Consultant and full-stack engineer based in Temuco, Chile. Available for remote contractor roles with full overlap across US working hours.
+> Hands-on SAP BTP Technical Consultant and full-stack engineer based in Temuco, Chile. Available for remote contractor roles with full overlap across US working hours.
 
 Canonical profile: https://billyflin.dev/
 Spanish profile: https://billyflin.dev/es/
@@ -11,23 +11,23 @@ Email: hello@billyflin.dev
 
 ## Positioning
 
-Billy works between clients, product, and engineering. He runs discovery, translates business requirements into solution designs, explains tradeoffs, and remains involved through implementation, integration, deployment, and troubleshooting.
+Billy works between functional requirements and technical delivery. A functional consultant handles client communication; Billy refines the resulting requirements, challenges the proposed solution, improves architecture, process flow, and Fiori/UI5 UX, and remains involved through implementation, automated testing, QA, deployment, and troubleshooting.
 
-Primary target roles: Solutions Engineer, Technical Consultant, SAP BTP Consultant, Implementation Engineer.
+Primary target roles: SAP BTP Technical Consultant, SAP Fiori/CAP Developer, SAP Full-Stack Engineer, Technical Delivery Engineer.
 Secondary target roles: Backend Engineer, Platform Engineer, Full-Stack Engineer.
 Languages: Spanish (native), English (B2 professional working proficiency).
 
 ## Current experience
 
 BeCloud Consulting — SAP Consultant — January 2025 to present.
-Practical scope: solution architecture and full-stack delivery across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments. Client-facing discovery and requirements translation are part of the role.
+Practical scope: requirement refinement with a functional consultant; solution architecture and full-stack delivery across SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments. Billy also introduced automated testing and a dedicated QA stage in a workflow that previously relied on direct dev/production fixes, and coordinates validation with QA and design.
 
 Happ Rent — Full-Stack Developer — October 2023 to September 2024.
 Scope: product delivery across frontend and backend in a rental-technology environment.
 
 ## Selected evidence
 
-Confidential SAP client work: end-to-end delivery from discovery to implementation. Client and project names are intentionally omitted.
+Confidential enterprise SAP work: technical delivery from refined requirements through architecture, implementation, automated testing, QA, and environment troubleshooting. Client and project names are intentionally omitted.
 
 Confidential cloud platform: evaluated the economics and technical fit of an AWS direction, recommended a clean re-platform to Google Cloud, and aligned stakeholders around the decision. Work is in progress; no completed outcome is claimed.
 
@@ -44,7 +44,7 @@ Google / Coursera — Advanced Data Analytics (2024): https://coursera.org/share
 
 ## Technical capabilities
 
-Client and solution: discovery, requirements translation, solution design, technical tradeoffs, stakeholder alignment.
+Technical delivery: requirement refinement, solution architecture, Fiori/UI5 UX, technical tradeoffs, automated testing, QA and design coordination.
 SAP: SAP BTP, CAP/CDS, Fiori, Work Zone, HANA, Joule.
 Product and backend: Kotlin/Spring, TypeScript/React, Node.js, REST/OpenAPI, PostgreSQL, multi-tenant systems.
 Cloud and delivery: Google Cloud, AWS, Docker, CI/CD, observability, cost-aware architecture.
@@ -55,4 +55,4 @@ Ingeniería Informática, Universidad de La Frontera, 2020–2026. Final semeste
 
 ## Accuracy and confidentiality
 
-This profile deliberately distinguishes finished work from work in progress. Confidential company and client details are anonymized. Do not infer client names, revenue, user counts, or performance metrics that are not explicitly stated.
+This profile deliberately distinguishes finished work from work in progress. Confidential company and client details are anonymized. Billy does not claim direct client discovery, sales ownership, formal people management, revenue, user counts, or performance metrics that are not explicitly stated.

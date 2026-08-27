@@ -2,7 +2,7 @@
 
 ## Positioning
 
-Primary lane: Solutions Engineer, Technical Consultant, SAP BTP Consultant, or Implementation Engineer with hands-on delivery.
+Primary lane: SAP BTP Technical Consultant, SAP Fiori/CAP Developer, SAP Full-Stack Engineer, or Technical Delivery Engineer with hands-on ownership.
 
 Secondary lane: Backend or Platform Engineer where Kotlin/Spring, TypeScript, multi-tenant systems, integrations, and cloud delivery matter.
 
@@ -25,7 +25,7 @@ Do not lead with “Software Architect” as the job title yet. Demonstrate arch
 
 ## Application sequence
 
-1. Use the Solutions CV for client-facing, SAP, implementation, presales, and technical consulting roles.
+1. Use the Solutions CV for SAP BTP, Fiori/CAP, implementation, architecture, and technical delivery roles that do not depend on sales ownership.
 2. Use the Backend CV for Kotlin/Spring, platform, integration, and multi-tenant product roles.
 3. Put the matching title in the first line of the application and link directly to the relevant portfolio language.
 4. Send a 4-line note: business problem you understand, matching proof, why this company, and availability.
@@ -33,7 +33,7 @@ Do not lead with “Software Architect” as the job title yet. Demonstrate arch
 
 ## Interview evidence bank
 
-- BeCloud: translating client needs into a solution across the complete SAP BTP environment.
+- BeCloud: refining requirements with a functional consultant, challenging architecture and UX, delivering across SAP BTP, and introducing automated testing plus a QA stage.
 - Confidential platform: comparing economics and technical fit, recommending AWS to Google Cloud, and earning stakeholder alignment.
 - Clinipets: designing tenancy, clinical integrity, scheduling, security, payments, and reliable delivery as one product system.
 - UFRO Sustentable: using tests and quality evidence in a real team project.
@@ -45,7 +45,7 @@ Do not lead with “Software Architect” as the job title yet. Demonstrate arch
 - Get on Board: current LATAM remote engineering and solutions roles.
 - Wellfound and direct company career pages: remote SaaS and implementation teams.
 - SAP partner ecosystem: BTP consulting, implementation, and solution delivery roles.
-- Referrals: former colleagues, university network, cloud certification cohorts, and client contacts who can speak to communication and ownership without sharing confidential details.
+- Referrals: former colleagues, university network, and cloud certification cohorts who can speak to technical judgment, delivery, and ownership without sharing confidential details.
 
 ## Source notes
 

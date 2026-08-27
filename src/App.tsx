@@ -42,15 +42,15 @@ const content = {
     hero: {
       status: 'Open to remote contractor roles · Full US-hours overlap',
       title: <>I turn complex business requirements <span>into software teams can ship.</span></>,
-      intro: 'SAP Technical Consultant and full-stack engineer. I work directly with clients, turn ambiguity into architecture, and stay through implementation and delivery.',
+      intro: 'SAP Technical Consultant and full-stack engineer. I refine functional requirements into architecture, improve flows and UX within SAP standards, and stay through implementation, testing, and delivery.',
       primaryCta: 'See selected work',
       resumeCta: 'Solutions CV',
       portraitAlt: 'Billy Martínez with Oliver outdoors in Temuco',
-      disciplines: ['Solution discovery', 'SAP BTP', 'Full-stack delivery', 'Cloud decisions', 'Client communication'],
+      disciplines: ['Requirement refinement', 'SAP BTP', 'Full-stack delivery', 'Quality automation', 'Technical coordination'],
     },
     proof: [
       { value: '2025—now', label: 'SAP Consultant at BeCloud' },
-      { value: 'End to end', label: 'Discovery → architecture → delivery' },
+      { value: 'End to end', label: 'Requirements → architecture → build → QA' },
       { value: 'B2 English', label: 'Full overlap with US working hours' },
     ],
     work: {
@@ -62,16 +62,16 @@ const content = {
           number: '01',
           kind: 'Current role · BeCloud',
           name: 'SAP solution delivery',
-          headline: 'From a client conversation to a working SAP solution.',
-          body: 'My contract says SAP Consultant. In practice, I work across solution architecture and full-stack delivery: requirements, interface, domain model, integration, deployment, and environment troubleshooting.',
+          headline: 'From refined requirements to a testable SAP delivery.',
+          body: 'My contract says SAP Consultant. In practice, I turn functional requirements into architecture and full-stack delivery: interface and UX, domain model, integration, deployment, test automation, and environment troubleshooting.',
           evidence: [
-            'Run discovery with clients and translate needs into technical work',
-            'Design and build across SAP BTP, Fiori, CAP/CDS and Work Zone',
-            'Work with HANA, Joule, integrations and distributed deployments',
+            'Refine requirements with the functional consultant and propose architecture, flow, and UX improvements',
+            'Design and build across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, and Joule',
+            'Introduced automated testing and a QA stage beyond direct dev-to-production fixes',
           ],
-          tags: ['SAP BTP', 'Fiori', 'CAP / CDS', 'Work Zone', 'HANA', 'Joule'],
+          tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Automated testing', 'QA delivery'],
           tone: 'orange',
-          label: 'Confidential client work',
+          label: 'Confidential enterprise work',
         },
         {
           number: '02',
@@ -133,10 +133,10 @@ const content = {
     },
     experience: {
       kicker: '02 / Experience',
-      title: 'Technical depth that still works in the client room.',
-      intro: 'I am most useful at the boundary between business, product, and engineering: clarifying the real problem, choosing a defensible approach, and helping deliver it.',
+      title: 'Technical judgment that continues through QA.',
+      intro: 'I am most useful between a functional requirement and a production delivery: challenging the initial solution, choosing a defensible architecture, implementing it, and guiding validation.',
       roles: [
-        { period: 'Jan 2025 — Present', company: 'BeCloud Consulting', title: 'SAP Consultant · Solution architecture & full-stack delivery', body: 'Client discovery, solution design, implementation, integration, and platform operations across the SAP BTP ecosystem.' },
+        { period: 'Jan 2025 — Present', company: 'BeCloud Consulting', title: 'SAP Consultant · Architecture, full-stack delivery & quality', body: 'Requirement refinement with a functional consultant; architecture, Fiori/UI5 UX, implementation, integration, automated testing, and coordination with QA and design across SAP BTP.' },
         { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Full-Stack Developer', body: 'Product delivery across frontend and backend in a rental-technology environment.' },
         { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Final semester', body: 'Three courses remaining. Coursework completion expected in 2026.' },
       ],
@@ -145,7 +145,7 @@ const content = {
       kicker: '03 / Capabilities',
       title: 'Organized by responsibility, not by logo.',
       groups: [
-        { index: 'A', title: 'Client & solution', items: ['Discovery', 'Requirements translation', 'Solution design', 'Technical tradeoffs', 'Stakeholder alignment'] },
+        { index: 'A', title: 'Technical delivery', items: ['Requirement refinement', 'Solution architecture', 'Fiori / UI5 UX', 'Technical tradeoffs', 'QA & design coordination'] },
         { index: 'B', title: 'SAP full stack', items: ['SAP BTP', 'CAP / CDS', 'Fiori', 'Work Zone', 'HANA', 'Joule'] },
         { index: 'C', title: 'Product & backend', items: ['TypeScript / React', 'Kotlin / Spring', 'Node.js', 'REST / OpenAPI', 'PostgreSQL', 'Multi-tenant systems'] },
         { index: 'D', title: 'Cloud & delivery', items: ['Google Cloud', 'AWS', 'Docker', 'CI/CD', 'Observability', 'Cost-aware architecture'] },
@@ -153,12 +153,12 @@ const content = {
     },
     about: {
       kicker: '04 / Working style',
-      quote: 'I can join the client call—and still open the codebase afterwards.',
+      quote: 'I do not stop at the ticket—I question the architecture, flow, and failure modes.',
       paragraphs: [
         'I have been programming long enough to know that tools change faster than fundamentals. My advantage is not memorizing one stack; it is understanding the whole system, making a clear decision, and learning whatever the delivery requires.',
         'I am based in Temuco, Chile, available as a remote contractor with full overlap for US working hours. Spanish is native; English is B2 and operational for technical conversations.',
       ],
-      facts: [['Current focus', 'Solutions Engineering / Technical Consulting'], ['Location', 'Temuco, Chile · Remote'], ['Education', 'Ingeniería Informática · Final semester']],
+      facts: [['Current focus', 'SAP BTP architecture / Full-stack delivery'], ['Location', 'Temuco, Chile · Remote'], ['Education', 'Ingeniería Informática · Final semester']],
     },
     credentials: { kicker: '05 / Verified learning', title: 'Cloud and data credentials.', intro: 'Credentials support the work; they are not a substitute for it. Each item links to a verifiable record.' },
     contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Remote contractor · Full US-hours overlap · Discreetly exploring selected roles', backendCv: 'Backend / Platform CV', recruiterProfile: 'Recruiter profile' },
@@ -170,15 +170,15 @@ const content = {
     hero: {
       status: 'Disponible para roles contractor remotos · Jornada completa US',
       title: <>Convierto requisitos complejos del negocio <span>en software que el equipo puede entregar.</span></>,
-      intro: 'Consultor técnico SAP e ingeniero full-stack. Trabajo directamente con clientes, convierto ambigüedad en arquitectura y sigo involucrado hasta la implementación y entrega.',
+      intro: 'Consultor técnico SAP e ingeniero full-stack. Refino requerimientos funcionales en arquitectura, mejoro flujos y UX dentro de los estándares SAP y sigo involucrado hasta la implementación, pruebas y entrega.',
       primaryCta: 'Ver trabajo',
       resumeCta: 'CV de soluciones',
       portraitAlt: 'Billy Martínez junto a Oliver al aire libre en Temuco',
-      disciplines: ['Descubrimiento', 'SAP BTP', 'Entrega full-stack', 'Decisiones cloud', 'Comunicación con clientes'],
+      disciplines: ['Refinamiento técnico', 'SAP BTP', 'Entrega full-stack', 'Calidad automatizada', 'Coordinación técnica'],
     },
     proof: [
       { value: '2025—hoy', label: 'Consultor SAP en BeCloud' },
-      { value: 'De punta a punta', label: 'Discovery → arquitectura → entrega' },
+      { value: 'De punta a punta', label: 'Requisitos → arquitectura → desarrollo → QA' },
       { value: 'Inglés B2', label: 'Jornada completa compatible con EE. UU.' },
     ],
     work: {
@@ -187,10 +187,10 @@ const content = {
       intro: 'El trabajo más importante suele ser privado. Estos casos explican el problema, mi responsabilidad y el criterio técnico sin exponer información del cliente ni inventar impacto.',
       cases: [
         {
-          number: '01', kind: 'Rol actual · BeCloud', name: 'Entrega de soluciones SAP', headline: 'Desde una conversación con el cliente hasta una solución SAP funcionando.',
-          body: 'Mi contrato dice Consultor SAP. En la práctica trabajo en arquitectura de soluciones y entrega full-stack: requisitos, interfaz, modelo de dominio, integraciones, despliegue y resolución de problemas del ambiente.',
-          evidence: ['Hago discovery con clientes y traduzco necesidades en trabajo técnico', 'Diseño y construyo con SAP BTP, Fiori, CAP/CDS y Work Zone', 'Trabajo con HANA, Joule, integraciones y despliegues distribuidos'],
-          tags: ['SAP BTP', 'Fiori', 'CAP / CDS', 'Work Zone', 'HANA', 'Joule'], tone: 'orange', label: 'Trabajo confidencial',
+          number: '01', kind: 'Rol actual · BeCloud', name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
+          body: 'Mi contrato dice Consultor SAP. En la práctica convierto requisitos funcionales en arquitectura y entrega full-stack: interfaz y UX, modelo de dominio, integraciones, despliegue, automatización de pruebas y resolución de problemas del ambiente.',
+          evidence: ['Refino requerimientos con el consultor funcional y propongo mejoras de arquitectura, flujo y UX', 'Diseño y construyo con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción'],
+          tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Pruebas automatizadas', 'Entrega con QA'], tone: 'orange', label: 'Trabajo empresarial confidencial',
         },
         {
           number: '02', kind: 'Decisión de arquitectura · En curso', name: 'Plataforma cloud confidencial', headline: 'Cambiar la base cuando la economía deja de tener sentido.',
@@ -223,9 +223,9 @@ const content = {
       ],
     },
     experience: {
-      kicker: '02 / Experiencia', title: 'Profundidad técnica que también funciona frente al cliente.', intro: 'Aporto más valor en el límite entre negocio, producto e ingeniería: aclarando el problema real, eligiendo un enfoque defendible y ayudando a entregarlo.',
+      kicker: '02 / Experiencia', title: 'Criterio técnico que continúa hasta QA.', intro: 'Aporto más valor entre un requerimiento funcional y una entrega productiva: cuestionando la solución inicial, eligiendo una arquitectura defendible, implementándola y guiando su validación.',
       roles: [
-        { period: 'Ene 2025 — Actualidad', company: 'BeCloud Consulting', title: 'Consultor SAP · Arquitectura de soluciones y entrega full-stack', body: 'Discovery con clientes, diseño, implementación, integración y operación de plataforma dentro del ecosistema SAP BTP.' },
+        { period: 'Ene 2025 — Actualidad', company: 'BeCloud Consulting', title: 'Consultor SAP · Arquitectura, entrega full-stack y calidad', body: 'Refinamiento de requerimientos junto al consultor funcional; arquitectura, UX Fiori/UI5, implementación, integración, pruebas automatizadas y coordinación con QA y diseño en SAP BTP.' },
         { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Full-Stack Developer', body: 'Entrega de producto en frontend y backend dentro de un entorno tecnológico de arriendo.' },
         { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Último semestre', body: 'Tres ramos pendientes. Finalización académica esperada durante 2026.' },
       ],
@@ -233,16 +233,16 @@ const content = {
     capabilities: {
       kicker: '03 / Capacidades', title: 'Ordenadas por responsabilidad, no por logo.',
       groups: [
-        { index: 'A', title: 'Cliente y solución', items: ['Discovery', 'Traducción de requisitos', 'Diseño de soluciones', 'Decisiones técnicas', 'Alineamiento de stakeholders'] },
+        { index: 'A', title: 'Entrega técnica', items: ['Refinamiento de requisitos', 'Arquitectura de soluciones', 'UX Fiori / UI5', 'Decisiones técnicas', 'Coordinación de QA y diseño'] },
         { index: 'B', title: 'SAP full stack', items: ['SAP BTP', 'CAP / CDS', 'Fiori', 'Work Zone', 'HANA', 'Joule'] },
         { index: 'C', title: 'Producto y backend', items: ['TypeScript / React', 'Kotlin / Spring', 'Node.js', 'REST / OpenAPI', 'PostgreSQL', 'Sistemas multi-tenant'] },
         { index: 'D', title: 'Cloud y entrega', items: ['Google Cloud', 'AWS', 'Docker', 'CI/CD', 'Observabilidad', 'Arquitectura consciente de costos'] },
       ],
     },
     about: {
-      kicker: '04 / Forma de trabajo', quote: 'Puedo entrar a la reunión con el cliente y después abrir el código.',
+      kicker: '04 / Forma de trabajo', quote: 'No me quedo con el ticket: cuestiono la arquitectura, el flujo y los modos de falla.',
       paragraphs: ['Llevo suficiente tiempo programando para saber que las herramientas cambian más rápido que los fundamentos. Mi ventaja no es memorizar un stack: es entender el sistema completo, tomar una decisión clara y aprender lo que la entrega necesite.', 'Vivo en Temuco, Chile, y estoy disponible como contractor remoto con jornada completa compatible con Estados Unidos. Español nativo; inglés B2 operativo para conversaciones técnicas.'],
-      facts: [['Enfoque actual', 'Solutions Engineering / Consultoría técnica'], ['Ubicación', 'Temuco, Chile · Remoto'], ['Formación', 'Ingeniería Informática · Último semestre']],
+      facts: [['Enfoque actual', 'Arquitectura SAP BTP / Entrega full-stack'], ['Ubicación', 'Temuco, Chile · Remoto'], ['Formación', 'Ingeniería Informática · Último semestre']],
     },
     credentials: { kicker: '05 / Aprendizaje verificable', title: 'Credenciales de cloud y datos.', intro: 'Las credenciales respaldan el trabajo; no lo reemplazan. Cada elemento enlaza a un registro verificable.' },
     contact: { kicker: '06 / Contacto', title: '¿Necesitas a alguien que entienda la operación y construya la solución?', note: 'Contractor remoto · Jornada completa US · Explorando oportunidades de forma discreta', backendCv: 'CV Backend / Platform', recruiterProfile: 'Perfil para reclutamiento' },
@@ -257,7 +257,7 @@ function Header({ locale }: { locale: Locale }) {
 function Hero({ locale }: { locale: Locale }) {
   const t = content[locale];
   const resumeHref = locale === 'en' ? '/Billy_Martinez_Resume_Solutions_EN.pdf' : '/Billy_Martinez_CV_Soluciones_ES.pdf';
-  return <><section className="hero" id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeHref} target="_blank" rel="noreferrer">{t.hero.resumeCta}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></div></div><figure className="portrait"><picture><source srcSet="/billy-martinez-oliver-portrait-2026-640.webp 640w, /billy-martinez-oliver-portrait-2026-960.webp 960w, /billy-martinez-oliver-portrait-2026-1440.webp 1440w, /billy-martinez-oliver-portrait-2026-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 44vw" type="image/webp" /><img src="/billy-martinez-oliver-portrait-2026-1440.webp" alt={t.hero.portraitAlt} width="1440" height="2160" fetchPriority="high" decoding="async" /></picture><figcaption><span>Billy Martínez</span><span><span aria-hidden="true">●</span> Temuco, CL</span></figcaption></figure><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
+  return <><section className={`hero hero--${locale}`} id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeHref} target="_blank" rel="noreferrer">{t.hero.resumeCta}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></div></div><figure className="portrait"><picture><source srcSet="/billy-martinez-oliver-portrait-2026-640.webp 640w, /billy-martinez-oliver-portrait-2026-960.webp 960w, /billy-martinez-oliver-portrait-2026-1440.webp 1440w, /billy-martinez-oliver-portrait-2026-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 44vw" type="image/webp" /><img src="/billy-martinez-oliver-portrait-2026-1440.webp" alt={t.hero.portraitAlt} width="1440" height="2160" fetchPriority="high" decoding="async" /></picture><figcaption><span>Billy Martínez</span><span><span aria-hidden="true">●</span> Temuco, CL</span></figcaption></figure><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
 }
 
 function WorkSection({ locale }: { locale: Locale }) {
