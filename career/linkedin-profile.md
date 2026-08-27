@@ -10,7 +10,7 @@ I turn complex business requirements into software teams can ship and operate.
 
 At BeCloud Consulting, my contract title is SAP Consultant, but my practical scope spans requirement refinement, solution architecture, Fiori/UI5 UX, full-stack implementation, integration, automated testing, deployment, and platform troubleshooting. I work across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, and Joule.
 
-Outside enterprise SAP, I design cloud-native products end to end. Clinipets is a private B2B2C veterinary platform with tenant isolation, conflict-safe scheduling, auditable clinical records, secure files, payments, notifications, and web/mobile clients. I also contributed to UFRO Sustentable, an open Kotlin/Firebase Android project with 83 JVM tests and documented coverage above 89% for lines.
+Outside enterprise SAP, I design cloud-native products end to end. Clinipets is a private B2B2C veterinary platform with tenant isolation, conflict-safe scheduling, auditable clinical records, secure files, payments, notifications, and web/mobile clients. My public Grounded Knowledge Assistant is an independent Next.js/TypeScript RAG reference with evidence gating, safe refusals, validated citations, 12 automated tests, deterministic evaluations, and an optional OpenAI provider.
 
 I am strongest between a functional requirement and a production delivery: refining the requirement with functional consulting, questioning the initial solution, choosing a defensible architecture, implementing it, and coordinating validation with QA and design.
 
@@ -23,6 +23,8 @@ Convierto requisitos complejos del negocio en software que los equipos pueden en
 En BeCloud Consulting mi cargo contractual es Consultor SAP, pero mi alcance real cruza refinamiento de requerimientos, arquitectura de soluciones, UX Fiori/UI5, implementación full-stack, integraciones, pruebas automatizadas, despliegue y resolución de problemas de plataforma. Trabajo con SAP BTP, Fiori, CAP/CDS, Work Zone, HANA y Joule.
 
 Fuera de SAP empresarial diseño productos cloud-native de punta a punta. Clinipets es una plataforma veterinaria B2B2C privada con aislamiento entre clínicas, agenda sin conflictos, fichas clínicas auditables, archivos seguros, pagos, notificaciones y clientes web/móvil.
+
+Como evidencia pública construí Grounded Knowledge Assistant, una referencia RAG independiente en Next.js/TypeScript con umbral de evidencia, rechazo seguro, citas validadas, 12 pruebas automatizadas, evaluaciones deterministas y un proveedor OpenAI opcional.
 
 Mi mejor aporte ocurre entre un requerimiento funcional y una entrega productiva: refinar el requerimiento junto a consultoría funcional, cuestionar la solución inicial, elegir una arquitectura defendible, implementarla y coordinar su validación con QA y diseño.
 
@@ -60,8 +62,9 @@ Vivo en Temuco, Chile. Disponible para roles contractor remotos con jornada comp
 
 1. Portfolio: https://billyflin.dev/
 2. Plain recruiter profile: https://billyflin.dev/plain/
-3. UFRO Sustentable: https://github.com/Billyflin/ufro-sustentable
-4. AWS Cloud Solutions Architect credential
+3. Grounded Knowledge Assistant: https://github.com/Billyflin/grounded-knowledge-assistant
+4. SAP CAP + Fiori reference: https://github.com/Billyflin/sap-cap-fiori-btp
+5. AWS Cloud Solutions Architect credential
 
 ## Search settings
 

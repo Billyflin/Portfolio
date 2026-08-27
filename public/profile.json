@@ -11,7 +11,7 @@
     "workingScope": "Solution architecture and full-stack SAP delivery",
     "startDate": "2025-01"
   },
-  "targetRoles": ["SAP BTP Technical Consultant", "SAP Fiori / CAP Developer", "SAP Full-Stack Engineer", "Technical Delivery Engineer", "Backend Engineer", "Platform Engineer"],
+  "targetRoles": ["SAP BTP Technical Consultant", "SAP Fiori / CAP Developer", "SAP Full-Stack Engineer", "Technical Delivery Engineer", "Backend Engineer", "Platform Engineer", "AI-enabled Full-Stack Engineer"],
   "workPreference": {
     "engagement": "Remote contractor",
     "timezone": "Full US-hours overlap",
@@ -26,7 +26,7 @@
     "ownership": "Proposes architecture, process flow, Fiori/UI5 UX, implementation, integration, automated testing, and environment improvements",
     "coordination": "Guides QA validation and collaborates with design; does not claim direct client discovery or sales ownership"
   },
-  "skills": ["Requirements refinement", "Solution architecture", "SAP BTP", "SAP Fiori", "SAP UI5", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Automated testing", "QA coordination", "UX flow design", "Kotlin", "Spring", "TypeScript", "React", "Node.js", "PostgreSQL", "Google Cloud", "AWS", "Docker", "CI/CD"],
+  "skills": ["Requirements refinement", "Solution architecture", "SAP BTP", "SAP Fiori", "SAP UI5", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Automated testing", "QA coordination", "UX flow design", "Kotlin", "Spring", "TypeScript", "React", "Next.js", "Node.js", "PostgreSQL", "Retrieval-augmented generation", "LLM evaluation", "OpenAI Responses API", "Google Cloud", "AWS", "Docker", "CI/CD"],
   "verifiedCredentials": [
     { "issuer": "AWS / Coursera", "name": "Cloud Technology Consultant", "year": 2024, "url": "https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d" },
     { "issuer": "AWS / Coursera", "name": "Cloud Solutions Architect", "year": 2024, "url": "https://coursera.org/share/e39b52b82410a6d0327ac715e3fb971c" },
@@ -35,6 +35,7 @@
   ],
   "publicEvidence": [
     { "name": "SAP CAP + Fiori Reference Application", "type": "Independent SAP BTP reference", "url": "https://github.com/Billyflin/sap-cap-fiori-btp", "evidence": ["CDS and OData V4", "Fiori Elements", "12 CAP service tests", "Concurrent stock protection", "Role authorization checks", "Resilient external OData integration", "Two architecture decision records", "GitHub Actions CI", "Production build"] },
+    { "name": "Grounded Knowledge Assistant", "type": "Independent RAG engineering reference", "url": "https://github.com/Billyflin/grounded-knowledge-assistant", "evidence": ["Evidence threshold and safe refusal", "Validated source citations", "12 automated and adversarial tests", "100% fixture hit@3", "100% fixture support/refusal accuracy", "100% fixture citation validity", "Optional server-only OpenAI provider", "GitHub Actions CI", "Production build"] },
     { "name": "UFRO Sustentable", "type": "Android team project", "url": "https://github.com/Billyflin/ufro-sustentable", "evidence": ["83 JVM tests", "89.23% line coverage", "77.88% branch coverage"] }
   ],
   "profiles": {

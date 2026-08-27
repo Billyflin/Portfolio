@@ -14,6 +14,7 @@ const pages = {
     evidence: [
       ['Confidential SAP solutions', 'Convert functional requirements into architecture and delivery across SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, and Joule; introduced automated tests and a dedicated QA stage.'],
       ['SAP CAP/Fiori public reference', 'Open SAP BTP reference with CDS modeling, OData V4, Fiori Elements, XSUAA/HANA deployment design, and 12 CAP service tests covering role authorization, concurrent stock protection, and degraded external OData behavior; lint, production build, and GitHub Actions CI pass.'],
+      ['Grounded RAG public reference', 'Independent Next.js/TypeScript reference with evidence gating, safe refusals, validated citations, 12 automated tests, deterministic fixture evaluations, and an optional server-only OpenAI provider.'],
       ['Confidential cloud platform', 'Recommended and aligned an AWS-to-Google-Cloud re-platform after evaluating cost and technical fit; implementation is in progress.'],
       ['Clinipets', 'Designed a multi-tenant veterinary platform with scheduling, auditable clinical records, payments, secure attachments, notifications, web/mobile clients, and infrastructure.'],
       ['UFRO Sustentable', 'Kotlin/Firebase Android project with QR and location flows, 83 JVM tests, 89.23% line coverage, and 77.88% branch coverage reported in the repository.'],
@@ -39,6 +40,7 @@ const pages = {
     evidence: [
       ['Soluciones SAP confidenciales', 'Convierto requerimientos funcionales en arquitectura y entrega con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule; introduje pruebas automatizadas y una etapa dedicada de QA.'],
       ['Referencia pública SAP CAP/Fiori', 'Referencia abierta de SAP BTP con modelado CDS, OData V4, Fiori Elements, diseño de despliegue XSUAA/HANA y 12 pruebas CAP sobre autorización por roles, protección de stock concurrente y degradación de un servicio OData externo; lint, build productivo y CI pasan.'],
+      ['Referencia pública de RAG comprobable', 'Referencia independiente Next.js/TypeScript con umbral de evidencia, rechazo seguro, citas validadas, 12 pruebas automatizadas, evaluación determinista y proveedor OpenAI opcional sólo en servidor.'],
       ['Plataforma cloud confidencial', 'Recomendé y alineé una migración AWS a Google Cloud después de evaluar costo y encaje técnico; la implementación está en curso.'],
       ['Clinipets', 'Diseñé una plataforma veterinaria multi-tenant con agenda, fichas clínicas auditables, pagos, archivos seguros, notificaciones, aplicaciones web/móvil e infraestructura.'],
       ['UFRO Sustentable', 'Proyecto Android Kotlin/Firebase con flujos QR y ubicación, 83 pruebas JVM, 89,23% de cobertura de líneas y 77,88% de ramas reportadas en el repositorio.'],

@@ -14,7 +14,7 @@ Email: hello@billyflin.dev
 Billy works between functional requirements and technical delivery. A functional consultant handles client communication; Billy refines the resulting requirements, challenges the proposed solution, improves architecture, process flow, and Fiori/UI5 UX, and remains involved through implementation, automated testing, QA, deployment, and troubleshooting.
 
 Primary target roles: SAP BTP Technical Consultant, SAP Fiori/CAP Developer, SAP Full-Stack Engineer, Technical Delivery Engineer.
-Secondary target roles: Backend Engineer, Platform Engineer, Full-Stack Engineer.
+Secondary target roles: Backend Engineer, Platform Engineer, Full-Stack Engineer, AI-enabled Full-Stack Engineer.
 Languages: Spanish (native), English (B2 professional working proficiency).
 
 ## Current experience
@@ -35,6 +35,8 @@ Clinipets: privately developed B2B2C veterinary platform with clinic isolation, 
 
 SAP CAP + Fiori Reference Application: independent open SAP BTP reference with CDS modeling, OData V4, Fiori Elements, XSUAA/HANA deployment design, an external OData service with controlled degradation, two architecture decision records, and 12 service tests covering role authorization, concurrent stock protection, and provider-failure behavior; lint, production build, and GitHub Actions CI pass: https://github.com/Billyflin/sap-cap-fiori-btp
 
+Grounded Knowledge Assistant: independent Next.js/TypeScript RAG engineering reference with evidence gating, safe refusals, validated citations, 12 automated and adversarial tests, deterministic committed-fixture evaluations at 100% hit@3, support/refusal accuracy, and citation validity, plus an optional server-only OpenAI provider; lint, production build, and GitHub Actions CI pass. These are fixture metrics, not production claims: https://github.com/Billyflin/grounded-knowledge-assistant
+
 UFRO Sustentable: open Kotlin/Firebase Android team project with maps, QR, rewards, BDD/Cucumber, and 83 JVM tests. The repository documents 89.23% line coverage and 77.88% branch coverage: https://github.com/Billyflin/ufro-sustentable
 
 ## Verified credentials
@@ -48,7 +50,7 @@ Google / Coursera — Advanced Data Analytics (2024): https://coursera.org/share
 
 Technical delivery: requirement refinement, solution architecture, Fiori/UI5 UX, technical tradeoffs, automated testing, QA and design coordination.
 SAP: SAP BTP, CAP/CDS, Fiori, Work Zone, HANA, Joule.
-Product and backend: Kotlin/Spring, TypeScript/React, Node.js, REST/OpenAPI, PostgreSQL, multi-tenant systems.
+Product and backend: Kotlin/Spring, TypeScript/React/Next.js, Node.js, REST/OpenAPI, PostgreSQL, multi-tenant systems, grounded RAG, LLM evaluation.
 Cloud and delivery: Google Cloud, AWS, Docker, CI/CD, observability, cost-aware architecture.
 
 ## Education
