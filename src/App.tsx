@@ -47,7 +47,7 @@ const content = {
       primaryCta: 'See selected work',
       resumeCta: 'Backend / Platform CV',
       portraitAlt: 'Billy Martínez with Oliver outdoors in Temuco',
-      disciplines: ['Backend & APIs', 'System architecture', 'Full-stack delivery', 'Quality automation', 'SAP BTP'],
+      disciplines: ['Backend & APIs', 'System architecture', 'Full-stack delivery', 'Quality automation', 'Cloud & AI systems'],
     },
     proof: [
       { value: '2023—now', label: 'Professional software delivery' },
@@ -73,8 +73,8 @@ const content = {
           ],
           tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Automated testing', 'QA delivery'],
           tone: 'orange',
-          label: 'Inspect independent CAP reference',
-          href: 'https://github.com/Billyflin/sap-cap-fiori-btp',
+          label: 'Inspect the engineering evidence',
+          href: '/proof/sap-cap-fiori-btp/',
         },
         {
           number: '02',
@@ -131,8 +131,8 @@ const content = {
           ],
           tags: ['Next.js', 'TypeScript', 'RAG', 'OpenAI', 'Playwright', 'CI'],
           tone: 'paper',
-          label: 'Inspect grounded RAG reference',
-          href: 'https://github.com/Billyflin/grounded-knowledge-assistant',
+          label: 'Inspect the engineering evidence',
+          href: '/proof/grounded-knowledge-assistant/',
         },
       ],
     },
@@ -148,7 +148,8 @@ const content = {
     },
     capabilities: {
       kicker: '03 / Capabilities',
-      title: 'Organized by responsibility, not by logo.',
+      title: 'Stacks change. Engineering responsibility does not.',
+      intro: 'I ramp up by mapping the domain, contracts, data, failure modes, and delivery path first. That model has transferred across Kotlin/Spring, TypeScript/Node, React/Next.js, SAP BTP, cloud, and applied AI.',
       groups: [
         { index: 'A', title: 'Systems architecture', items: ['Requirement refinement', 'Domain modeling', 'API & integration design', 'Technical tradeoffs', 'Cost-aware decisions'] },
         { index: 'B', title: 'Backend & platform', items: ['Kotlin / Spring', 'Node.js / TypeScript', 'REST / OpenAPI', 'PostgreSQL', 'Multi-tenant systems', 'Failure design'] },
@@ -179,7 +180,7 @@ const content = {
       primaryCta: 'Ver trabajo',
       resumeCta: 'CV Backend / Platform',
       portraitAlt: 'Billy Martínez junto a Oliver al aire libre en Temuco',
-      disciplines: ['Backend y APIs', 'Arquitectura de sistemas', 'Entrega full-stack', 'Calidad automatizada', 'SAP BTP'],
+      disciplines: ['Backend y APIs', 'Arquitectura de sistemas', 'Entrega full-stack', 'Calidad automatizada', 'Cloud y sistemas de IA'],
     },
     proof: [
       { value: '2023—hoy', label: 'Entrega profesional de software' },
@@ -195,7 +196,7 @@ const content = {
           number: '01', kind: 'Rol actual · Trabajo confidencial', name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
           body: 'Mi contrato dice Consultor SAP. En la práctica convierto requisitos funcionales en arquitectura y entrega full-stack: interfaz y UX, modelo de dominio, integraciones, despliegue, automatización de pruebas y resolución de problemas del ambiente.',
           evidence: ['Refino requerimientos con el consultor funcional y propongo mejoras de arquitectura, flujo y UX', 'Diseño y construyo con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción', 'Referencia CAP/Fiori pública e independiente con 12 pruebas sobre autorización por roles, protección de stock concurrente e integración OData resiliente, más CI verde'],
-          tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Pruebas automatizadas', 'Entrega con QA'], tone: 'orange', label: 'Ver referencia CAP independiente', href: 'https://github.com/Billyflin/sap-cap-fiori-btp',
+          tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Pruebas automatizadas', 'Entrega con QA'], tone: 'orange', label: 'Ver evidencia de ingeniería', href: '/proof/sap-cap-fiori-btp/',
         },
         {
           number: '02', kind: 'Decisión de arquitectura · En curso', name: 'Plataforma cloud confidencial', headline: 'Cambiar la base cuando la economía deja de tener sentido.',
@@ -223,7 +224,7 @@ const content = {
           number: '04', kind: 'Referencia independiente · Código abierto', name: 'Grounded Knowledge Assistant', headline: 'Hacer que las respuestas de IA fallen de forma segura cuando falta evidencia.',
           body: 'Referencia RAG deliberadamente acotada en TypeScript que vuelve inspeccionables y comprobables la recuperación, el uso de fuentes, la validación de citas y el rechazo seguro.',
           evidence: ['12 pruebas unitarias/adversariales más 4 checks E2E en Chromium con Playwright', '100% de hit@3, precisión de respuesta/rechazo y validez de citas en la evaluación versionada', 'CI determinista sin claves y un adaptador OpenAI opcional que sólo corre en el servidor', 'Protocolo de entrega con IA validada por humanos: evidencia reproducible, revisión completa del diff, sin datos sensibles en prompts y con límites explícitos', 'Decisión de preparación publicada: no aprobado para producción hasta reunir evidencia de calidad, seguridad, aislamiento, escala, costo, confiabilidad, observabilidad y despliegue'],
-          tags: ['Next.js', 'TypeScript', 'RAG', 'OpenAI', 'Playwright', 'CI'], tone: 'paper', label: 'Ver referencia RAG comprobable', href: 'https://github.com/Billyflin/grounded-knowledge-assistant',
+          tags: ['Next.js', 'TypeScript', 'RAG', 'OpenAI', 'Playwright', 'CI'], tone: 'paper', label: 'Ver evidencia de ingeniería', href: '/proof/grounded-knowledge-assistant/',
         },
       ],
     },
@@ -236,7 +237,8 @@ const content = {
       ],
     },
     capabilities: {
-      kicker: '03 / Capacidades', title: 'Ordenadas por responsabilidad, no por logo.',
+      kicker: '03 / Capacidades', title: 'El stack cambia. La responsabilidad de ingeniería no.',
+      intro: 'Aprendo un stack mapeando primero el dominio, los contratos, los datos, los modos de falla y la ruta de entrega. Ese modelo se ha transferido entre Kotlin/Spring, TypeScript/Node, React/Next.js, SAP BTP, cloud e IA aplicada.',
       groups: [
         { index: 'A', title: 'Arquitectura de sistemas', items: ['Refinamiento de requisitos', 'Modelado de dominio', 'Diseño de APIs e integraciones', 'Decisiones técnicas', 'Decisiones conscientes de costos'] },
         { index: 'B', title: 'Backend y plataforma', items: ['Kotlin / Spring', 'Node.js / TypeScript', 'REST / OpenAPI', 'PostgreSQL', 'Sistemas multi-tenant', 'Diseño para fallas'] },
@@ -267,7 +269,7 @@ function Hero({ locale }: { locale: Locale }) {
 
 function WorkSection({ locale }: { locale: Locale }) {
   const t = content[locale].work;
-  return <section className="section work-section" id="work"><div className="section-heading"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><p className="section-intro">{t.intro}</p></div><div className="case-list">{t.cases.map((item) => <article className={`case-study case-study--${item.tone}`} key={item.number}><div className="case-meta"><span>{item.number}</span><span>{item.kind}</span></div><div className="case-body"><div className="case-copy"><p className="case-name">{item.name}</p><h3>{item.headline}</h3><p>{item.body}</p></div><div className="case-aside"><ul className="case-evidence" aria-label={locale === 'en' ? `Evidence from ${item.name}` : `Evidencia de ${item.name}`}>{item.evidence.map((point) => <li key={point}>{point}</li>)}</ul>{'architecture' in item && <details className="architecture-details"><summary>{item.architecture.summary}</summary><section className="architecture-map" aria-label={item.architecture.title}><h4>{item.architecture.title}</h4><div className="architecture-flow">{item.architecture.layers.map((layer) => <div className="architecture-layer" key={layer.label}><strong>{layer.label}</strong><ul>{layer.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div>)}</div><div className="architecture-transversal"><strong>{item.architecture.transversal.label}</strong><ul>{item.architecture.transversal.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div></section></details>}</div></div><div className="case-footer"><ul aria-label={locale === 'en' ? `Technologies used in ${item.name}` : `Tecnologías utilizadas en ${item.name}`}>{item.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>{'href' in item ? <a href={item.href} target="_blank" rel="noreferrer">{item.label}<span className="icon-arrow" aria-hidden="true">↗</span></a> : <span className="private-label">{item.label}</span>}</div></article>)}</div></section>;
+  return <section className="section work-section" id="work"><div className="section-heading"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><p className="section-intro">{t.intro}</p></div><div className="case-list">{t.cases.map((item) => <article className={`case-study case-study--${item.tone}`} key={item.number}><div className="case-meta"><span>{item.number}</span><span>{item.kind}</span></div><div className="case-body"><div className="case-copy"><p className="case-name">{item.name}</p><h3>{item.headline}</h3><p>{item.body}</p></div><div className="case-aside"><ul className="case-evidence" aria-label={locale === 'en' ? `Evidence from ${item.name}` : `Evidencia de ${item.name}`}>{item.evidence.map((point) => <li key={point}>{point}</li>)}</ul>{'architecture' in item && <details className="architecture-details"><summary>{item.architecture.summary}</summary><section className="architecture-map" aria-label={item.architecture.title}><h4>{item.architecture.title}</h4><div className="architecture-flow">{item.architecture.layers.map((layer) => <div className="architecture-layer" key={layer.label}><strong>{layer.label}</strong><ul>{layer.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div>)}</div><div className="architecture-transversal"><strong>{item.architecture.transversal.label}</strong><ul>{item.architecture.transversal.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div></section></details>}</div></div><div className="case-footer"><ul aria-label={locale === 'en' ? `Technologies used in ${item.name}` : `Tecnologías utilizadas en ${item.name}`}>{item.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>{'href' in item ? <a href={item.href}>{item.label}<span className="icon-arrow" aria-hidden="true">↗</span></a> : <span className="private-label">{item.label}</span>}</div></article>)}</div></section>;
 }
 
 function ExperienceSection({ locale }: { locale: Locale }) {
@@ -277,7 +279,7 @@ function ExperienceSection({ locale }: { locale: Locale }) {
 
 function CapabilitiesSection({ locale }: { locale: Locale }) {
   const t = content[locale].capabilities;
-  return <section className="section stack-section" id="capabilities"><div className="section-heading section-heading--compact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2></div><div className="skill-grid">{t.groups.map((group) => <article className="skill-group" key={group.index}><span className="skill-index">{group.index}</span><h3>{group.title}</h3><ul>{group.items.map((item) => <li key={item}>{item}</li>)}</ul></article>)}</div></section>;
+  return <section className="section stack-section" id="capabilities"><div className="section-heading section-heading--compact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><p className="section-intro">{t.intro}</p></div><div className="skill-grid">{t.groups.map((group) => <article className="skill-group" key={group.index}><span className="skill-index">{group.index}</span><h3>{group.title}</h3><ul>{group.items.map((item) => <li key={item}>{item}</li>)}</ul></article>)}</div></section>;
 }
 
 function AboutSection({ locale }: { locale: Locale }) {

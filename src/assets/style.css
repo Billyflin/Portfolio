@@ -330,8 +330,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero-enter--3 { animation-delay: 220ms; }
 
 @keyframes enter-up {
-  from { opacity: 0; transform: translateY(18px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { transform: translateY(18px); }
+  to { transform: translateY(0); }
 }
 
 .section { padding: clamp(4rem, 7vw, 7rem) var(--page-pad); }
@@ -704,7 +704,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .profile-facts dd { margin: 0; font-size: 0.94rem; }
-.section-heading--compact { grid-template-columns: minmax(0, 0.6fr) minmax(0, 2.8fr); }
+.section-heading--compact { grid-template-columns: minmax(0, 0.6fr) minmax(0, 1.8fr) minmax(240px, 0.85fr); }
 
 .skill-grid {
   display: grid;
@@ -1212,7 +1212,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .skill-group:nth-child(-n + 2) { border-bottom: 1px solid var(--ink); }
 }
 
-@media (min-width: 761px) and (max-height: 950px) {
+@media (min-width: 761px) and (max-height: 1100px) {
   .hero {
     height: calc(100svh - 5.75rem);
     min-height: 0;
