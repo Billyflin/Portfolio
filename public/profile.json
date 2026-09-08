@@ -8,13 +8,14 @@
   "currentRole": {
     "organization": "BeCloud Consulting",
     "contractTitle": "SAP Consultant",
-    "workingScope": "Solution architecture and full-stack SAP delivery",
+    "workingScope": "Systems architecture, backend/full-stack implementation, automated quality, and SAP BTP delivery",
     "startDate": "2025-01"
   },
-  "targetRoles": ["SAP BTP Technical Consultant", "SAP Fiori / CAP Developer", "SAP Full-Stack Engineer", "Technical Delivery Engineer", "Backend Engineer", "Platform Engineer", "AI-enabled Full-Stack Engineer"],
+  "targetRoles": ["Backend Engineer", "Platform Engineer", "Software Engineer", "Full-Stack Engineer", "Solutions Engineer", "Technical Delivery Engineer", "SAP BTP Technical Consultant", "SAP Fiori / CAP Developer"],
   "workPreference": {
-    "engagement": "Remote contractor",
-    "timezone": "Full US-hours overlap",
+    "engagement": "Open to selected software engineering opportunities",
+    "locationPreference": "Temuco, Chile; remote-first",
+    "timezone": "Can provide full US-hours overlap for remote roles",
     "searchVisibility": "Discreet and selective"
   },
   "languages": [
@@ -26,7 +27,7 @@
     "ownership": "Proposes architecture, process flow, Fiori/UI5 UX, implementation, integration, automated testing, and environment improvements",
     "coordination": "Guides QA validation and collaborates with design; does not claim direct client discovery or sales ownership"
   },
-  "skills": ["Requirements refinement", "Solution architecture", "SAP BTP", "SAP Fiori", "SAP UI5", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Automated testing", "QA coordination", "UX flow design", "Kotlin", "Spring", "TypeScript", "React", "Next.js", "Node.js", "PostgreSQL", "Retrieval-augmented generation", "LLM evaluation", "OpenAI Responses API", "Google Cloud", "AWS", "Docker", "CI/CD"],
+  "skills": ["Systems architecture", "Requirements refinement", "Domain modeling", "Backend engineering", "Platform engineering", "API design", "Integration design", "Kotlin", "Spring", "Node.js", "TypeScript", "REST", "OpenAPI", "PostgreSQL", "Multi-tenant systems", "React", "Next.js", "Automated testing", "CI/CD", "Observability", "QA coordination", "UX flow design", "SAP BTP", "SAP Fiori", "SAP UI5", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Retrieval-augmented generation", "LLM evaluation", "Google Cloud", "AWS", "Docker"],
   "verifiedCredentials": [
     { "issuer": "AWS / Coursera", "name": "Cloud Technology Consultant", "year": 2024, "url": "https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d" },
     { "issuer": "AWS / Coursera", "name": "Cloud Solutions Architect", "year": 2024, "url": "https://coursera.org/share/e39b52b82410a6d0327ac715e3fb971c" },
@@ -38,9 +39,12 @@
     { "name": "Grounded Knowledge Assistant", "type": "Independent RAG engineering reference", "url": "https://github.com/Billyflin/grounded-knowledge-assistant", "evidence": ["Evidence threshold and safe refusal", "Validated source citations", "12 unit and adversarial tests", "4 Playwright Chromium E2E checks", "100% fixture hit@3", "100% fixture support/refusal accuracy", "100% fixture citation validity", "Optional server-only OpenAI provider", "Human-verified AI delivery protocol", "Prototype-to-production review with explicit quality, security, isolation, scale, cost, reliability, observability and release gates", "GitHub Actions CI", "Production build"] },
     { "name": "UFRO Sustentable", "type": "Android team project", "url": "https://github.com/Billyflin/ufro-sustentable", "evidence": ["83 JVM tests", "89.23% line coverage", "77.88% branch coverage"] }
   ],
+  "featuredWriting": [
+    { "title": "Reliable API integrations start by assuming delivery will fail", "url": "https://billyflin.dev/writing/reliable-api-integrations/", "topics": ["Transactional outbox", "Idempotency", "Failure taxonomy", "Observability", "Auditable replay"], "claimBoundary": "Architecture blueprint backed by a public CAP reference; not a claim of production SAP Integration Suite ownership" }
+  ],
   "profiles": {
     "github": "https://github.com/Billyflin",
     "linkedin": "https://www.linkedin.com/in/billyflin"
   },
-  "lastUpdated": "2026-08-27"
+  "lastUpdated": "2026-09-07"
 }

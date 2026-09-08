@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>
+    (() => {
+      const { protocol, hostname, pathname, search, hash } = window.location;
+      const isPortfolioHost = hostname === 'billyflin.dev' || hostname === 'www.billyflin.dev';
+      if (isPortfolioHost && (protocol !== 'https:' || hostname !== 'billyflin.dev' || pathname.endsWith('/index.html'))) {
+        const cleanPath = pathname.replace(/index\.html$/, '');
+        window.location.replace(`https://billyflin.dev${cleanPath}${search}${hash}`);
+      }
+    })();
+  </script>
+  <title>Reliable API integrations: outbox, idempotency and safe retries — Billy Martínez</title>
+  <meta name="description" content="A practical engineering blueprint for retry-safe API integrations using a transactional outbox, stable idempotency keys, explicit failure classes, observability, and auditable replay." />
+  <meta name="author" content="Billy Martínez" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#ff5a36" />
+  <meta name="color-scheme" content="light" />
+  <link rel="canonical" href="https://billyflin.dev/writing/reliable-api-integrations/" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+  <link rel="author" href="https://billyflin.dev/" />
+  <link rel="icon" type="image/svg+xml" href="/bm-mark.svg" />
+  <link rel="icon" type="image/png" href="/bm-mark.png" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2026-08-29" />
+  <meta property="article:author" content="Billy Martínez" />
+  <meta property="article:section" content="Software Engineering" />
+  <meta property="article:tag" content="API integrations" />
+  <meta property="article:tag" content="Idempotency" />
+  <meta property="article:tag" content="Transactional outbox" />
+  <meta property="article:tag" content="SAP CAP" />
+  <meta property="og:site_name" content="Billy Martínez" />
+  <meta property="og:title" content="Reliable API integrations start by assuming delivery will fail" />
+  <meta property="og:description" content="Transactional outbox, stable idempotency keys, failure taxonomy, observability, and auditable replay—without pretending transport is exactly once." />
+  <meta property="og:url" content="https://billyflin.dev/writing/reliable-api-integrations/" />
+  <meta property="og:image" content="https://billyflin.dev/og-systems.png" />
+  <meta property="og:image:width" content="1730" />
+  <meta property="og:image:height" content="909" />
+  <meta property="og:image:alt" content="Billy Martínez — reliable API integration engineering note" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Reliable API integrations start by assuming delivery will fail" />
+  <meta name="twitter:description" content="A practical blueprint for retry-safe delivery, explicit failure classes, and auditable replay." />
+  <meta name="twitter:image" content="https://billyflin.dev/og-systems.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "@id": "https://billyflin.dev/writing/reliable-api-integrations/#article",
+    "url": "https://billyflin.dev/writing/reliable-api-integrations/",
+    "headline": "Reliable API integrations start by assuming delivery will fail",
+    "description": "A practical engineering blueprint for retry-safe API integrations using a transactional outbox, stable idempotency keys, explicit failure classes, observability, and auditable replay.",
+    "datePublished": "2026-08-29",
+    "dateModified": "2026-08-29",
+    "inLanguage": "en",
+    "proficiencyLevel": "Expert",
+    "dependencies": "Basic knowledge of HTTP APIs, databases, and asynchronous messaging",
+    "keywords": ["API integrations", "idempotency", "transactional outbox", "SAP CAP", "SAP Integration Suite", "failure handling", "observability"],
+    "author": {
+      "@type": "Person",
+      "@id": "https://billyflin.dev/#person",
+      "name": "Billy Martínez",
+      "url": "https://billyflin.dev/",
+      "sameAs": ["https://github.com/Billyflin", "https://www.linkedin.com/in/billyflin"]
+    },
+    "publisher": { "@id": "https://billyflin.dev/#person" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://billyflin.dev/writing/reliable-api-integrations/" },
+    "isBasedOn": "https://github.com/Billyflin/sap-cap-fiori-btp/blob/main/docs/adr/0003-integration-suite-delivery-blueprint.md"
+  }
+  </script>
+</head>
+<body>
+  <div id="app"><!--app-html--></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

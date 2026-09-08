@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://billyflin.dev/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://billyflin.dev/" />
@@ -10,10 +10,17 @@
   </url>
   <url>
     <loc>https://billyflin.dev/es/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://billyflin.dev/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://billyflin.dev/es/" />
+  </url>
+  <url>
+    <loc>https://billyflin.dev/writing/reliable-api-integrations/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://billyflin.dev/writing/reliable-api-integrations/" />
   </url>
 </urlset>

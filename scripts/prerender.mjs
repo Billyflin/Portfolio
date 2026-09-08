@@ -7,6 +7,7 @@ const pages = [
   ['dist/es/index.html', 'es', 'portfolio'],
   ['dist/plain/index.html', 'en', 'plain'],
   ['dist/es/plain/index.html', 'es', 'plain'],
+  ['dist/writing/reliable-api-integrations/index.html', 'en', 'article'],
   ['dist/404.html', 'en', 'notFound'],
 ];
 const clientAssets = new Set();

@@ -3,8 +3,8 @@ import type { Locale } from '../App';
 const pages = {
   en: {
     label: 'Plain-text recruiter profile',
-    headline: 'SAP BTP Technical Consultant · Architecture · Full-Stack Delivery',
-    summary: 'Hands-on engineer who refines functional requirements into architecture and working software. Current scope includes SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, automated testing, QA coordination, and end-to-end delivery.',
+    headline: 'Software Engineer · Backend · Platform · Full-Stack Delivery',
+    summary: 'Stack-flexible, hands-on engineer who refines functional requirements into architecture and working systems across backend, web, cloud, and SAP BTP. I stay through implementation, automated testing, QA coordination, and delivery.',
     sectionExperience: 'Experience',
     roles: [
       ['BeCloud Consulting · SAP Consultant', 'Jan 2025 — Present', 'Requirement refinement with a functional consultant; solution architecture, Fiori/UI5 UX, full-stack SAP delivery, automated testing, QA and design coordination, deployment, and platform troubleshooting.'],
@@ -20,17 +20,17 @@ const pages = {
       ['UFRO Sustentable', 'Kotlin/Firebase Android project with QR and location flows, 83 JVM tests, 89.23% line coverage, and 77.88% branch coverage reported in the repository.'],
     ],
     sectionCapabilities: 'Capabilities',
-    capabilities: 'Requirement refinement · Solution architecture · Fiori/UI5 UX · Automated testing · QA and design coordination · SAP BTP · CAP/CDS · Work Zone · HANA · Joule · Kotlin/Spring · TypeScript/React · Node.js · PostgreSQL · Google Cloud · AWS · Docker · CI/CD',
+    capabilities: 'Systems architecture · Domain modeling · API and integration design · Kotlin/Spring · Node.js/TypeScript · REST/OpenAPI · PostgreSQL · Multi-tenant systems · React/Next.js · Automated testing · CI/CD · Observability · SAP BTP · CAP/CDS · Fiori/UI5 · Work Zone · HANA · Google Cloud · AWS · Docker',
     sectionEducation: 'Education & languages',
     education: 'Ingeniería Informática, Universidad de La Frontera · Final semester, three courses remaining · Expected coursework completion 2026',
     languages: 'Spanish: Native · English: B2 professional working proficiency · Available for full overlap with US working hours',
     back: 'View visual portfolio',
-    cv: 'Download Solutions CV',
+    cv: 'Download Backend / Platform CV',
   },
   es: {
     label: 'Perfil simple para reclutamiento',
-    headline: 'Consultor técnico SAP BTP · Arquitectura · Entrega full-stack',
-    summary: 'Ingeniero hands-on que refina requerimientos funcionales en arquitectura y software funcionando. Mi alcance actual incluye SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, pruebas automatizadas, coordinación de QA y entrega de punta a punta.',
+    headline: 'Ingeniería de software · Backend · Plataforma · Entrega full-stack',
+    summary: 'Ingeniero hands-on y flexible en tecnologías que convierte requerimientos funcionales en arquitectura y sistemas funcionando entre backend, web, cloud y SAP BTP. Sigo involucrado hasta la implementación, pruebas automatizadas, coordinación de QA y entrega.',
     sectionExperience: 'Experiencia',
     roles: [
       ['BeCloud Consulting · Consultor SAP', 'Ene 2025 — Actualidad', 'Refinamiento de requerimientos con un consultor funcional; arquitectura, UX Fiori/UI5, entrega SAP full-stack, pruebas automatizadas, coordinación de QA y diseño, despliegue y resolución de problemas de plataforma.'],
@@ -46,19 +46,19 @@ const pages = {
       ['UFRO Sustentable', 'Proyecto Android Kotlin/Firebase con flujos QR y ubicación, 83 pruebas JVM, 89,23% de cobertura de líneas y 77,88% de ramas reportadas en el repositorio.'],
     ],
     sectionCapabilities: 'Capacidades',
-    capabilities: 'Refinamiento de requisitos · Arquitectura de soluciones · UX Fiori/UI5 · Pruebas automatizadas · Coordinación de QA y diseño · SAP BTP · CAP/CDS · Work Zone · HANA · Joule · Kotlin/Spring · TypeScript/React · Node.js · PostgreSQL · Google Cloud · AWS · Docker · CI/CD',
+    capabilities: 'Arquitectura de sistemas · Modelado de dominio · Diseño de APIs e integraciones · Kotlin/Spring · Node.js/TypeScript · REST/OpenAPI · PostgreSQL · Sistemas multi-tenant · React/Next.js · Pruebas automatizadas · CI/CD · Observabilidad · SAP BTP · CAP/CDS · Fiori/UI5 · Work Zone · HANA · Google Cloud · AWS · Docker',
     sectionEducation: 'Formación e idiomas',
     education: 'Ingeniería Informática, Universidad de La Frontera · Último semestre, tres ramos pendientes · Finalización académica esperada en 2026',
     languages: 'Español: Nativo · Inglés: B2 profesional · Disponible para jornada completa compatible con EE. UU.',
     back: 'Ver portafolio visual',
-    cv: 'Descargar CV de soluciones',
+    cv: 'Descargar CV Backend / Platform',
   },
 } as const;
 
 export function PlainResumePage({ locale }: { locale: Locale }) {
   const t = pages[locale];
   const home = locale === 'en' ? '/' : '/es/';
-  const cv = locale === 'en' ? '/Billy_Martinez_Resume_Solutions_EN.pdf' : '/Billy_Martinez_CV_Soluciones_ES.pdf';
+  const cv = locale === 'en' ? '/Billy_Martinez_Resume_Backend_EN.pdf' : '/Billy_Martinez_CV_Backend_ES.pdf';
   return (
     <main className="plain-page">
       <div className="plain-shell">

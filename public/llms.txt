@@ -1,6 +1,6 @@
 # Billy Martínez
 
-> Hands-on SAP BTP Technical Consultant and full-stack engineer based in Temuco, Chile. Available for remote contractor roles with full overlap across US working hours.
+> Stack-flexible software engineer based in Temuco, Chile. Works across backend, platform, full-stack, cloud, and enterprise SAP systems; available for selected software roles and full US-hours overlap when remote.
 
 Canonical profile: https://billyflin.dev/
 Spanish profile: https://billyflin.dev/es/
@@ -11,10 +11,10 @@ Email: hello@billyflin.dev
 
 ## Positioning
 
-Billy works between functional requirements and technical delivery. A functional consultant handles client communication; Billy refines the resulting requirements, challenges the proposed solution, improves architecture, process flow, and Fiori/UI5 UX, and remains involved through implementation, automated testing, QA, deployment, and troubleshooting.
+Billy works between functional requirements and technical delivery. A functional consultant handles client communication; Billy refines the resulting requirements, challenges the proposed solution, improves architecture, process flow, and UX, and remains involved through implementation, automated testing, QA, deployment, and troubleshooting. SAP BTP is his current enterprise domain, not the boundary of his engineering profile.
 
-Primary target roles: SAP BTP Technical Consultant, SAP Fiori/CAP Developer, SAP Full-Stack Engineer, Technical Delivery Engineer.
-Secondary target roles: Backend Engineer, Platform Engineer, Full-Stack Engineer, AI-enabled Full-Stack Engineer.
+Primary target roles: Backend Engineer, Platform Engineer, Software Engineer, Full-Stack Engineer, Solutions Engineer, Technical Delivery Engineer.
+Enterprise specialization: SAP BTP Technical Consultant, SAP Fiori/CAP Developer, SAP Full-Stack Engineer.
 Languages: Spanish (native), English (B2 professional working proficiency).
 
 ## Current experience
@@ -42,6 +42,10 @@ AI prototype hardening: the repository publishes a prototype-to-production readi
 
 UFRO Sustentable: open Kotlin/Firebase Android team project with maps, QR, rewards, BDD/Cucumber, and 83 JVM tests. The repository documents 89.23% line coverage and 77.88% branch coverage: https://github.com/Billyflin/ufro-sustentable
 
+## Technical writing
+
+Reliable API integrations start by assuming delivery will fail: a practical blueprint for transactional outbox delivery, stable idempotency keys, failure classification, observability, and auditable replay. It clearly separates implemented public CAP evidence from the proposed Integration Suite boundary: https://billyflin.dev/writing/reliable-api-integrations/
+
 ## Verified credentials
 
 AWS / Coursera — Cloud Technology Consultant (2024): https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d
@@ -51,10 +55,10 @@ Google / Coursera — Advanced Data Analytics (2024): https://coursera.org/share
 
 ## Technical capabilities
 
-Technical delivery: requirement refinement, solution architecture, Fiori/UI5 UX, technical tradeoffs, automated testing, QA and design coordination.
-SAP: SAP BTP, CAP/CDS, Fiori, Work Zone, HANA, Joule.
-Product and backend: Kotlin/Spring, TypeScript/React/Next.js, Node.js, REST/OpenAPI, PostgreSQL, multi-tenant systems, grounded RAG, LLM evaluation.
-Cloud and delivery: Google Cloud, AWS, Docker, CI/CD, observability, cost-aware architecture.
+Systems architecture: requirement refinement, domain modeling, API and integration design, technical tradeoffs, and cost-aware decisions.
+Backend and platform: Kotlin/Spring, Node.js/TypeScript, REST/OpenAPI, PostgreSQL, multi-tenant systems, and failure design.
+Product delivery: React/Next.js, Fiori/UI5 UX, automated testing, CI/CD, observability, and QA/design coordination.
+Enterprise and cloud: SAP BTP, CAP/CDS, Work Zone, HANA, Joule, Google Cloud, AWS, and Docker.
 
 ## Education
 

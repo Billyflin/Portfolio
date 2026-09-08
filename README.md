@@ -1,6 +1,6 @@
 # Billy Martínez — Professional Portfolio
 
-Portafolio bilingüe y pre-renderizado de Billy Martínez. Posicionado para consultoría técnica SAP BTP, arquitectura hands-on, entrega full-stack y backend/platform.
+Portafolio bilingüe y pre-renderizado de Billy Martínez. Posicionado para ingeniería backend, plataforma y full-stack, arquitectura hands-on y entrega empresarial SAP BTP.
 
 ## Desarrollo
 
