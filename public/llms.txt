@@ -1,6 +1,6 @@
 # Billy Martínez
 
-> Stack-flexible software engineer based in Temuco, Chile. Works across backend, platform, full-stack, cloud, and enterprise SAP systems; available for selected software roles and full US-hours overlap when remote.
+> Stack-flexible software engineer based in Temuco, Chile. Works across backend, platform, full-stack, cloud, and enterprise SAP systems; seeking salaried employment with immediate availability. Open to remote, hybrid, or on-site work and relocation within Chile.
 
 Canonical profile: https://billyflin.dev/
 Spanish profile: https://billyflin.dev/es/
@@ -21,10 +21,10 @@ Languages: Spanish (native), English (B2 professional working proficiency).
 
 Billy does not claim expert status in every framework. His stack flexibility is evidenced by carrying the same engineering responsibilities across Kotlin/Spring domain services, TypeScript/Node.js enterprise services, React/Next.js product work, SAP BTP extensions, cloud architecture decisions, and a grounded RAG reference. His adoption method is to map the domain, contracts, data boundaries, failure behavior, validation strategy, and delivery path before treating framework syntax as the main problem.
 
-## Current experience
+## Professional experience
 
-BeCloud Consulting — SAP Consultant — January 2025 to present.
-Practical scope: requirement refinement with a functional consultant; solution architecture and full-stack delivery across SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments. Billy also introduced automated testing and a dedicated QA stage in a workflow that previously relied on direct dev/production fixes, and coordinates validation with QA and design.
+BeCloud Consulting — SAP Consultant — 2025–2026.
+Practical scope: requirement refinement with a functional consultant; solution architecture and full-stack delivery across SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments. Billy also introduced automated testing and a dedicated QA stage in a workflow that previously relied on direct dev/production fixes, and coordinated validation with QA and design.
 
 Happ Rent — Full-Stack Developer — October 2023 to September 2024.
 Scope: product delivery across frontend and backend in a rental-technology environment.
@@ -66,7 +66,7 @@ Enterprise and cloud: SAP BTP, CAP/CDS, Work Zone, HANA, Joule, Google Cloud, AW
 
 ## Education
 
-Ingeniería Informática, Universidad de La Frontera, 2020–2026. Final semester with three courses remaining; coursework completion expected during 2026.
+Ingeniería Informática, Universidad de La Frontera, 2020–2026. Coursework completed (egresado).
 
 ## Accuracy and confidentiality
 

@@ -10,9 +10,11 @@ Do not lead with “Software Architect” as the job title yet. Demonstrate arch
 
 ## Target
 
-- Remote contractor only.
-- Full overlap with US working hours.
-- Target compensation: USD 3,000-4,000 gross monthly.
+- Salaried employment.
+- Immediate availability.
+- Remote, hybrid, or on-site work.
+- Based in Temuco, Chile; open to relocation within Chile.
+- Compensation: Discuss privately during negotiation or when required by an application form. Omit salary figures from public profiles, CVs, and first-contact messages.
 - Search style: discreet and selective; no public Open to Work frame.
 
 ## Weekly operating rhythm

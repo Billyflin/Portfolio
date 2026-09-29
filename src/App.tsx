@@ -61,13 +61,13 @@ const content = {
       cases: [
         {
           number: '01',
-          kind: 'Current role · Confidential work',
+          kind: 'Previous role · Confidential work',
           name: 'SAP solution delivery',
           headline: 'From refined requirements to a testable SAP delivery.',
-          body: 'My contract says SAP Consultant. In practice, I turn functional requirements into architecture and full-stack delivery: interface and UX, domain model, integration, deployment, test automation, and environment troubleshooting.',
+          body: 'My contract title was SAP Consultant. In practice, I turned functional requirements into architecture and full-stack delivery: interface and UX, domain model, integration, deployment, test automation, and environment troubleshooting.',
           evidence: [
-            'Refine requirements with the functional consultant and propose architecture, flow, and UX improvements',
-            'Design and build across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, and Joule',
+            'Refined requirements with the functional consultant and proposed architecture, flow, and UX improvements',
+            'Designed and built across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, and Joule',
             'Introduced automated testing and a QA stage beyond direct dev-to-production fixes',
             'Independent public CAP/Fiori reference with 12 service tests covering role authorization, concurrent stock protection, and resilient OData integration, plus green CI',
           ],
@@ -141,9 +141,9 @@ const content = {
       title: 'Software engineering breadth inside complex domains.',
       intro: 'I am most useful between a functional requirement and a production delivery: challenging the initial solution, choosing a defensible architecture, implementing it, and guiding validation.',
       roles: [
-        { period: 'Jan 2025 — Present', company: 'BeCloud Consulting', title: 'SAP Consultant · Architecture, full-stack delivery & quality', body: 'Requirement refinement with a functional consultant; architecture, Fiori/UI5 UX, implementation, integration, automated testing, and coordination with QA and design across SAP BTP.' },
+        { period: '2025 — 2026', company: 'BeCloud Consulting', title: 'SAP Consultant · Architecture, full-stack delivery & quality', body: 'Requirement refinement with a functional consultant; architecture, Fiori/UI5 UX, implementation, integration, automated testing, and coordination with QA and design across SAP BTP.' },
         { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Full-Stack Developer', body: 'Product delivery across frontend and backend in a rental-technology environment.' },
-        { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Final semester', body: 'Three courses remaining. Coursework completion expected in 2026.' },
+        { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Coursework completed', body: 'Coursework completed in 2026.' },
       ],
     },
     capabilities: {
@@ -162,12 +162,12 @@ const content = {
       quote: 'I do not stop at the ticket—I question the architecture, flow, and failure modes.',
       paragraphs: [
         'I have been programming long enough to know that tools change faster than fundamentals. My advantage is not memorizing one stack; it is understanding the whole system, making a clear decision, and learning whatever the delivery requires.',
-        'I am based in Temuco, Chile, and open to selected software roles. For remote work, I can provide full overlap with US working hours. Spanish is native; English is B2 and operational for technical conversations.',
+        'I am based in Temuco, Chile, and seeking salaried software roles with immediate availability. I am open to remote, hybrid, or on-site work and relocation within Chile. Spanish is native; English is B2 and operational for technical conversations.',
       ],
-      facts: [['Role fit', 'Backend / Platform / Full-stack engineering'], ['Current domain', 'Enterprise systems · SAP BTP'], ['Education', 'Ingeniería Informática · Final semester']],
+      facts: [['Role fit', 'Backend / Platform / Full-stack engineering'], ['Current domain', 'Enterprise systems · SAP BTP'], ['Education', 'Ingeniería Informática · Coursework completed']],
     },
     credentials: { kicker: '05 / Verified learning', title: 'Cloud and data credentials.', intro: 'Credentials support the work; they are not a substitute for it. Each item links to a verifiable record.' },
-    contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Temuco, Chile · Spanish native · English B2 · Open to selected software roles', backendCv: 'Backend / Platform CV', recruiterProfile: 'Recruiter profile' },
+    contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Temuco, Chile · Spanish native · English B2 · Salaried roles · Immediate availability', backendCv: 'Backend / Platform CV', recruiterProfile: 'Recruiter profile' },
   },
   es: {
     nav: { work: 'Trabajo', experience: 'Experiencia', capabilities: 'Capacidades', writing: 'Artículo', contact: 'Conversemos' },
@@ -193,9 +193,9 @@ const content = {
       intro: 'El trabajo más importante suele ser privado. Estos casos explican el problema, mi responsabilidad y el criterio técnico sin exponer información del cliente ni inventar impacto.',
       cases: [
         {
-          number: '01', kind: 'Rol actual · Trabajo confidencial', name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
-          body: 'Mi contrato dice Consultor SAP. En la práctica convierto requisitos funcionales en arquitectura y entrega full-stack: interfaz y UX, modelo de dominio, integraciones, despliegue, automatización de pruebas y resolución de problemas del ambiente.',
-          evidence: ['Refino requerimientos con el consultor funcional y propongo mejoras de arquitectura, flujo y UX', 'Diseño y construyo con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción', 'Referencia CAP/Fiori pública e independiente con 12 pruebas sobre autorización por roles, protección de stock concurrente e integración OData resiliente, más CI verde'],
+          number: '01', kind: 'Experiencia previa · Trabajo confidencial', name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
+          body: 'Mi cargo contractual era Consultor SAP. En la práctica convertí requisitos funcionales en arquitectura y entrega full-stack: interfaz y UX, modelo de dominio, integraciones, despliegue, automatización de pruebas y resolución de problemas del ambiente.',
+          evidence: ['Refiné requerimientos con el consultor funcional y propuse mejoras de arquitectura, flujo y UX', 'Diseñé y construí con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción', 'Referencia CAP/Fiori pública e independiente con 12 pruebas sobre autorización por roles, protección de stock concurrente e integración OData resiliente, más CI verde'],
           tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Pruebas automatizadas', 'Entrega con QA'], tone: 'orange', label: 'Ver evidencia de ingeniería', href: '/proof/sap-cap-fiori-btp/',
         },
         {
@@ -231,9 +231,9 @@ const content = {
     experience: {
       kicker: '02 / Experiencia', title: 'Amplitud de ingeniería en dominios complejos.', intro: 'Aporto más valor entre un requerimiento funcional y una entrega productiva: cuestionando la solución inicial, eligiendo una arquitectura defendible, implementándola y guiando su validación.',
       roles: [
-        { period: 'Ene 2025 — Actualidad', company: 'BeCloud Consulting', title: 'Consultor SAP · Arquitectura, entrega full-stack y calidad', body: 'Refinamiento de requerimientos junto al consultor funcional; arquitectura, UX Fiori/UI5, implementación, integración, pruebas automatizadas y coordinación con QA y diseño en SAP BTP.' },
+        { period: '2025 — 2026', company: 'BeCloud Consulting', title: 'Consultor SAP · Arquitectura, entrega full-stack y calidad', body: 'Refinamiento de requerimientos junto al consultor funcional; arquitectura, UX Fiori/UI5, implementación, integración, pruebas automatizadas y coordinación con QA y diseño en SAP BTP.' },
         { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Full-Stack Developer', body: 'Entrega de producto en frontend y backend dentro de un entorno tecnológico de arriendo.' },
-        { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Último semestre', body: 'Tres ramos pendientes. Finalización académica esperada durante 2026.' },
+        { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Egresado', body: 'Plan de estudios completado en 2026.' },
       ],
     },
     capabilities: {
@@ -248,11 +248,11 @@ const content = {
     },
     about: {
       kicker: '04 / Forma de trabajo', quote: 'No me quedo con el ticket: cuestiono la arquitectura, el flujo y los modos de falla.',
-      paragraphs: ['Llevo suficiente tiempo programando para saber que las herramientas cambian más rápido que los fundamentos. Mi ventaja no es memorizar un stack: es entender el sistema completo, tomar una decisión clara y aprender lo que la entrega necesite.', 'Vivo en Temuco, Chile, y estoy disponible para roles de software seleccionados. Para trabajo remoto puedo cubrir la jornada completa de Estados Unidos. Español nativo; inglés B2 operativo para conversaciones técnicas.'],
-      facts: [['Roles objetivo', 'Backend / Plataforma / Full-stack'], ['Dominio actual', 'Sistemas empresariales · SAP BTP'], ['Formación', 'Ingeniería Informática · Último semestre']],
+      paragraphs: ['Llevo suficiente tiempo programando para saber que las herramientas cambian más rápido que los fundamentos. Mi ventaja no es memorizar un stack: es entender el sistema completo, tomar una decisión clara y aprender lo que la entrega necesite.', 'Vivo en Temuco, Chile, y busco empleo asalariado con contrato en software, con disponibilidad inmediata. Acepto trabajo remoto, híbrido o presencial y puedo trasladarme dentro de Chile. Español nativo; inglés B2 operativo para conversaciones técnicas.'],
+      facts: [['Roles objetivo', 'Backend / Plataforma / Full-stack'], ['Dominio actual', 'Sistemas empresariales · SAP BTP'], ['Formación', 'Ingeniería Informática · Egresado']],
     },
     credentials: { kicker: '05 / Aprendizaje verificable', title: 'Credenciales de cloud y datos.', intro: 'Las credenciales respaldan el trabajo; no lo reemplazan. Cada elemento enlaza a un registro verificable.' },
-    contact: { kicker: '06 / Contacto', title: '¿Necesitas a alguien que entienda la operación y construya la solución?', note: 'Temuco, Chile · Español nativo · Inglés B2 · Disponible para roles de software seleccionados', backendCv: 'CV Backend / Platform', recruiterProfile: 'Perfil para reclutamiento' },
+    contact: { kicker: '06 / Contacto', title: '¿Necesitas a alguien que entienda la operación y construya la solución?', note: 'Temuco, Chile · Español nativo · Inglés B2 · Empleo asalariado con contrato · Disponibilidad inmediata', backendCv: 'CV Backend / Platform', recruiterProfile: 'Perfil para reclutamiento' },
   },
 } as const;
 

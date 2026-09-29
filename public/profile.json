@@ -5,17 +5,19 @@
   "url": "https://billyflin.dev/",
   "email": "mailto:hello@billyflin.dev",
   "location": "Temuco, Chile",
-  "currentRole": {
+  "previousRole": {
     "organization": "BeCloud Consulting",
     "contractTitle": "SAP Consultant",
     "workingScope": "Systems architecture, backend/full-stack implementation, automated quality, and SAP BTP delivery",
-    "startDate": "2025-01"
+    "startDate": "2025-01",
+    "endDate": "2026"
   },
   "targetRoles": ["Backend Engineer", "Platform Engineer", "Software Engineer", "Full-Stack Engineer", "Solutions Engineer", "Technical Delivery Engineer", "SAP BTP Technical Consultant", "SAP Fiori / CAP Developer"],
   "workPreference": {
-    "engagement": "Open to selected software engineering opportunities",
-    "locationPreference": "Temuco, Chile; remote-first",
-    "timezone": "Can provide full US-hours overlap for remote roles",
+    "engagement": "Seeking salaried employment",
+    "locationPreference": "Temuco, Chile; open to remote, hybrid, or on-site work and relocation within Chile",
+    "timezone": "America/Santiago",
+    "availability": "Immediate",
     "searchVisibility": "Discreet and selective"
   },
   "languages": [
@@ -52,5 +54,5 @@
     "github": "https://github.com/Billyflin",
     "linkedin": "https://www.linkedin.com/in/billyflin"
   },
-  "lastUpdated": "2026-09-08"
+  "lastUpdated": "2026-09-29"
 }

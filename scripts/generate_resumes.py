@@ -28,12 +28,12 @@ DATA = {
         "experience": [
             {
                 "heading": "BeCloud Consulting | SAP Consultant",
-                "date": "Jan 2025 - Present",
+                "date": "2025 - 2026",
                 "bullets": [
-                    "Refine requirements with a functional consultant and translate them into architecture and implementation work.",
-                    "Design and build full-stack SAP solutions across BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments.",
-                    "Improve process flow and UX within UI5 standards; contribute to SAP migration and modernization work for large organizations in energy and consumer goods.",
-                    "Introduced automated testing and a dedicated QA stage beyond direct development/production fixes; coordinate validation with QA and design.",
+                    "Refined requirements with a functional consultant and translated them into architecture and implementation work.",
+                    "Designed and built full-stack SAP solutions across BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments.",
+                    "Improved process flow and UX within UI5 standards; contributed to SAP migration and modernization work for large organizations in energy and consumer goods.",
+                    "Introduced automated testing and a dedicated QA stage beyond direct development/production fixes; coordinated validation with QA and design.",
                     "For a confidential product, evaluated cloud economics and technical fit, recommended an AWS-to-Google-Cloud re-platform, and aligned stakeholders around the change; implementation is in progress.",
                 ],
             },
@@ -57,9 +57,9 @@ DATA = {
             },
         ],
         "skills": "Requirement refinement; solution architecture; Fiori/UI5 UX; automated testing; QA and design coordination; SAP BTP, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
-        "education": "Ingenieria Informatica, Universidad de La Frontera | 2020 - 2026 | Final semester, three courses remaining; coursework completion expected in 2026.",
+        "education": "Ingenieria Informatica, Universidad de La Frontera | 2020 - 2026 | Coursework completed (egresado).",
         "credentials": "AWS Cloud Technology Consultant; AWS Cloud Solutions Architect; AWS Academy Machine Learning Foundations; Google Advanced Data Analytics.",
-        "languages": "Spanish: Native | English: B2 professional working proficiency | Remote contractor | Full US-hours overlap",
+        "languages": "Spanish: Native | English: B2 professional working proficiency | Remote / hybrid / on-site | Open to relocation within Chile",
         "labels": {"experience": "EXPERIENCE", "projects": "SELECTED EVIDENCE", "skills": "CAPABILITIES", "education": "EDUCATION, CREDENTIALS AND LANGUAGES"},
     },
     "backend_en": {
@@ -69,11 +69,11 @@ DATA = {
         "experience": [
             {
                 "heading": "BeCloud Consulting | SAP Consultant",
-                "date": "Jan 2025 - Present",
+                "date": "2025 - 2026",
                 "bullets": [
-                    "Design domain models and service logic with SAP CAP/CDS, integrate Fiori and Work Zone experiences, and work across HANA, Joule, and BTP environments.",
-                    "Own implementation, integration, deployment, and environment troubleshooting across distributed enterprise solutions.",
-                    "Introduced automated testing and a QA stage; coordinate validation with QA and design before delivery.",
+                    "Designed domain models and service logic with SAP CAP/CDS, integrated Fiori and Work Zone experiences, and worked across HANA, Joule, and BTP environments.",
+                    "Owned implementation, integration, deployment, and environment troubleshooting across distributed enterprise solutions.",
+                    "Introduced automated testing and a QA stage; coordinated validation with QA and design before delivery.",
                     "Evaluated cost and technical fit for a confidential platform and drove an in-progress AWS-to-Google-Cloud re-platform decision.",
                 ],
             },
@@ -98,9 +98,9 @@ DATA = {
             },
         ],
         "skills": "Kotlin; Spring Boot; SAP CAP/CDS; Node.js; TypeScript; REST/OpenAPI; PostgreSQL; multi-tenant architecture; authentication and authorization; payments and webhooks; Docker; CI/CD; Google Cloud; AWS; observability.",
-        "education": "Ingenieria Informatica, Universidad de La Frontera | 2020 - 2026 | Final semester, three courses remaining; coursework completion expected in 2026.",
+        "education": "Ingenieria Informatica, Universidad de La Frontera | 2020 - 2026 | Coursework completed (egresado).",
         "credentials": "AWS Cloud Solutions Architect; AWS Cloud Technology Consultant; AWS Academy Machine Learning Foundations; Google Advanced Data Analytics.",
-        "languages": "Spanish: Native | English: B2 professional working proficiency | Remote contractor | Full US-hours overlap",
+        "languages": "Spanish: Native | English: B2 professional working proficiency | Remote / hybrid / on-site | Open to relocation within Chile",
         "labels": {"experience": "EXPERIENCE", "projects": "SELECTED TECHNICAL WORK", "skills": "TECHNICAL CAPABILITIES", "education": "EDUCATION, CREDENTIALS AND LANGUAGES"},
     },
     "quality_en": {
@@ -110,12 +110,12 @@ DATA = {
         "experience": [
             {
                 "heading": "BeCloud Consulting | SAP Consultant",
-                "date": "Jan 2025 - Present",
+                "date": "2025 - 2026",
                 "bullets": [
                     "Introduced automated testing and a dedicated QA stage in a workflow that previously relied on direct dev/production fixes.",
-                    "Refine requirements with a functional consultant, implement SAP BTP solutions, and coordinate validation with QA and design before delivery.",
-                    "Work across Fiori/UI5, CAP/CDS services, HANA, Work Zone, integrations, deployment, and environment troubleshooting, keeping quality connected to implementation.",
-                    "Improve process flows and UX within UI5 standards, identifying failure paths and acceptance risks across interface, service, data, and platform layers.",
+                    "Refined requirements with a functional consultant, implemented SAP BTP solutions, and coordinated validation with QA and design before delivery.",
+                    "Worked across Fiori/UI5, CAP/CDS services, HANA, Work Zone, integrations, deployment, and environment troubleshooting, keeping quality connected to implementation.",
+                    "Improved process flows and UX within UI5 standards, identifying failure paths and acceptance risks across interface, service, data, and platform layers.",
                 ],
             },
             {
@@ -141,9 +141,9 @@ DATA = {
             },
         ],
         "skills": "Test automation; unit and integration testing; API and contract testing; QA workflow design; defect analysis; TypeScript/JavaScript; React; Kotlin; REST/OpenAPI; SAP BTP; CAP/CDS; AWS; Docker; Git; CI/CD; PostgreSQL; authentication and authorization.",
-        "education": "Ingenieria Informatica, Universidad de La Frontera | 2020 - 2026 | Final semester, three courses remaining; coursework completion expected in 2026.",
+        "education": "Ingenieria Informatica, Universidad de La Frontera | 2020 - 2026 | Coursework completed (egresado).",
         "credentials": "AWS Cloud Solutions Architect; AWS Cloud Technology Consultant; AWS Academy Machine Learning Foundations; Google Advanced Data Analytics.",
-        "languages": "Spanish: Native | English: B2 professional working proficiency | Remote contractor | Full US-hours overlap",
+        "languages": "Spanish: Native | English: B2 professional working proficiency | Remote / hybrid / on-site | Open to relocation within Chile",
         "labels": {"experience": "EXPERIENCE", "projects": "QUALITY EVIDENCE", "skills": "TEST AND ENGINEERING CAPABILITIES", "education": "EDUCATION, CREDENTIALS AND LANGUAGES"},
     },
     "solutions_es": {
@@ -153,12 +153,12 @@ DATA = {
         "experience": [
             {
                 "heading": "BeCloud Consulting | Consultor SAP",
-                "date": "Ene 2025 - Actualidad",
+                "date": "2025 - 2026",
                 "bullets": [
-                    "Refino requerimientos con el consultor funcional y los traduzco en arquitectura y trabajo de implementación.",
-                    "Diseño y construyo soluciones SAP full-stack con BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integraciones y despliegues distribuidos.",
-                    "Mejoro flujos y UX UI5 y contribuyo a modernizaciones SAP para grandes empresas de energía y consumo.",
-                    "Introduje pruebas automatizadas y una etapa de QA donde antes había correcciones directas entre desarrollo y producción; coordino QA y diseño.",
+                    "Refiné requerimientos con el consultor funcional y los traduje en arquitectura y trabajo de implementación.",
+                    "Diseñé y construí soluciones SAP full-stack con BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integraciones y despliegues distribuidos.",
+                    "Mejoré flujos y UX UI5 y contribuí a modernizaciones SAP para grandes empresas de energía y consumo.",
+                    "Introduje pruebas automatizadas y una etapa de QA donde antes había correcciones directas entre desarrollo y producción; coordiné QA y diseño.",
                     "Para un producto confidencial evalué costo y encaje técnico, recomendé migrar de AWS a Google Cloud y alineé a los involucrados; está en implementación.",
                 ],
             },
@@ -182,9 +182,9 @@ DATA = {
             },
         ],
         "skills": "Refinamiento de requisitos; arquitectura de soluciones; UX Fiori/UI5; pruebas automatizadas; coordinación de QA y diseño; SAP BTP, CAP/CDS, Work Zone, HANA, Joule; Kotlin/Spring; TypeScript/React; Node.js; PostgreSQL; REST/OpenAPI; Google Cloud; AWS; Docker; CI/CD.",
-        "education": "Ingeniería Informática, Universidad de La Frontera | 2020 - 2026 | Último semestre, tres ramos pendientes; finalización académica esperada en 2026.",
+        "education": "Ingeniería Informática, Universidad de La Frontera | 2020 - 2026 | Egresado.",
         "credentials": "AWS Cloud Technology Consultant; AWS Cloud Solutions Architect; AWS Academy Machine Learning Foundations; Google Advanced Data Analytics.",
-        "languages": "Español: Nativo | Inglés: B2 profesional | Contractor remoto | Jornada completa compatible con EE. UU.",
+        "languages": "Español: Nativo | Inglés: B2 profesional | Remoto / híbrido / presencial | Posibilidad de traslado dentro de Chile",
         "labels": {"experience": "EXPERIENCIA", "projects": "EVIDENCIA SELECCIONADA", "skills": "CAPACIDADES", "education": "FORMACIÓN, CREDENCIALES E IDIOMAS"},
     },
     "backend_es": {
@@ -194,11 +194,11 @@ DATA = {
         "experience": [
             {
                 "heading": "BeCloud Consulting | Consultor SAP",
-                "date": "Ene 2025 - Actualidad",
+                "date": "2025 - 2026",
                 "bullets": [
-                    "Diseño modelos de dominio y lógica de servicios con SAP CAP/CDS, integro experiencias Fiori y Work Zone y trabajo con HANA, Joule y ambientes BTP.",
-                    "Me hago cargo de implementación, integración, despliegue y resolución de problemas en soluciones empresariales distribuidas.",
-                    "Introduje pruebas automatizadas y una etapa de QA; coordino la validación con QA y diseño antes de la entrega.",
+                    "Diseñé modelos de dominio y lógica de servicios con SAP CAP/CDS, integré experiencias Fiori y Work Zone y trabajé con HANA, Joule y ambientes BTP.",
+                    "Me hice cargo de implementación, integración, despliegue y resolución de problemas en soluciones empresariales distribuidas.",
+                    "Introduje pruebas automatizadas y una etapa de QA; coordiné la validación con QA y diseño antes de la entrega.",
                     "Evalué costo y encaje técnico de una plataforma confidencial e impulsé una decisión de migración AWS a Google Cloud actualmente en implementación.",
                 ],
             },
@@ -223,9 +223,9 @@ DATA = {
             },
         ],
         "skills": "Kotlin; Spring Boot; SAP CAP/CDS; Node.js; TypeScript; REST/OpenAPI; PostgreSQL; arquitectura multi-tenant; autenticación y autorización; pagos y webhooks; Docker; CI/CD; Google Cloud; AWS; observabilidad.",
-        "education": "Ingeniería Informática, Universidad de La Frontera | 2020 - 2026 | Último semestre, tres ramos pendientes; finalización académica esperada en 2026.",
+        "education": "Ingeniería Informática, Universidad de La Frontera | 2020 - 2026 | Egresado.",
         "credentials": "AWS Cloud Solutions Architect; AWS Cloud Technology Consultant; AWS Academy Machine Learning Foundations; Google Advanced Data Analytics.",
-        "languages": "Español: Nativo | Inglés: B2 profesional | Contractor remoto | Jornada completa compatible con EE. UU.",
+        "languages": "Español: Nativo | Inglés: B2 profesional | Remoto / híbrido / presencial | Posibilidad de traslado dentro de Chile",
         "labels": {"experience": "EXPERIENCIA", "projects": "TRABAJO TÉCNICO SELECCIONADO", "skills": "CAPACIDADES TÉCNICAS", "education": "FORMACIÓN, CREDENCIALES E IDIOMAS"},
     },
 }
@@ -265,12 +265,17 @@ def build_resume(data):
         subject="Professional resume",
     )
     s = styles()
+    availability = (
+        "Temuco, Chile | Empleo asalariado con contrato | Disponibilidad inmediata | "
+        if data["filename"].endswith("_ES.pdf")
+        else "Temuco, Chile | Salaried employment | Immediate availability | "
+    )
     story = [
         Paragraph("Billy Martínez", s["name"]),
         Paragraph(data["role"], s["role"]),
         Paragraph(
-            "Temuco, Chile | Remote contractor | Full US-hours overlap | "
-            "<link href='mailto:hello@billyflin.dev'>hello@billyflin.dev</link> | "
+            availability
+            + "<link href='mailto:hello@billyflin.dev'>hello@billyflin.dev</link> | "
             "<link href='https://billyflin.dev'>billyflin.dev</link> | "
             "<link href='https://www.linkedin.com/in/billyflin'>linkedin.com/in/billyflin</link> | "
             "<link href='https://github.com/Billyflin'>github.com/Billyflin</link>",

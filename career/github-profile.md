@@ -20,6 +20,6 @@ I turn ambiguous requirements into solution architecture and working software, t
 - Secure multi-tenant backend systems
 - Cost-aware cloud decisions and production troubleshooting
 
-Based in Temuco, Chile. Remote contractor with full US-hours overlap. Spanish native, English B2.
+Based in Temuco, Chile. Seeking salaried employment with immediate availability. Open to remote, hybrid, or on-site work and relocation within Chile. Spanish native, English B2.
 
 [Portfolio](https://billyflin.dev/) · [LinkedIn](https://www.linkedin.com/in/billyflin) · [Email](mailto:hello@billyflin.dev)
