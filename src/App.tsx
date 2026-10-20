@@ -41,16 +41,16 @@ const content = {
     localeLabel: 'ES',
     localeHref: '/es/',
     hero: {
-      status: 'Open to backend, platform & full-stack roles',
+      status: 'Available now · SAP BTP, backend & full-stack roles',
       title: <>I turn complex business requirements <span>into software teams can ship.</span></>,
-      intro: 'Software and full-stack engineer who turns functional requirements into architecture and working systems. I move across backend, web, cloud, and SAP BTP—and stay through implementation, automated testing, QA, and delivery.',
+      intro: 'Developer with 32 months of professional experience: SAP BTP at BeCloud (CAP/CDS on Node.js/TypeScript, Fiori/UI5, HANA, OData) and full-stack Kotlin/Spring Boot + Vue 3 at HappRent. I turn functional requirements into architecture and working systems, and stay through automated testing, QA, and delivery.',
       primaryCta: 'See selected work',
-      resumeCta: 'Backend / Platform CV',
+      resumeCta: 'SAP BTP CV', resumeCtaAlt: 'Full-stack CV',
       portraitAlt: 'Billy Martínez with Oliver outdoors in Temuco',
       disciplines: ['Backend & APIs', 'System architecture', 'Full-stack delivery', 'Quality automation', 'Cloud & AI systems'],
     },
     proof: [
-      { value: '2023—now', label: 'Professional software delivery' },
+      { value: '32 months', label: 'Professional experience · SAP BTP & full-stack' },
       { value: 'End to end', label: 'Requirements → architecture → build → QA' },
       { value: 'B2 English', label: 'Technical working proficiency' },
     ],
@@ -69,7 +69,7 @@ const content = {
             'Refined requirements with the functional consultant and proposed architecture, flow, and UX improvements',
             'Designed and built across SAP BTP, Fiori, CAP/CDS, Work Zone, HANA, and Joule',
             'Introduced automated testing and a QA stage beyond direct dev-to-production fixes',
-            'Independent public CAP/Fiori reference with 12 service tests covering role authorization, concurrent stock protection, and resilient OData integration, plus green CI',
+            'Independent CAP/Fiori reference (public proof page) with 12 service tests covering role authorization, concurrent stock protection, and resilient OData integration, plus green CI',
           ],
           tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Automated testing', 'QA delivery'],
           tone: 'orange',
@@ -124,7 +124,7 @@ const content = {
           body: 'A deliberately small TypeScript RAG reference that makes retrieval, source grounding, citation validation, and safe refusal behavior inspectable and testable.',
           evidence: [
             '12 unit/adversarial tests plus 4 Chromium E2E checks with Playwright',
-            '100% hit@3, support/refusal accuracy, and citation validity on the committed fixture evaluation',
+            '100% hit@3, support/refusal accuracy, and citation validity on the small committed fixture evaluation',
             'Zero-key deterministic CI plus an optional server-only OpenAI provider boundary',
             'Human-verified AI delivery protocol: reproducible evidence, complete diff review, no sensitive prompts, and explicit limitations',
             'Published readiness decision: not approved for production until quality, security, isolation, scale, cost, reliability, observability, and release gates have evidence',
@@ -141,8 +141,8 @@ const content = {
       title: 'Software engineering breadth inside complex domains.',
       intro: 'I am most useful between a functional requirement and a production delivery: challenging the initial solution, choosing a defensible architecture, implementing it, and guiding validation.',
       roles: [
-        { period: '2025 — 2026', company: 'BeCloud Consulting', title: 'SAP Consultant · Architecture, full-stack delivery & quality', body: 'Requirement refinement with a functional consultant; architecture, Fiori/UI5 UX, implementation, integration, automated testing, and coordination with QA and design across SAP BTP.' },
-        { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Full-Stack Developer', body: 'Product delivery across frontend and backend in a rental-technology environment.' },
+        { period: 'Jan 2025 — Sep 2026', company: 'BeCloud Consulting', title: 'SAP BTP Consultant · CAP/CDS, Node.js/TypeScript, Fiori/UI5', body: 'Requirement refinement with a functional consultant; SAP CAP/CDS services on Node.js/TypeScript, REST/OData integrations on HANA, Fiori/UI5 in Work Zone, automated testing and a formal QA stage, Scrum/Kanban.' },
+        { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Full-Stack Developer · Kotlin/Spring Boot, Vue 3', body: 'As part of the team: Kotlin + Spring Boot 3 API (Spring Security/JWT, JPA, email), Vue 3 + Pinia frontend for leases, properties, brokers and KPIs, contract PDF generation and templates, Docker images published on AWS.' },
         { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Coursework completed', body: 'Coursework completed in 2026.' },
       ],
     },
@@ -164,26 +164,26 @@ const content = {
         'I have been programming long enough to know that tools change faster than fundamentals. My advantage is not memorizing one stack; it is understanding the whole system, making a clear decision, and learning whatever the delivery requires.',
         'I am based in Temuco, Chile, and seeking salaried software roles with immediate availability. I am open to remote, hybrid, or on-site work and relocation within Chile. Spanish is native; English is B2 and operational for technical conversations.',
       ],
-      facts: [['Role fit', 'Backend / Platform / Full-stack engineering'], ['Current domain', 'Enterprise systems · SAP BTP'], ['Education', 'Ingeniería Informática · Coursework completed']],
+      facts: [['Role fit', 'SAP BTP · Backend · Full-stack'], ['Professional stack', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Education', 'Ingeniería Informática · Coursework completed']],
     },
-    credentials: { kicker: '05 / Verified learning', title: 'Cloud and data credentials.', intro: 'Credentials support the work; they are not a substitute for it. Each item links to a verifiable record.' },
-    contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Temuco, Chile · Spanish native · English B2 · Salaried roles · Immediate availability', backendCv: 'Backend / Platform CV', recruiterProfile: 'Recruiter profile' },
+    credentials: { kicker: '05 / Verified learning', title: 'Cloud and data courses.', intro: 'Courses support the work; they are not a substitute for it. These are Coursera and AWS Academy courses, not AWS certification exams. Each item links to a verifiable record.' },
+    contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Temuco, Chile · Spanish native · English B2 · Salaried roles · Immediate availability', backendCv: 'SAP BTP CV', fullstackCv: 'Full-stack CV', recruiterProfile: 'Recruiter profile' },
   },
   es: {
     nav: { work: 'Trabajo', experience: 'Experiencia', capabilities: 'Capacidades', writing: 'Artículo', contact: 'Conversemos' },
     localeLabel: 'EN',
     localeHref: '/',
     hero: {
-      status: 'Disponible para roles backend, plataforma y full-stack',
+      status: 'Disponible ya · roles SAP BTP, backend y full-stack',
       title: <>Convierto requisitos complejos del negocio <span>en software que el equipo puede entregar.</span></>,
-      intro: 'Ingeniero de software y full-stack que convierte requerimientos funcionales en arquitectura y sistemas funcionando. Me muevo entre backend, web, cloud y SAP BTP, y sigo involucrado hasta la implementación, pruebas automatizadas, QA y entrega.',
+      intro: 'Desarrollador con 32 meses de experiencia profesional: SAP BTP en BeCloud (CAP/CDS sobre Node.js/TypeScript, Fiori/UI5, HANA, OData) y full stack Kotlin/Spring Boot + Vue 3 en HappRent. Convierto requerimientos funcionales en arquitectura y sistemas funcionando, y sigo hasta las pruebas automatizadas, el QA y la entrega.',
       primaryCta: 'Ver trabajo',
-      resumeCta: 'CV Backend / Platform',
+      resumeCta: 'CV SAP BTP', resumeCtaAlt: 'CV Full Stack',
       portraitAlt: 'Billy Martínez junto a Oliver al aire libre en Temuco',
       disciplines: ['Backend y APIs', 'Arquitectura de sistemas', 'Entrega full-stack', 'Calidad automatizada', 'Cloud y sistemas de IA'],
     },
     proof: [
-      { value: '2023—hoy', label: 'Entrega profesional de software' },
+      { value: '32 meses', label: 'Experiencia profesional · SAP BTP y full stack' },
       { value: 'De punta a punta', label: 'Requisitos → arquitectura → desarrollo → QA' },
       { value: 'Inglés B2', label: 'Competencia técnica profesional' },
     ],
@@ -195,7 +195,7 @@ const content = {
         {
           number: '01', kind: 'Experiencia previa · Trabajo confidencial', name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
           body: 'Mi cargo contractual era Consultor SAP. En la práctica convertí requisitos funcionales en arquitectura y entrega full-stack: interfaz y UX, modelo de dominio, integraciones, despliegue, automatización de pruebas y resolución de problemas del ambiente.',
-          evidence: ['Refiné requerimientos con el consultor funcional y propuse mejoras de arquitectura, flujo y UX', 'Diseñé y construí con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción', 'Referencia CAP/Fiori pública e independiente con 12 pruebas sobre autorización por roles, protección de stock concurrente e integración OData resiliente, más CI verde'],
+          evidence: ['Refiné requerimientos con el consultor funcional y propuse mejoras de arquitectura, flujo y UX', 'Diseñé y construí con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción', 'Referencia CAP/Fiori independiente (página de evidencia pública) con 12 pruebas sobre autorización por roles, protección de stock concurrente e integración OData resiliente, más CI verde'],
           tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Pruebas automatizadas', 'Entrega con QA'], tone: 'orange', label: 'Ver evidencia de ingeniería', href: '/proof/sap-cap-fiori-btp/',
         },
         {
@@ -223,7 +223,7 @@ const content = {
         {
           number: '04', kind: 'Referencia independiente · Código abierto', name: 'Grounded Knowledge Assistant', headline: 'Hacer que las respuestas de IA fallen de forma segura cuando falta evidencia.',
           body: 'Referencia RAG deliberadamente acotada en TypeScript que vuelve inspeccionables y comprobables la recuperación, el uso de fuentes, la validación de citas y el rechazo seguro.',
-          evidence: ['12 pruebas unitarias/adversariales más 4 checks E2E en Chromium con Playwright', '100% de hit@3, precisión de respuesta/rechazo y validez de citas en la evaluación versionada', 'CI determinista sin claves y un adaptador OpenAI opcional que sólo corre en el servidor', 'Protocolo de entrega con IA validada por humanos: evidencia reproducible, revisión completa del diff, sin datos sensibles en prompts y con límites explícitos', 'Decisión de preparación publicada: no aprobado para producción hasta reunir evidencia de calidad, seguridad, aislamiento, escala, costo, confiabilidad, observabilidad y despliegue'],
+          evidence: ['12 pruebas unitarias/adversariales más 4 checks E2E en Chromium con Playwright', '100% de hit@3, precisión de respuesta/rechazo y validez de citas en la pequeña evaluación versionada', 'CI determinista sin claves y un adaptador OpenAI opcional que sólo corre en el servidor', 'Protocolo de entrega con IA validada por humanos: evidencia reproducible, revisión completa del diff, sin datos sensibles en prompts y con límites explícitos', 'Decisión de preparación publicada: no aprobado para producción hasta reunir evidencia de calidad, seguridad, aislamiento, escala, costo, confiabilidad, observabilidad y despliegue'],
           tags: ['Next.js', 'TypeScript', 'RAG', 'OpenAI', 'Playwright', 'CI'], tone: 'paper', label: 'Ver evidencia de ingeniería', href: '/proof/grounded-knowledge-assistant/',
         },
       ],
@@ -231,8 +231,8 @@ const content = {
     experience: {
       kicker: '02 / Experiencia', title: 'Amplitud de ingeniería en dominios complejos.', intro: 'Aporto más valor entre un requerimiento funcional y una entrega productiva: cuestionando la solución inicial, eligiendo una arquitectura defendible, implementándola y guiando su validación.',
       roles: [
-        { period: '2025 — 2026', company: 'BeCloud Consulting', title: 'Consultor SAP · Arquitectura, entrega full-stack y calidad', body: 'Refinamiento de requerimientos junto al consultor funcional; arquitectura, UX Fiori/UI5, implementación, integración, pruebas automatizadas y coordinación con QA y diseño en SAP BTP.' },
-        { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Full-Stack Developer', body: 'Entrega de producto en frontend y backend dentro de un entorno tecnológico de arriendo.' },
+        { period: 'Ene 2025 — Sep 2026', company: 'BeCloud Consulting', title: 'Consultor SAP BTP · CAP/CDS, Node.js/TypeScript, Fiori/UI5', body: 'Refinamiento de requerimientos con el consultor funcional; servicios SAP CAP/CDS sobre Node.js/TypeScript, integraciones REST/OData sobre HANA, Fiori/UI5 en Work Zone, pruebas automatizadas y etapa formal de QA, Scrum/Kanban.' },
+        { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Desarrollador Full Stack · Kotlin/Spring Boot, Vue 3', body: 'Dentro del equipo: API en Kotlin + Spring Boot 3 (Spring Security/JWT, JPA, correo), frontend Vue 3 + Pinia para contratos, propiedades, corredoras e indicadores, generación de contratos PDF y plantillas, imágenes Docker publicadas en AWS.' },
         { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Egresado', body: 'Plan de estudios completado en 2026.' },
       ],
     },
@@ -249,10 +249,10 @@ const content = {
     about: {
       kicker: '04 / Forma de trabajo', quote: 'No me quedo con el ticket: cuestiono la arquitectura, el flujo y los modos de falla.',
       paragraphs: ['Llevo suficiente tiempo programando para saber que las herramientas cambian más rápido que los fundamentos. Mi ventaja no es memorizar un stack: es entender el sistema completo, tomar una decisión clara y aprender lo que la entrega necesite.', 'Vivo en Temuco, Chile, y busco empleo asalariado con contrato en software, con disponibilidad inmediata. Acepto trabajo remoto, híbrido o presencial y puedo trasladarme dentro de Chile. Español nativo; inglés B2 operativo para conversaciones técnicas.'],
-      facts: [['Roles objetivo', 'Backend / Plataforma / Full-stack'], ['Dominio actual', 'Sistemas empresariales · SAP BTP'], ['Formación', 'Ingeniería Informática · Egresado']],
+      facts: [['Roles objetivo', 'SAP BTP · Backend · Full stack'], ['Stack laboral', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Formación', 'Ingeniería Informática · Egresado']],
     },
-    credentials: { kicker: '05 / Aprendizaje verificable', title: 'Credenciales de cloud y datos.', intro: 'Las credenciales respaldan el trabajo; no lo reemplazan. Cada elemento enlaza a un registro verificable.' },
-    contact: { kicker: '06 / Contacto', title: '¿Necesitas a alguien que entienda la operación y construya la solución?', note: 'Temuco, Chile · Español nativo · Inglés B2 · Empleo asalariado con contrato · Disponibilidad inmediata', backendCv: 'CV Backend / Platform', recruiterProfile: 'Perfil para reclutamiento' },
+    credentials: { kicker: '05 / Aprendizaje verificable', title: 'Cursos de cloud y datos.', intro: 'Los cursos respaldan el trabajo; no lo reemplazan. Son cursos de Coursera y AWS Academy, no exámenes de certificación AWS. Cada elemento enlaza a un registro verificable.' },
+    contact: { kicker: '06 / Contacto', title: '¿Necesitas a alguien que entienda la operación y construya la solución?', note: 'Temuco, Chile · Español nativo · Inglés B2 · Empleo asalariado con contrato · Disponibilidad inmediata', backendCv: 'CV SAP BTP', fullstackCv: 'CV Full Stack', recruiterProfile: 'Perfil para reclutamiento' },
   },
 } as const;
 
@@ -263,8 +263,9 @@ function Header({ locale }: { locale: Locale }) {
 
 function Hero({ locale }: { locale: Locale }) {
   const t = content[locale];
-  const resumeHref = locale === 'en' ? '/Billy_Martinez_Resume_Backend_EN.pdf' : '/Billy_Martinez_CV_Backend_ES.pdf';
-  return <><section className={`hero hero--${locale}`} id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeHref} target="_blank" rel="noreferrer">{t.hero.resumeCta}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></div></div><figure className="portrait"><picture><source srcSet="/billy-martinez-oliver-portrait-2026-640.webp 640w, /billy-martinez-oliver-portrait-2026-960.webp 960w, /billy-martinez-oliver-portrait-2026-1440.webp 1440w, /billy-martinez-oliver-portrait-2026-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 44vw" type="image/webp" /><img src="/billy-martinez-oliver-portrait-2026-1440.webp" alt={t.hero.portraitAlt} width="1440" height="2160" fetchPriority="high" decoding="async" /></picture><figcaption><span>Billy Martínez</span><span><span aria-hidden="true">●</span> Temuco, CL</span></figcaption></figure><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
+  const resumeHref = locale === 'en' ? '/Billy_Martinez_CV_SAP-BTP_EN.pdf' : '/Billy_Martinez_CV_SAP-BTP_ES.pdf';
+  const resumeAltHref = locale === 'en' ? '/Billy_Martinez_CV_FullStack_EN.pdf' : '/Billy_Martinez_CV_FullStack_ES.pdf';
+  return <><section className={`hero hero--${locale}`} id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeHref} target="_blank" rel="noreferrer">{t.hero.resumeCta}<span className="icon-arrow" aria-hidden="true">↗</span></a><a className="text-link" href={resumeAltHref} target="_blank" rel="noreferrer">{t.hero.resumeCtaAlt}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></div></div><figure className="portrait"><picture><source srcSet="/billy-martinez-oliver-portrait-2026-640.webp 640w, /billy-martinez-oliver-portrait-2026-960.webp 960w, /billy-martinez-oliver-portrait-2026-1440.webp 1440w, /billy-martinez-oliver-portrait-2026-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 44vw" type="image/webp" /><img src="/billy-martinez-oliver-portrait-2026-1440.webp" alt={t.hero.portraitAlt} width="1440" height="2160" fetchPriority="high" decoding="async" /></picture><figcaption><span>Billy Martínez</span><span><span aria-hidden="true">●</span> Temuco, CL</span></figcaption></figure><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
 }
 
 function WorkSection({ locale }: { locale: Locale }) {
@@ -294,7 +295,7 @@ function CredentialsSection({ locale }: { locale: Locale }) {
 
 function ContactSection({ locale }: { locale: Locale }) {
   const t = content[locale].contact;
-  return <footer className="contact-section" id="contact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><a className="contact-email" href="mailto:hello@billyflin.dev">hello@billyflin.dev<span className="icon-arrow" aria-hidden="true">↗</span></a><p className="contact-note">{t.note}</p><div className="footer-row"><p>© {new Date().getFullYear()} Billy Martínez</p><div className="social-links"><a href="https://github.com/Billyflin" target="_blank" rel="me noreferrer">GitHub</a><a href="https://www.linkedin.com/in/billyflin" target="_blank" rel="me noreferrer">LinkedIn</a><a href="/writing/reliable-api-integrations/">{locale === 'en' ? 'Writing' : 'Artículo técnico'}</a><a href={locale === 'en' ? '/plain/' : '/es/plain/'}>{t.recruiterProfile}</a><a href={locale === 'en' ? '/Billy_Martinez_Resume_Backend_EN.pdf' : '/Billy_Martinez_CV_Backend_ES.pdf'} target="_blank" rel="noreferrer">{t.backendCv}</a><a href="mailto:hello@billyflin.dev">Email</a></div></div></footer>;
+  return <footer className="contact-section" id="contact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><a className="contact-email" href="mailto:hello@billyflin.dev">hello@billyflin.dev<span className="icon-arrow" aria-hidden="true">↗</span></a><p className="contact-note">{t.note}</p><div className="footer-row"><p>© {new Date().getFullYear()} Billy Martínez</p><div className="social-links"><a href="https://github.com/Billyflin" target="_blank" rel="me noreferrer">GitHub</a><a href="https://www.linkedin.com/in/billyflin" target="_blank" rel="me noreferrer">LinkedIn</a><a href="/writing/reliable-api-integrations/">{locale === 'en' ? 'Writing' : 'Artículo técnico'}</a><a href={locale === 'en' ? '/plain/' : '/es/plain/'}>{t.recruiterProfile}</a><a href={locale === 'en' ? '/Billy_Martinez_CV_SAP-BTP_EN.pdf' : '/Billy_Martinez_CV_SAP-BTP_ES.pdf'} target="_blank" rel="noreferrer">{t.backendCv}</a><a href={locale === 'en' ? '/Billy_Martinez_CV_FullStack_EN.pdf' : '/Billy_Martinez_CV_FullStack_ES.pdf'} target="_blank" rel="noreferrer">{t.fullstackCv}</a><a href="mailto:hello@billyflin.dev">Email</a></div></div></footer>;
 }
 
 function NotFoundPage() {
