@@ -23,10 +23,10 @@ Billy does not claim expert status in every framework. His stack flexibility is 
 
 ## Professional experience
 
-BeCloud Consulting — SAP Consultant — 2025–2026.
+BeCloud Consulting — SAP BTP Consultant — January 2025 to September 2026.
 Practical scope: requirement refinement with a functional consultant; solution architecture and full-stack delivery across SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments. Billy also introduced automated testing and a dedicated QA stage in a workflow that previously relied on direct dev/production fixes, and coordinated validation with QA and design.
 
-Happ Rent — Full-Stack Developer — October 2023 to September 2024.
+Happ Rent — Full-Stack Developer — October 2023 to September 2024. Team member: Kotlin + Spring Boot 3 API (Spring Security/JWT, JPA, email), Vue 3 + Pinia frontend, contract PDF generation, Docker images published on AWS.
 Scope: product delivery across frontend and backend in a rental-technology environment.
 
 ## Selected evidence
