@@ -1,6 +1,6 @@
 # Billy Martínez
 
-> SAP Certified SAP BTP and Business AI engineer (Solution Architect – SAP Business AI Platform; SAP Business Data Cloud) based in Temuco, Chile, with full-stack depth and professional experience since 2023. Works across SAP BTP, backend, full-stack, and cloud; seeking salaried employment with immediate availability. Open to remote, hybrid, or on-site work and relocation within Chile.
+> SAP Certified SAP BTP and Business AI engineer (Solution Architect – SAP Business AI Platform; SAP Business Data Cloud) based in Temuco, Chile, with SAP BTP consulting experience at BeCloud and full-stack depth from independent products. Works across SAP BTP, backend, full-stack, and cloud; seeking salaried employment with immediate availability. Open to remote, hybrid, or on-site work and relocation within Chile.
 
 Canonical profile: https://billyflin.dev/
 Spanish profile: https://billyflin.dev/es/
@@ -25,9 +25,6 @@ Billy does not claim expert status in every framework. His stack flexibility is 
 
 BeCloud Consulting — SAP BTP Consultant — January 2025 to September 2026.
 Practical scope: requirement refinement with a functional consultant; solution architecture and full-stack delivery across SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA, Joule, integrations, and distributed deployments. Billy also introduced automated testing and a dedicated QA stage in a workflow that previously relied on direct dev/production fixes, and coordinated validation with QA and design.
-
-Happ Rent — Full-Stack Developer — October 2023 to September 2024. Team member: Kotlin + Spring Boot 3 API (Spring Security/JWT, JPA, email), Vue 3 + Pinia frontend, contract PDF generation, Docker images published on AWS.
-Scope: product delivery across frontend and backend in a rental-technology environment.
 
 ## Selected evidence
 
