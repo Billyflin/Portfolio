@@ -1,5 +1,7 @@
+import { useEffect } from 'react';
 import { PlainResumePage } from './components/PlainResumePage';
 import { TechnicalArticlePage } from './components/TechnicalArticlePage';
+import { PortraitCarousel } from './components/PortraitCarousel';
 
 export type Locale = 'en' | 'es';
 
@@ -7,6 +9,44 @@ type AppProps = {
   locale?: Locale;
   page?: 'portfolio' | 'plain' | 'article' | 'notFound';
 };
+
+const certifications = [
+  {
+    issuer: 'SAP',
+    code: 'C_BAIPA',
+    name: 'Solution Architect – SAP Business AI Platform',
+    year: '2026',
+    validUntil: { en: 'Valid to Nov 2027', es: 'Vigente a nov 2027' },
+    badge: '/badges/sap-c-baipa.webp',
+    href: 'https://www.credly.com/badges/b1714db2-7ff6-4de8-b710-e5e6bdfcf6ad/public_url',
+  },
+  {
+    issuer: 'SAP',
+    code: 'C_BCBDC',
+    name: 'SAP Business Data Cloud',
+    year: '2026',
+    validUntil: { en: 'Valid to Nov 2027', es: 'Vigente a nov 2027' },
+    badge: '/badges/sap-c-bcbdc.webp',
+    href: 'https://www.credly.com/badges/23e95a72-aea5-4499-a4a1-ce075dd47773/public_url',
+  },
+] as const;
+
+const securityCredentials = [
+  {
+    issuer: 'Fortinet',
+    name: 'NSE 1 Certified in Cybersecurity',
+    year: '2026',
+    badge: '/badges/fortinet-nse1.webp',
+    href: 'https://www.credly.com/badges/e08eefd0-cfc6-440d-9c74-cf52dc194e3b/public_url',
+  },
+  {
+    issuer: 'Fortinet',
+    name: 'Cybersecurity and Cloud Fundamentals 1.0',
+    year: '2026',
+    badge: '/badges/fortinet-fcf.webp',
+    href: 'https://www.credly.com/badges/b2e8f793-b535-445c-9950-4522271e3ce6/public_url',
+  },
+] as const;
 
 const credentials = [
   {
@@ -37,32 +77,33 @@ const credentials = [
 
 const content = {
   en: {
-    nav: { work: 'Selected work', experience: 'Experience', capabilities: 'Capabilities', writing: 'Writing', contact: 'Let’s talk' },
+    nav: { work: 'Selected work', experience: 'Experience', capabilities: 'Capabilities', certifications: 'Certifications', writing: 'Writing', contact: 'Let’s talk' },
     localeLabel: 'ES',
     localeHref: '/es/',
     hero: {
-      status: 'Available now · SAP BTP, backend & full-stack roles',
-      title: <>I turn complex business requirements <span>into software teams can ship.</span></>,
-      intro: 'Developer with 32 months of professional experience: SAP BTP at BeCloud (CAP/CDS on Node.js/TypeScript, Fiori/UI5, HANA, OData) and full-stack Kotlin/Spring Boot + Vue 3 at HappRent. I turn functional requirements into architecture and working systems, and stay through automated testing, QA, and delivery.',
+      status: 'Available now · SAP Certified · Business AI & Business Data Cloud',
+      title: <>SAP BTP engineer who turns business requirements <span>into systems that ship.</span></>,
+      intro: 'SAP Certified Solution Architect for the SAP Business AI Platform and certified in SAP Business Data Cloud. Since 2023 I have taken functional requirements to architecture, code, automated tests, and release: SAP BTP at BeCloud, full-stack Kotlin/Spring + Vue at HappRent.',
       primaryCta: 'See selected work',
       resumeCta: 'SAP BTP CV', resumeCtaAlt: 'Full-stack CV',
       portraitAlt: 'Billy Martínez with Oliver outdoors in Temuco',
-      disciplines: ['Backend & APIs', 'System architecture', 'Full-stack delivery', 'Quality automation', 'Cloud & AI systems'],
+      disciplines: ['SAP BTP & CAP', 'SAP Business AI', 'Backend & APIs', 'System architecture', 'Full-stack delivery', 'Quality automation'],
     },
     proof: [
-      { value: '32 months', label: 'Professional experience · SAP BTP & full-stack' },
-      { value: 'End to end', label: 'Requirements → architecture → build → QA' },
-      { value: 'B2 English', label: 'Technical working proficiency' },
+      { value: '2× SAP Certified', label: 'Business AI Platform architect · Business Data Cloud' },
+      { value: 'Since 2023', label: 'Shipping professionally · SAP BTP & full-stack' },
+      { value: 'End to end', label: 'Requirement → architecture → build → QA → release' },
     ],
     work: {
       kicker: '01 / Selected work',
       title: 'Evidence over buzzwords.',
-      intro: 'The strongest work is often private. These cases explain the problem, my ownership, and the technical judgment without exposing client information or inventing impact.',
+      intro: 'Much of my best work is under NDA. Each case shows the problem, what I owned, and the decisions I made—with public code wherever it can be inspected.',
       cases: [
         {
           number: '01',
           kind: 'Previous role · Confidential work',
           name: 'SAP solution delivery',
+          stat: { value: '12', label: 'CAP service tests in the public reference, plus a formal QA stage' },
           headline: 'From refined requirements to a testable SAP delivery.',
           body: 'My contract title was SAP Consultant. In practice, I turned functional requirements into architecture and full-stack delivery: interface and UX, domain model, integration, deployment, test automation, and environment troubleshooting.',
           evidence: [
@@ -80,6 +121,7 @@ const content = {
           number: '02',
           kind: 'Architecture decision · In progress',
           name: 'Confidential cloud platform',
+          stat: { value: 'AWS → GCP', label: 'Re-platform recommended and defended on cost and fit' },
           headline: 'Changing the foundation when the economics stop making sense.',
           body: 'I evaluated the cost and technical fit of an existing AWS direction, proposed a clean re-platform to Google Cloud, and built enough alignment to restart on a foundation better suited to the product and team.',
           evidence: [
@@ -95,6 +137,7 @@ const content = {
           number: '03',
           kind: 'Independent product · Private repository',
           name: 'Clinipets',
+          stat: { value: 'B2B2C', label: 'Clinics, vets, tutors and pets on one multi-tenant platform' },
           headline: 'A veterinary platform designed for real operational constraints.',
           body: 'A B2B2C system connecting clinics, veterinary teams, tutors, and pets. I own the product and architecture end to end—from tenant boundaries and clinical integrity to mobile/web delivery and infrastructure.',
           evidence: [
@@ -120,6 +163,7 @@ const content = {
           number: '04',
           kind: 'Independent reference · Open source',
           name: 'Grounded Knowledge Assistant',
+          stat: { value: '100%', label: 'Citation validity on the committed fixture evaluation' },
           headline: 'Making AI answers fail closed when the evidence is missing.',
           body: 'A deliberately small TypeScript RAG reference that makes retrieval, source grounding, citation validation, and safe refusal behavior inspectable and testable.',
           evidence: [
@@ -138,8 +182,8 @@ const content = {
     },
     experience: {
       kicker: '02 / Experience',
-      title: 'Software engineering breadth inside complex domains.',
-      intro: 'I am most useful between a functional requirement and a production delivery: challenging the initial solution, choosing a defensible architecture, implementing it, and guiding validation.',
+      title: 'Enterprise SAP delivery, backed by full-stack depth.',
+      intro: 'I create the most value between a functional requirement and a production release: I challenge the first solution, choose a defensible architecture, build it, and lead validation until it ships.',
       roles: [
         { period: 'Jan 2025 — Sep 2026', company: 'BeCloud Consulting', title: 'SAP BTP Consultant · CAP/CDS, Node.js/TypeScript, Fiori/UI5', body: 'Requirement refinement with a functional consultant; SAP CAP/CDS services on Node.js/TypeScript, REST/OData integrations on HANA, Fiori/UI5 in Work Zone, automated testing and a formal QA stage, Scrum/Kanban.' },
         { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Full-Stack Developer · Kotlin/Spring Boot, Vue 3', body: 'As part of the team: Kotlin + Spring Boot 3 API (Spring Security/JWT, JPA, email), Vue 3 + Pinia frontend for leases, properties, brokers and KPIs, contract PDF generation and templates, Docker images published on AWS.' },
@@ -154,58 +198,58 @@ const content = {
         { index: 'A', title: 'Systems architecture', items: ['Requirement refinement', 'Domain modeling', 'API & integration design', 'Technical tradeoffs', 'Cost-aware decisions'] },
         { index: 'B', title: 'Backend & platform', items: ['Kotlin / Spring', 'Node.js / TypeScript', 'REST / OpenAPI', 'PostgreSQL', 'Multi-tenant systems', 'Failure design'] },
         { index: 'C', title: 'Product delivery', items: ['React / Next.js', 'Fiori / UI5 UX', 'Automated testing', 'CI/CD', 'Observability', 'QA & design coordination'] },
-        { index: 'D', title: 'Enterprise & cloud', items: ['SAP BTP', 'CAP / CDS', 'Work Zone', 'HANA', 'Google Cloud', 'AWS / Docker'] },
+        { index: 'D', title: 'SAP & cloud', items: ['SAP BTP · CAP / CDS', 'SAP Business AI · Joule', 'SAP Business Data Cloud', 'HANA · Work Zone', 'Google Cloud', 'AWS / Docker'] },
       ],
     },
     about: {
       kicker: '04 / Working style',
       quote: 'I do not stop at the ticket—I question the architecture, flow, and failure modes.',
       paragraphs: [
-        'I have been programming long enough to know that tools change faster than fundamentals. My advantage is not memorizing one stack; it is understanding the whole system, making a clear decision, and learning whatever the delivery requires.',
+        'Tools change faster than fundamentals. My edge is not one stack: it is understanding the whole system—business process, data, integrations, failure modes—making a clear decision, and learning whatever the delivery requires. The SAP certifications are recent proof of how fast I ramp up.',
         'I am based in Temuco, Chile, and seeking salaried software roles with immediate availability. I am open to remote, hybrid, or on-site work and relocation within Chile. Spanish is native; English is B2 and operational for technical conversations.',
       ],
-      facts: [['Role fit', 'SAP BTP · Backend · Full-stack'], ['Professional stack', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Education', 'Ingeniería Informática · Coursework completed']],
+      facts: [['Role fit', 'SAP BTP · Business AI · Backend · Full-stack'], ['Certified', 'SAP C_BAIPA · SAP C_BCBDC · Fortinet NSE 1'], ['Professional stack', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Education', 'Ingeniería Informática · Coursework completed']],
     },
-    credentials: { kicker: '05 / Verified learning', title: 'Cloud and data courses.', intro: 'Courses support the work; they are not a substitute for it. These are Coursera and AWS Academy courses, not AWS certification exams. Each item links to a verifiable record.' },
-    contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Temuco, Chile · Spanish native · English B2 · Salaried roles · Immediate availability', backendCv: 'SAP BTP CV', fullstackCv: 'Full-stack CV', recruiterProfile: 'Recruiter profile' },
+    credentials: { kicker: '05 / Certifications', title: 'SAP certified. Verifiable.', intro: 'Current SAP certifications in Business AI architecture and Business Data Cloud, valid to November 2027, plus Fortinet cybersecurity and cloud and data coursework. Every item links to a verifiable record.', certsLabel: 'SAP certifications', securityLabel: 'Cybersecurity · Fortinet', coursesLabel: 'Courses · not certification exams' },
+    contact: { kicker: '06 / Contact', title: 'Need an SAP BTP engineer who understands the business and ships the solution?', note: 'SAP Certified · Temuco, Chile · Spanish native · English B2 · Remote, hybrid or on-site · Immediate availability', backendCv: 'SAP BTP CV', fullstackCv: 'Full-stack CV', recruiterProfile: 'Recruiter profile' },
   },
   es: {
-    nav: { work: 'Trabajo', experience: 'Experiencia', capabilities: 'Capacidades', writing: 'Artículo', contact: 'Conversemos' },
+    nav: { work: 'Trabajo', experience: 'Experiencia', capabilities: 'Capacidades', certifications: 'Certificaciones', writing: 'Artículo', contact: 'Conversemos' },
     localeLabel: 'EN',
     localeHref: '/',
     hero: {
-      status: 'Disponible ya · roles SAP BTP, backend y full-stack',
-      title: <>Convierto requisitos complejos del negocio <span>en software que el equipo puede entregar.</span></>,
-      intro: 'Desarrollador con 32 meses de experiencia profesional: SAP BTP en BeCloud (CAP/CDS sobre Node.js/TypeScript, Fiori/UI5, HANA, OData) y full stack Kotlin/Spring Boot + Vue 3 en HappRent. Convierto requerimientos funcionales en arquitectura y sistemas funcionando, y sigo hasta las pruebas automatizadas, el QA y la entrega.',
+      status: 'Disponible ya · SAP Certified · Business AI y Business Data Cloud',
+      title: <>Ingeniero SAP BTP que convierte requisitos del negocio <span>en sistemas que llegan a producción.</span></>,
+      intro: 'SAP Certified Solution Architect en SAP Business AI Platform y certificado en SAP Business Data Cloud. Desde 2023 llevo requerimientos funcionales a arquitectura, código, pruebas automatizadas y producción: SAP BTP en BeCloud y full stack Kotlin/Spring + Vue en HappRent.',
       primaryCta: 'Ver trabajo',
       resumeCta: 'CV SAP BTP', resumeCtaAlt: 'CV Full Stack',
       portraitAlt: 'Billy Martínez junto a Oliver al aire libre en Temuco',
-      disciplines: ['Backend y APIs', 'Arquitectura de sistemas', 'Entrega full-stack', 'Calidad automatizada', 'Cloud y sistemas de IA'],
+      disciplines: ['SAP BTP y CAP', 'SAP Business AI', 'Backend y APIs', 'Arquitectura de sistemas', 'Entrega full-stack', 'Calidad automatizada'],
     },
     proof: [
-      { value: '32 meses', label: 'Experiencia profesional · SAP BTP y full stack' },
-      { value: 'De punta a punta', label: 'Requisitos → arquitectura → desarrollo → QA' },
-      { value: 'Inglés B2', label: 'Competencia técnica profesional' },
+      { value: '2× SAP Certified', label: 'Arquitecto Business AI Platform · Business Data Cloud' },
+      { value: 'Desde 2023', label: 'Entregando software · SAP BTP y full stack' },
+      { value: 'De punta a punta', label: 'Requisito → arquitectura → desarrollo → QA → producción' },
     ],
     work: {
       kicker: '01 / Trabajo seleccionado',
       title: 'Evidencia antes que palabras de moda.',
-      intro: 'El trabajo más importante suele ser privado. Estos casos explican el problema, mi responsabilidad y el criterio técnico sin exponer información del cliente ni inventar impacto.',
+      intro: 'Buena parte de mi mejor trabajo está bajo confidencialidad. Cada caso muestra el problema, de qué me hice cargo y qué decidí, con código público cuando se puede inspeccionar.',
       cases: [
         {
-          number: '01', kind: 'Experiencia previa · Trabajo confidencial', name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
+          number: '01', kind: 'Experiencia previa · Trabajo confidencial', stat: { value: '12', label: 'pruebas CAP en la referencia pública, más una etapa formal de QA' }, name: 'Entrega de soluciones SAP', headline: 'Desde requisitos refinados hasta una entrega SAP comprobable.',
           body: 'Mi cargo contractual era Consultor SAP. En la práctica convertí requisitos funcionales en arquitectura y entrega full-stack: interfaz y UX, modelo de dominio, integraciones, despliegue, automatización de pruebas y resolución de problemas del ambiente.',
           evidence: ['Refiné requerimientos con el consultor funcional y propuse mejoras de arquitectura, flujo y UX', 'Diseñé y construí con SAP BTP, Fiori/UI5, CAP/CDS, Work Zone, HANA y Joule', 'Introduje pruebas automatizadas y una etapa de QA más allá de corregir directamente entre desarrollo y producción', 'Referencia CAP/Fiori independiente (página de evidencia pública) con 12 pruebas sobre autorización por roles, protección de stock concurrente e integración OData resiliente, más CI verde'],
           tags: ['SAP BTP', 'Fiori / UI5', 'CAP / CDS', 'Work Zone', 'Pruebas automatizadas', 'Entrega con QA'], tone: 'orange', label: 'Ver evidencia de ingeniería', href: '/proof/sap-cap-fiori-btp/',
         },
         {
-          number: '02', kind: 'Decisión de arquitectura · En curso', name: 'Plataforma cloud confidencial', headline: 'Cambiar la base cuando la economía deja de tener sentido.',
+          number: '02', kind: 'Decisión de arquitectura · En curso', stat: { value: 'AWS → GCP', label: 'Migración recomendada y defendida por costo y encaje' }, name: 'Plataforma cloud confidencial', headline: 'Cambiar la base cuando la economía deja de tener sentido.',
           body: 'Evalué el costo y encaje técnico de una dirección existente en AWS, propuse una migración limpia hacia Google Cloud y conseguí el alineamiento necesario para reiniciar sobre una base más adecuada para el producto y el equipo.',
           evidence: ['Comparé economía cloud y costos operacionales', 'Recomendé AWS → Google Cloud y defendí la decisión', 'Alineé a los involucrados en torno a “partir de nuevo, pero partir bien”'],
           tags: ['AWS → GCP', 'Arquitectura de costos', 'Estrategia técnica', 'Alineamiento'], tone: 'blue', label: 'Anonimizado · En curso',
         },
         {
-          number: '03', kind: 'Producto propio · Repositorio privado', name: 'Clinipets', headline: 'Una plataforma veterinaria diseñada para restricciones operacionales reales.',
+          number: '03', kind: 'Producto propio · Repositorio privado', stat: { value: 'B2B2C', label: 'Clínicas, veterinarios, tutores y mascotas en una plataforma multi-tenant' }, name: 'Clinipets', headline: 'Una plataforma veterinaria diseñada para restricciones operacionales reales.',
           body: 'Sistema B2B2C que conecta clínicas, equipos veterinarios, tutores y mascotas. Me hago cargo del producto y la arquitectura de punta a punta: límites entre tenants, integridad clínica, aplicaciones e infraestructura.',
           evidence: ['Agenda sin conflictos y roles aislados por clínica', 'Fichas versionadas, firmas y correcciones auditables', 'Pagos firmados e idempotentes, cuarentena de archivos y notificaciones outbox'],
           tags: ['Kotlin / Spring', 'KMP', 'Next.js', 'PostgreSQL', 'R2', 'Docker'], tone: 'acid', label: 'Capturas seleccionadas disponibles en entrevistas',
@@ -221,7 +265,7 @@ const content = {
           },
         },
         {
-          number: '04', kind: 'Referencia independiente · Código abierto', name: 'Grounded Knowledge Assistant', headline: 'Hacer que las respuestas de IA fallen de forma segura cuando falta evidencia.',
+          number: '04', kind: 'Referencia independiente · Código abierto', stat: { value: '100%', label: 'Validez de citas en la evaluación de fixtures del repositorio' }, name: 'Grounded Knowledge Assistant', headline: 'Hacer que las respuestas de IA fallen de forma segura cuando falta evidencia.',
           body: 'Referencia RAG deliberadamente acotada en TypeScript que vuelve inspeccionables y comprobables la recuperación, el uso de fuentes, la validación de citas y el rechazo seguro.',
           evidence: ['12 pruebas unitarias/adversariales más 4 checks E2E en Chromium con Playwright', '100% de hit@3, precisión de respuesta/rechazo y validez de citas en la pequeña evaluación versionada', 'CI determinista sin claves y un adaptador OpenAI opcional que sólo corre en el servidor', 'Protocolo de entrega con IA validada por humanos: evidencia reproducible, revisión completa del diff, sin datos sensibles en prompts y con límites explícitos', 'Decisión de preparación publicada: no aprobado para producción hasta reunir evidencia de calidad, seguridad, aislamiento, escala, costo, confiabilidad, observabilidad y despliegue'],
           tags: ['Next.js', 'TypeScript', 'RAG', 'OpenAI', 'Playwright', 'CI'], tone: 'paper', label: 'Ver evidencia de ingeniería', href: '/proof/grounded-knowledge-assistant/',
@@ -243,34 +287,34 @@ const content = {
         { index: 'A', title: 'Arquitectura de sistemas', items: ['Refinamiento de requisitos', 'Modelado de dominio', 'Diseño de APIs e integraciones', 'Decisiones técnicas', 'Decisiones conscientes de costos'] },
         { index: 'B', title: 'Backend y plataforma', items: ['Kotlin / Spring', 'Node.js / TypeScript', 'REST / OpenAPI', 'PostgreSQL', 'Sistemas multi-tenant', 'Diseño para fallas'] },
         { index: 'C', title: 'Entrega de producto', items: ['React / Next.js', 'UX Fiori / UI5', 'Pruebas automatizadas', 'CI/CD', 'Observabilidad', 'Coordinación de QA y diseño'] },
-        { index: 'D', title: 'Empresa y cloud', items: ['SAP BTP', 'CAP / CDS', 'Work Zone', 'HANA', 'Google Cloud', 'AWS / Docker'] },
+        { index: 'D', title: 'SAP y cloud', items: ['SAP BTP · CAP / CDS', 'SAP Business AI · Joule', 'SAP Business Data Cloud', 'HANA · Work Zone', 'Google Cloud', 'AWS / Docker'] },
       ],
     },
     about: {
       kicker: '04 / Forma de trabajo', quote: 'No me quedo con el ticket: cuestiono la arquitectura, el flujo y los modos de falla.',
-      paragraphs: ['Llevo suficiente tiempo programando para saber que las herramientas cambian más rápido que los fundamentos. Mi ventaja no es memorizar un stack: es entender el sistema completo, tomar una decisión clara y aprender lo que la entrega necesite.', 'Vivo en Temuco, Chile, y busco empleo asalariado con contrato en software, con disponibilidad inmediata. Acepto trabajo remoto, híbrido o presencial y puedo trasladarme dentro de Chile. Español nativo; inglés B2 operativo para conversaciones técnicas.'],
-      facts: [['Roles objetivo', 'SAP BTP · Backend · Full stack'], ['Stack laboral', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Formación', 'Ingeniería Informática · Egresado']],
+      paragraphs: ['Las herramientas cambian más rápido que los fundamentos. Mi ventaja no es un stack: es entender el sistema completo (proceso de negocio, datos, integraciones, modos de falla), tomar una decisión clara y aprender lo que la entrega necesite. Las certificaciones SAP son una prueba reciente de lo rápido que aprendo.', 'Vivo en Temuco, Chile, y busco empleo asalariado con contrato en software, con disponibilidad inmediata. Acepto trabajo remoto, híbrido o presencial y puedo trasladarme dentro de Chile. Español nativo; inglés B2 operativo para conversaciones técnicas.'],
+      facts: [['Roles objetivo', 'SAP BTP · Business AI · Backend · Full stack'], ['Certificaciones', 'SAP C_BAIPA · SAP C_BCBDC · Fortinet NSE 1'], ['Stack laboral', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Formación', 'Ingeniería Informática · Egresado']],
     },
-    credentials: { kicker: '05 / Aprendizaje verificable', title: 'Cursos de cloud y datos.', intro: 'Los cursos respaldan el trabajo; no lo reemplazan. Son cursos de Coursera y AWS Academy, no exámenes de certificación AWS. Cada elemento enlaza a un registro verificable.' },
-    contact: { kicker: '06 / Contacto', title: '¿Necesitas a alguien que entienda la operación y construya la solución?', note: 'Temuco, Chile · Español nativo · Inglés B2 · Empleo asalariado con contrato · Disponibilidad inmediata', backendCv: 'CV SAP BTP', fullstackCv: 'CV Full Stack', recruiterProfile: 'Perfil para reclutamiento' },
+    credentials: { kicker: '05 / Certificaciones', title: 'Certificado por SAP. Verificable.', intro: 'Certificaciones SAP vigentes en arquitectura de Business AI y Business Data Cloud, válidas hasta noviembre de 2027, más ciberseguridad con Fortinet y formación en cloud y datos. Cada elemento enlaza a un registro verificable.', certsLabel: 'Certificaciones SAP', securityLabel: 'Ciberseguridad · Fortinet', coursesLabel: 'Cursos · no son exámenes de certificación' },
+    contact: { kicker: '06 / Contacto', title: '¿Buscas un ingeniero SAP BTP que entienda el negocio y entregue la solución?', note: 'SAP Certified · Temuco, Chile · Español nativo · Inglés B2 · Remoto, híbrido o presencial · Disponibilidad inmediata', backendCv: 'CV SAP BTP', fullstackCv: 'CV Full Stack', recruiterProfile: 'Perfil para reclutamiento' },
   },
 } as const;
 
 function Header({ locale }: { locale: Locale }) {
   const t = content[locale];
-  return <header className="site-header"><a className="brand" href="#top" aria-label={locale === 'en' ? 'Go to the top' : 'Ir al inicio'}>BM<span>/26</span></a><nav className="desktop-nav" aria-label={locale === 'en' ? 'Primary navigation' : 'Navegación principal'}><a href="#work">{t.nav.work}</a><a href="#experience">{t.nav.experience}</a><a href="#capabilities">{t.nav.capabilities}</a><a href="/writing/reliable-api-integrations/">{t.nav.writing}</a></nav><div className="header-actions"><a className="locale-link" href={t.localeHref} lang={locale === 'en' ? 'es' : 'en'}>{t.localeLabel}</a><a className="header-cta" href="mailto:hello@billyflin.dev">{t.nav.contact}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></header>;
+  return <header className="site-header"><a className="brand" href="#top" aria-label={locale === 'en' ? 'Go to the top' : 'Ir al inicio'}>BM<span>/26</span></a><nav className="desktop-nav" aria-label={locale === 'en' ? 'Primary navigation' : 'Navegación principal'}><a href="#work">{t.nav.work}</a><a href="#experience">{t.nav.experience}</a><a href="#capabilities">{t.nav.capabilities}</a><a href="#credentials">{t.nav.certifications}</a><a href="/writing/reliable-api-integrations/">{t.nav.writing}</a></nav><div className="header-actions"><a className="locale-link" href={t.localeHref} lang={locale === 'en' ? 'es' : 'en'}>{t.localeLabel}</a><a className="header-cta" href="mailto:hello@billyflin.dev">{t.nav.contact}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></header>;
 }
 
 function Hero({ locale }: { locale: Locale }) {
   const t = content[locale];
   const resumeHref = locale === 'en' ? '/Billy_Martinez_CV_SAP-BTP_EN.pdf' : '/Billy_Martinez_CV_SAP-BTP_ES.pdf';
   const resumeAltHref = locale === 'en' ? '/Billy_Martinez_CV_FullStack_EN.pdf' : '/Billy_Martinez_CV_FullStack_ES.pdf';
-  return <><section className={`hero hero--${locale}`} id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeHref} target="_blank" rel="noreferrer">{t.hero.resumeCta}<span className="icon-arrow" aria-hidden="true">↗</span></a><a className="text-link" href={resumeAltHref} target="_blank" rel="noreferrer">{t.hero.resumeCtaAlt}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></div></div><figure className="portrait"><picture><source srcSet="/billy-martinez-oliver-portrait-2026-640.webp 640w, /billy-martinez-oliver-portrait-2026-960.webp 960w, /billy-martinez-oliver-portrait-2026-1440.webp 1440w, /billy-martinez-oliver-portrait-2026-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 44vw" type="image/webp" /><img src="/billy-martinez-oliver-portrait-2026-1440.webp" alt={t.hero.portraitAlt} width="1440" height="2160" fetchPriority="high" decoding="async" /></picture><figcaption><span>Billy Martínez</span><span><span aria-hidden="true">●</span> Temuco, CL</span></figcaption></figure><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
+  return <><section className={`hero hero--${locale}`} id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeHref} target="_blank" rel="noreferrer">{t.hero.resumeCta}<span className="icon-arrow" aria-hidden="true">↗</span></a><a className="text-link" href={resumeAltHref} target="_blank" rel="noreferrer">{t.hero.resumeCtaAlt}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></div></div><PortraitCarousel locale={locale} /><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
 }
 
 function WorkSection({ locale }: { locale: Locale }) {
   const t = content[locale].work;
-  return <section className="section work-section" id="work"><div className="section-heading"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><p className="section-intro">{t.intro}</p></div><div className="case-list">{t.cases.map((item) => <article className={`case-study case-study--${item.tone}`} key={item.number}><div className="case-meta"><span>{item.number}</span><span>{item.kind}</span></div><div className="case-body"><div className="case-copy"><p className="case-name">{item.name}</p><h3>{item.headline}</h3><p>{item.body}</p></div><div className="case-aside"><ul className="case-evidence" aria-label={locale === 'en' ? `Evidence from ${item.name}` : `Evidencia de ${item.name}`}>{item.evidence.map((point) => <li key={point}>{point}</li>)}</ul>{'architecture' in item && <details className="architecture-details"><summary>{item.architecture.summary}</summary><section className="architecture-map" aria-label={item.architecture.title}><h4>{item.architecture.title}</h4><div className="architecture-flow">{item.architecture.layers.map((layer) => <div className="architecture-layer" key={layer.label}><strong>{layer.label}</strong><ul>{layer.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div>)}</div><div className="architecture-transversal"><strong>{item.architecture.transversal.label}</strong><ul>{item.architecture.transversal.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div></section></details>}</div></div><div className="case-footer"><ul aria-label={locale === 'en' ? `Technologies used in ${item.name}` : `Tecnologías utilizadas en ${item.name}`}>{item.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>{'href' in item ? <a href={item.href}>{item.label}<span className="icon-arrow" aria-hidden="true">↗</span></a> : <span className="private-label">{item.label}</span>}</div></article>)}</div></section>;
+  return <section className="section work-section" id="work"><div className="section-heading"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><p className="section-intro">{t.intro}</p></div><div className="case-list">{t.cases.map((item) => <article className={`case-study case-study--${item.tone}`} key={item.number}><div className="case-meta"><span>{item.number}</span><span>{item.kind}</span></div><div className="case-body"><div className="case-copy"><p className="case-name">{item.name}</p><h3>{item.headline}</h3><p>{item.body}</p></div><div className="case-aside"><div className="case-stat"><strong>{item.stat.value}</strong><span>{item.stat.label}</span></div><ul className="case-evidence" aria-label={locale === 'en' ? `Evidence from ${item.name}` : `Evidencia de ${item.name}`}>{item.evidence.slice(0, 3).map((point) => <li key={point}>{point}</li>)}</ul>{'architecture' in item && <details className="architecture-details"><summary>{item.architecture.summary}</summary><section className="architecture-map" aria-label={item.architecture.title}><h4>{item.architecture.title}</h4><div className="architecture-flow">{item.architecture.layers.map((layer) => <div className="architecture-layer" key={layer.label}><strong>{layer.label}</strong><ul>{layer.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div>)}</div><div className="architecture-transversal"><strong>{item.architecture.transversal.label}</strong><ul>{item.architecture.transversal.items.map((entry) => <li key={entry}>{entry}</li>)}</ul></div></section></details>}</div></div><div className="case-footer"><ul aria-label={locale === 'en' ? `Technologies used in ${item.name}` : `Tecnologías utilizadas en ${item.name}`}>{item.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>{'href' in item ? <a href={item.href}>{item.label}<span className="icon-arrow" aria-hidden="true">↗</span></a> : <span className="private-label">{item.label}</span>}</div></article>)}</div></section>;
 }
 
 function ExperienceSection({ locale }: { locale: Locale }) {
@@ -290,7 +334,7 @@ function AboutSection({ locale }: { locale: Locale }) {
 
 function CredentialsSection({ locale }: { locale: Locale }) {
   const t = content[locale].credentials;
-  return <section className="section credentials-section" id="credentials"><div className="credentials-heading"><div><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2></div><p>{t.intro}</p></div><div className="credential-list">{credentials.map((credential) => <a href={credential.href} target="_blank" rel="noreferrer" key={credential.name}><span className="credential-issuer">{credential.issuer}</span><strong>{credential.name}</strong><span className="credential-year">{credential.year}</span><span className="icon-arrow" aria-hidden="true">↗</span></a>)}</div></section>;
+  return <section className="section credentials-section" id="credentials"><div className="credentials-heading"><div><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2></div><p>{t.intro}</p></div><p className="credential-group-label">{t.certsLabel}</p><div className="badge-grid badge-grid--sap">{certifications.map((cert) => <a className="badge-card badge-card--sap" href={cert.href} target="_blank" rel="noreferrer" key={cert.code}><img src={cert.badge} alt="" width="160" height="160" loading="lazy" decoding="async" /><span className="badge-copy"><span className="credential-issuer">{cert.issuer} · {cert.code}</span><strong>SAP Certified – {cert.name}</strong><span className="badge-meta"><span className="status-dot" aria-hidden="true" />{cert.validUntil[locale]}</span></span><span className="icon-arrow" aria-hidden="true">↗</span></a>)}</div><p className="credential-group-label">{t.securityLabel}</p><div className="badge-grid">{securityCredentials.map((credential) => <a className="badge-card" href={credential.href} target="_blank" rel="noreferrer" key={credential.name}><img src={credential.badge} alt="" width="104" height="104" loading="lazy" decoding="async" /><span className="badge-copy"><span className="credential-issuer">{credential.issuer}</span><strong>{credential.name}</strong><span className="badge-meta">{credential.year}</span></span><span className="icon-arrow" aria-hidden="true">↗</span></a>)}</div><p className="credential-group-label">{t.coursesLabel}</p><div className="credential-list">{credentials.map((credential) => <a href={credential.href} target="_blank" rel="noreferrer" key={credential.name}><span className="credential-issuer">{credential.issuer}</span><strong>{credential.name}</strong><span className="credential-year">{credential.year}</span><span className="icon-arrow" aria-hidden="true">↗</span></a>)}</div></section>;
 }
 
 function ContactSection({ locale }: { locale: Locale }) {
@@ -302,9 +346,41 @@ function NotFoundPage() {
   return <main className="not-found-page"><div className="not-found-mark" aria-hidden="true">404</div><div className="not-found-copy"><p className="section-kicker">Lost route · Ruta no encontrada</p><h1>This page does not exist.<span>Esta página no existe.</span></h1><p>The useful part is still here. Choose your language and return to Billy Martínez’s professional portfolio.</p><div className="not-found-actions"><a className="button button--primary" href="/">Continue in English <span aria-hidden="true">↗</span></a><a className="button button--light" href="/es/">Continuar en español <span aria-hidden="true">↗</span></a></div></div></main>;
 }
 
+const stackItems = ['SAP BTP', 'CAP / CDS', 'Fiori / UI5', 'HANA', 'SAP Business AI', 'Joule', 'Business Data Cloud', 'Node.js', 'TypeScript', 'Kotlin', 'Spring Boot', 'Vue 3', 'React', 'Next.js', 'PostgreSQL', 'Docker', 'Google Cloud', 'AWS', 'Playwright', 'RAG'];
+
+function StackMarquee() {
+  // Decorative: the same technologies are listed as text in Capabilities.
+  const run = stackItems.map((item) => <span key={item}>{item}</span>);
+  return <div className="stack-marquee" aria-hidden="true"><div className="stack-marquee__track"><div>{run}</div><div>{run}</div></div></div>;
+}
+
+const revealSelector = '.section-heading, .case-study, .experience-lead, .timeline article, .skill-group, .about-lead, .about-copy, .credentials-heading, .badge-card, .credential-list a, .contact-section h2';
+
+function ScrollReveal() {
+  useEffect(() => {
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const elements = Array.from(document.querySelectorAll<HTMLElement>(revealSelector));
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (!entry.isIntersecting) continue;
+        entry.target.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    elements.forEach((element) => {
+      const siblings = element.parentElement ? Array.from(element.parentElement.children) : [];
+      element.style.setProperty('--reveal-delay', `${(siblings.indexOf(element) % 4) * 80}ms`);
+      element.classList.add('reveal');
+      observer.observe(element);
+    });
+    return () => observer.disconnect();
+  }, []);
+  return null;
+}
+
 export default function App({ locale = 'en', page = 'portfolio' }: AppProps) {
   if (page === 'plain') return <PlainResumePage locale={locale} />;
   if (page === 'article') return <TechnicalArticlePage />;
   if (page === 'notFound') return <NotFoundPage />;
-  return <><a className="skip-link" href="#main-content">{locale === 'en' ? 'Skip to content' : 'Saltar al contenido'}</a><Header locale={locale} /><main id="main-content"><Hero locale={locale} /><WorkSection locale={locale} /><ExperienceSection locale={locale} /><CapabilitiesSection locale={locale} /><AboutSection locale={locale} /><CredentialsSection locale={locale} /></main><ContactSection locale={locale} /></>;
+  return <><a className="skip-link" href="#main-content">{locale === 'en' ? 'Skip to content' : 'Saltar al contenido'}</a><Header locale={locale} /><main id="main-content"><Hero locale={locale} /><WorkSection locale={locale} /><ExperienceSection locale={locale} /><StackMarquee /><CapabilitiesSection locale={locale} /><AboutSection locale={locale} /><CredentialsSection locale={locale} /></main><ContactSection locale={locale} /><ScrollReveal /></>;
 }

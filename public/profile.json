@@ -2,6 +2,8 @@
   "$schema": "https://schema.org/Person",
   "name": "Billy Martínez",
   "alternateName": "Billyflin",
+  "headline": "SAP Certified SAP BTP and Business AI engineer with full-stack depth (Kotlin/Spring, Node.js/TypeScript, Vue)",
+  "professionalSince": "2023-10",
   "url": "https://billyflin.dev/",
   "email": "mailto:hello@billyflin.dev",
   "location": "Temuco, Chile",
@@ -12,7 +14,7 @@
     "startDate": "2025-01",
     "endDate": "2026"
   },
-  "targetRoles": ["Backend Engineer", "Platform Engineer", "Software Engineer", "Full-Stack Engineer", "Solutions Engineer", "Technical Delivery Engineer", "SAP BTP Technical Consultant", "SAP Fiori / CAP Developer"],
+  "targetRoles": ["SAP BTP Technical Consultant", "SAP Business AI Engineer", "SAP Solution Architect (Business AI)", "Backend Engineer", "Platform Engineer", "Software Engineer", "Full-Stack Engineer", "Solutions Engineer", "Technical Delivery Engineer", "SAP Fiori / CAP Developer"],
   "workPreference": {
     "engagement": "Seeking salaried employment",
     "locationPreference": "Temuco, Chile; open to remote, hybrid, or on-site work and relocation within Chile",
@@ -35,7 +37,15 @@
     "evidence": ["Kotlin and Spring domain services", "TypeScript and Node.js enterprise services", "React and Next.js product delivery", "SAP BTP extensions", "AWS and Google Cloud architecture decisions", "Grounded RAG evaluation and safe-refusal controls"],
     "claimBoundary": "Does not claim expert or production experience in every framework; demonstrates transferable engineering fundamentals and rapid adoption through inspectable work"
   },
-  "skills": ["Systems architecture", "Requirements refinement", "Domain modeling", "Backend engineering", "Platform engineering", "API design", "Integration design", "Kotlin", "Spring", "Node.js", "TypeScript", "REST", "OpenAPI", "PostgreSQL", "Multi-tenant systems", "React", "Next.js", "Automated testing", "CI/CD", "Observability", "QA coordination", "UX flow design", "SAP BTP", "SAP Fiori", "SAP UI5", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "Retrieval-augmented generation", "LLM evaluation", "Google Cloud", "AWS", "Docker"],
+  "skills": ["Systems architecture", "Requirements refinement", "Domain modeling", "Backend engineering", "Platform engineering", "API design", "Integration design", "Kotlin", "Spring", "Node.js", "TypeScript", "REST", "OpenAPI", "PostgreSQL", "Multi-tenant systems", "React", "Next.js", "Automated testing", "CI/CD", "Observability", "QA coordination", "UX flow design", "SAP BTP", "SAP Fiori", "SAP UI5", "SAP CAP", "CDS", "SAP Work Zone", "SAP HANA", "SAP Joule", "SAP Business AI", "SAP Business Data Cloud", "Retrieval-augmented generation", "LLM evaluation", "Google Cloud", "AWS", "Docker"],
+  "certifications": [
+    { "issuer": "SAP", "code": "C_BAIPA", "name": "SAP Certified - Solution Architect - SAP Business AI Platform", "year": 2026, "validUntil": "2027-11-12", "url": "https://www.credly.com/badges/b1714db2-7ff6-4de8-b710-e5e6bdfcf6ad/public_url" },
+    { "issuer": "SAP", "code": "C_BCBDC", "name": "SAP Certified - SAP Business Data Cloud", "year": 2026, "validUntil": "2027-11-12", "url": "https://www.credly.com/badges/23e95a72-aea5-4499-a4a1-ce075dd47773/public_url" }
+  ],
+  "securityCredentials": [
+    { "issuer": "Fortinet", "name": "NSE 1 Certified in Cybersecurity", "year": 2026, "url": "https://www.credly.com/badges/e08eefd0-cfc6-440d-9c74-cf52dc194e3b/public_url" },
+    { "issuer": "Fortinet", "name": "Fortinet Cybersecurity and Cloud Fundamentals 1.0", "year": 2026, "url": "https://www.credly.com/badges/b2e8f793-b535-445c-9950-4522271e3ce6/public_url" }
+  ],
   "verifiedCredentials": [
     { "issuer": "AWS / Coursera", "name": "Cloud Technology Consultant", "year": 2024, "url": "https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d" },
     { "issuer": "AWS / Coursera", "name": "Cloud Solutions Architect", "year": 2024, "url": "https://coursera.org/share/e39b52b82410a6d0327ac715e3fb971c" },
@@ -54,5 +64,5 @@
     "github": "https://github.com/Billyflin",
     "linkedin": "https://www.linkedin.com/in/billyflin"
   },
-  "lastUpdated": "2026-09-29"
+  "lastUpdated": "2026-11-11"
 }

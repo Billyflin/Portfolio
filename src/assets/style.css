@@ -79,6 +79,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .desktop-nav { gap: 1rem; font-size: 0.7rem; letter-spacing: 0.05em; }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .desktop-nav a[href^="/writing"] { display: none; }
 }
 
 .desktop-nav a, .text-link, .social-links a { position: relative; }
@@ -181,9 +190,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .hero-title {
-  max-width: 10ch;
+  max-width: 17ch;
   margin: clamp(2.5rem, min(9vw, 8vh), 9rem) 0 clamp(1.75rem, 4vh, 3rem);
-  font-size: clamp(3.7rem, min(8.2vw, 11vh), 9.5rem);
+  font-size: clamp(3.2rem, min(6.4vw, 9.5vh), 7.75rem);
   font-weight: 900;
   letter-spacing: -0.075em;
   line-height: 0.82;
@@ -193,13 +202,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .hero-bottom {
   display: grid;
-  grid-template-columns: minmax(220px, 1fr) auto;
-  align-items: end;
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 1.75rem;
 }
 
 .hero-bottom > p {
-  max-width: 34rem;
+  max-width: 38rem;
   margin: 0;
   color: var(--muted);
   font-size: clamp(1rem, 1.25vw, 1.25rem);
@@ -282,10 +291,40 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .portrait figcaption span { display: flex; align-items: center; gap: 0.35rem; }
 
+/* Photo carousel: the first slide stays in flow to size the frame; the rest
+   stack on top. The incoming slide fades in above the outgoing one, so the
+   background never shows through mid-transition. */
+.portrait--carousel .portrait-slide {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 900ms ease;
+}
+.portrait--carousel .portrait-slide:first-of-type { position: relative; }
+.portrait--carousel .portrait-slide.is-prev { z-index: 1; opacity: 1; transition: none; }
+.portrait--carousel .portrait-slide.is-active { z-index: 2; opacity: 1; }
+.portrait--carousel::after { z-index: 3; }
+.portrait--carousel figcaption { z-index: 4; align-items: center; }
+
+.portrait-dots { gap: 0.5rem; }
+.portrait-dots button {
+  width: 0.6rem;
+  height: 0.6rem;
+  padding: 0;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+.portrait-dots button:hover { transform: scale(1.25); }
+.portrait-dots button.is-active { background: white; }
+
 .discipline-strip {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   border-top: 1px solid var(--ink);
   background: var(--acid);
 }
@@ -345,9 +384,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .section-heading h2, .credentials-heading h2 {
-  max-width: 12ch;
+  max-width: 16ch;
   margin: 0;
-  font-size: clamp(2.5rem, 5.5vw, 6rem);
+  font-size: clamp(2.5rem, 4.6vw, 5rem);
   font-weight: 900;
   letter-spacing: -0.065em;
   line-height: 0.95;
@@ -422,9 +461,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .case-body h3 {
-  max-width: 14ch;
+  max-width: 18ch;
   margin: 0;
-  font-size: clamp(2.5rem, 5vw, 5.5rem);
+  font-size: clamp(2.2rem, 3.8vw, 4.25rem);
   font-weight: 900;
   letter-spacing: -0.055em;
   line-height: 0.98;
@@ -471,6 +510,60 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .case-aside { min-width: 0; }
+
+.case-stat { margin-bottom: 1.75rem; }
+.case-stat strong {
+  display: block;
+  font-size: clamp(3rem, 5.5vw, 5.75rem);
+  font-weight: 900;
+  letter-spacing: -0.07em;
+  line-height: 0.88;
+}
+.case-stat span {
+  display: block;
+  max-width: 28ch;
+  margin-top: 0.85rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+/* Scrolling stack band between Experience and Capabilities. */
+.stack-marquee {
+  overflow: hidden;
+  border-bottom: 1px solid var(--ink);
+  background: var(--acid);
+  color: var(--ink);
+}
+.stack-marquee__track {
+  display: flex;
+  width: max-content;
+  animation: marquee 48s linear infinite;
+}
+.stack-marquee__track > div { display: flex; }
+.stack-marquee span {
+  padding: 1.35rem 0 1.35rem 2.25rem;
+  font-size: clamp(1.4rem, 2.6vw, 2.4rem);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  white-space: nowrap;
+}
+.stack-marquee span::after { margin-left: 2.25rem; content: '✦'; color: var(--orange); }
+.stack-marquee:hover .stack-marquee__track { animation-play-state: paused; }
+@keyframes marquee { to { transform: translateX(-50%); } }
+
+/* Scroll reveal: only applied once JS has tagged elements, so content is
+   always visible without JavaScript. Uses `translate` so it does not fight
+   hover effects that use `transform`. */
+.reveal {
+  opacity: 0;
+  translate: 0 28px;
+  transition: opacity 700ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms), translate 700ms cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms), transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease, padding 180ms ease;
+}
+.reveal.is-visible { opacity: 1; translate: none; }
 
 .architecture-details {
   margin-top: 1rem;
@@ -784,6 +877,55 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 .credential-list strong { font-size: clamp(1.15rem, 2vw, 1.65rem); letter-spacing: -0.035em; }
+
+.credential-group-label {
+  margin: 0 0 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.credential-list + .credential-group-label { margin-top: 3rem; }
+.badge-grid + .credential-group-label { margin-top: 3rem; }
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.badge-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: clamp(1rem, 2vw, 2rem);
+  align-items: center;
+  padding: clamp(1rem, 2vw, 1.75rem);
+  border: 1px solid var(--ink);
+  border-radius: var(--radius);
+  background: var(--white);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.badge-card:hover { transform: translateY(-4px); box-shadow: 0 10px 0 var(--ink); }
+.badge-card img { width: 104px; height: 104px; object-fit: contain; }
+.badge-card--sap img { width: clamp(112px, 11vw, 160px); height: auto; aspect-ratio: 1; }
+.badge-copy { display: grid; gap: 0.6rem; min-width: 0; }
+.badge-card strong { font-size: clamp(1.15rem, 1.7vw, 1.55rem); font-weight: 900; letter-spacing: -0.035em; line-height: 1.12; }
+.badge-card--sap strong { font-size: clamp(1.25rem, 2vw, 1.85rem); }
+.badge-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.credential-list--featured a { grid-template-columns: minmax(150px, 0.7fr) minmax(300px, 1.5fr) 9rem 2rem; min-height: 6.5rem; }
+.credential-list--featured a:hover { background: var(--blue); color: white; }
+.credential-list--featured strong { font-weight: 900; }
 
 .contact-section {
   display: grid;
@@ -1222,7 +1364,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .hero-copy { min-height: 0; padding-top: 1.5rem; padding-bottom: 1.5rem; }
   .portrait { min-height: 0; }
   .hero-title {
-    max-width: 11ch;
+    max-width: 17ch;
     margin: 1.1rem 0;
     font-size: clamp(3.4rem, min(6.4vw, 9vh), 6.25rem);
     line-height: 0.84;
@@ -1232,7 +1374,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
   .hero--es .hero-copy { padding-top: 1.1rem; padding-bottom: 1.1rem; }
   .hero--es .hero-title {
-    max-width: 13ch;
+    max-width: 18ch;
     margin: 0.85rem 0;
     font-size: clamp(2.8rem, min(5.4vw, 6.8vh), 5.2rem);
     line-height: 0.86;
@@ -1260,7 +1402,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .discipline-strip { grid-template-columns: repeat(2, 1fr); }
   .discipline-strip span { border-bottom: 1px solid var(--ink); }
   .discipline-strip span:nth-child(2n) { border-right: 0; }
-  .discipline-strip span:last-child { grid-column: 1 / -1; border-bottom: 0; }
+  .discipline-strip span:nth-last-child(-n+2) { border-bottom: 0; }
   .proof-strip { grid-template-columns: 1fr; }
   .proof-strip > div { min-height: 0; border-right: 0; border-bottom: 1px solid var(--ink); }
   .proof-strip > div:last-child { border-bottom: 0; }
@@ -1280,7 +1422,11 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .skill-group, .skill-group:nth-child(2) { min-height: 0; border-right: 0; border-bottom: 1px solid var(--ink); }
   .skill-group:last-child { border-bottom: 0; }
   .skill-group h3 { min-height: 0; margin: 2rem 0; }
-  .credential-list a { grid-template-columns: 1fr auto; gap: 0.4rem 1rem; min-height: 7.5rem; padding: 1rem 0; }
+  .badge-grid { grid-template-columns: 1fr; }
+  .badge-card, .badge-card--sap { grid-template-columns: auto minmax(0, 1fr); }
+  .badge-card .icon-arrow { display: none; }
+  .badge-card img, .badge-card--sap img { width: 84px; height: 84px; }
+  .credential-list a, .credential-list--featured a { grid-template-columns: 1fr auto; gap: 0.4rem 1rem; min-height: 7.5rem; padding: 1rem 0; }
   .credential-list a:hover { padding-right: 0; padding-left: 0; }
   .credential-list strong { grid-column: 1; }
   .credential-year { grid-column: 1; }
@@ -1306,6 +1452,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .stack-marquee__track { animation: none; }
   html { scroll-behavior: auto; }
   *, *::before, *::after {
     scroll-behavior: auto !important;
