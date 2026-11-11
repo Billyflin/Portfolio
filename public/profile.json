@@ -40,6 +40,10 @@
     { "issuer": "SAP", "code": "C_BAIPA", "name": "SAP Certified - Solution Architect - SAP Business AI Platform", "year": 2026, "validUntil": "2027-11-12", "url": "https://www.credly.com/badges/b1714db2-7ff6-4de8-b710-e5e6bdfcf6ad/public_url" },
     { "issuer": "SAP", "code": "C_BCBDC", "name": "SAP Certified - SAP Business Data Cloud", "year": 2026, "validUntil": "2027-11-12", "url": "https://www.credly.com/badges/23e95a72-aea5-4499-a4a1-ce075dd47773/public_url" }
   ],
+  "securityCredentials": [
+    { "issuer": "Fortinet", "name": "NSE 1 Certified in Cybersecurity", "year": 2026, "url": "https://www.credly.com/badges/e08eefd0-cfc6-440d-9c74-cf52dc194e3b/public_url" },
+    { "issuer": "Fortinet", "name": "Fortinet Cybersecurity and Cloud Fundamentals 1.0", "year": 2026, "url": "https://www.credly.com/badges/b2e8f793-b535-445c-9950-4522271e3ce6/public_url" }
+  ],
   "verifiedCredentials": [
     { "issuer": "AWS / Coursera", "name": "Cloud Technology Consultant", "year": 2024, "url": "https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d" },
     { "issuer": "AWS / Coursera", "name": "Cloud Solutions Architect", "year": 2024, "url": "https://coursera.org/share/e39b52b82410a6d0327ac715e3fb971c" },

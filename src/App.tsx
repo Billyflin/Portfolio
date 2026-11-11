@@ -27,6 +27,21 @@ const certifications = [
   },
 ] as const;
 
+const securityCredentials = [
+  {
+    issuer: 'Fortinet',
+    name: 'NSE 1 Certified in Cybersecurity',
+    year: '2026',
+    href: 'https://www.credly.com/badges/e08eefd0-cfc6-440d-9c74-cf52dc194e3b/public_url',
+  },
+  {
+    issuer: 'Fortinet',
+    name: 'Cybersecurity and Cloud Fundamentals 1.0',
+    year: '2026',
+    href: 'https://www.credly.com/badges/b2e8f793-b535-445c-9950-4522271e3ce6/public_url',
+  },
+] as const;
+
 const credentials = [
   {
     issuer: 'AWS / Coursera',
@@ -185,7 +200,7 @@ const content = {
       ],
       facts: [['Role fit', 'SAP BTP · Backend · Full-stack'], ['Professional stack', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Education', 'Ingeniería Informática · Coursework completed']],
     },
-    credentials: { kicker: '05 / Certifications', title: 'SAP certified. Verifiable.', intro: 'Two current SAP certifications, valid until November 2027, backed by Coursera and AWS Academy courses in cloud and data. Each item links to a verifiable record.', certsLabel: 'SAP certifications', coursesLabel: 'Courses · not certification exams' },
+    credentials: { kicker: '05 / Certifications', title: 'SAP certified. Verifiable.', intro: 'Two current SAP certifications, valid until November 2027, plus Fortinet cybersecurity credentials and Coursera and AWS Academy courses in cloud and data. Each item links to a verifiable record.', certsLabel: 'SAP certifications', securityLabel: 'Cybersecurity · Fortinet', coursesLabel: 'Courses · not certification exams' },
     contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Temuco, Chile · Spanish native · English B2 · Salaried roles · Immediate availability', backendCv: 'SAP BTP CV', fullstackCv: 'Full-stack CV', recruiterProfile: 'Recruiter profile' },
   },
   es: {
@@ -270,7 +285,7 @@ const content = {
       paragraphs: ['Llevo suficiente tiempo programando para saber que las herramientas cambian más rápido que los fundamentos. Mi ventaja no es memorizar un stack: es entender el sistema completo, tomar una decisión clara y aprender lo que la entrega necesite.', 'Vivo en Temuco, Chile, y busco empleo asalariado con contrato en software, con disponibilidad inmediata. Acepto trabajo remoto, híbrido o presencial y puedo trasladarme dentro de Chile. Español nativo; inglés B2 operativo para conversaciones técnicas.'],
       facts: [['Roles objetivo', 'SAP BTP · Backend · Full stack'], ['Stack laboral', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Formación', 'Ingeniería Informática · Egresado']],
     },
-    credentials: { kicker: '05 / Certificaciones', title: 'Certificado por SAP. Verificable.', intro: 'Dos certificaciones SAP vigentes hasta noviembre de 2027, respaldadas por cursos de Coursera y AWS Academy en cloud y datos. Cada elemento enlaza a un registro verificable.', certsLabel: 'Certificaciones SAP', coursesLabel: 'Cursos · no son exámenes de certificación' },
+    credentials: { kicker: '05 / Certificaciones', title: 'Certificado por SAP. Verificable.', intro: 'Dos certificaciones SAP vigentes hasta noviembre de 2027, además de credenciales de ciberseguridad de Fortinet y cursos de Coursera y AWS Academy en cloud y datos. Cada elemento enlaza a un registro verificable.', certsLabel: 'Certificaciones SAP', securityLabel: 'Ciberseguridad · Fortinet', coursesLabel: 'Cursos · no son exámenes de certificación' },
     contact: { kicker: '06 / Contacto', title: '¿Necesitas a alguien que entienda la operación y construya la solución?', note: 'Temuco, Chile · Español nativo · Inglés B2 · Empleo asalariado con contrato · Disponibilidad inmediata', backendCv: 'CV SAP BTP', fullstackCv: 'CV Full Stack', recruiterProfile: 'Perfil para reclutamiento' },
   },
 } as const;
@@ -309,7 +324,7 @@ function AboutSection({ locale }: { locale: Locale }) {
 
 function CredentialsSection({ locale }: { locale: Locale }) {
   const t = content[locale].credentials;
-  return <section className="section credentials-section" id="credentials"><div className="credentials-heading"><div><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2></div><p>{t.intro}</p></div><p className="credential-group-label">{t.certsLabel}</p><div className="credential-list credential-list--featured">{certifications.map((cert) => <a href={cert.href} target="_blank" rel="noreferrer" key={cert.code}><span className="credential-issuer">{cert.issuer} · {cert.code}</span><strong>SAP Certified – {cert.name}</strong><span className="credential-year">{cert.validUntil[locale]}</span><span className="icon-arrow" aria-hidden="true">↗</span></a>)}</div><p className="credential-group-label">{t.coursesLabel}</p><div className="credential-list">{credentials.map((credential) => <a href={credential.href} target="_blank" rel="noreferrer" key={credential.name}><span className="credential-issuer">{credential.issuer}</span><strong>{credential.name}</strong><span className="credential-year">{credential.year}</span><span className="icon-arrow" aria-hidden="true">↗</span></a>)}</div></section>;
+  return <section className="section credentials-section" id="credentials"><div className="credentials-heading"><div><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2></div><p>{t.intro}</p></div><p className="credential-group-label">{t.certsLabel}</p><div className="credential-list credential-list--featured">{certifications.map((cert) => <a href={cert.href} target="_blank" rel="noreferrer" key={cert.code}><span className="credential-issuer">{cert.issuer} · {cert.code}</span><strong>SAP Certified – {cert.name}</strong><span className="credential-year">{cert.validUntil[locale]}</span><span className="icon-arrow" aria-hidden="true">↗</span></a>)}</div><p className="credential-group-label">{t.securityLabel}</p><div className="credential-list">{securityCredentials.map((credential) => <a href={credential.href} target="_blank" rel="noreferrer" key={credential.name}><span className="credential-issuer">{credential.issuer}</span><strong>{credential.name}</strong><span className="credential-year">{credential.year}</span><span className="icon-arrow" aria-hidden="true">↗</span></a>)}</div><p className="credential-group-label">{t.coursesLabel}</p><div className="credential-list">{credentials.map((credential) => <a href={credential.href} target="_blank" rel="noreferrer" key={credential.name}><span className="credential-issuer">{credential.issuer}</span><strong>{credential.name}</strong><span className="credential-year">{credential.year}</span><span className="icon-arrow" aria-hidden="true">↗</span></a>)}</div></section>;
 }
 
 function ContactSection({ locale }: { locale: Locale }) {
