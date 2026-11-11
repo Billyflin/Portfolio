@@ -260,7 +260,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .portrait img {
   display: block;
   object-fit: cover;
-  object-position: 58% 30%;
+  object-position: 50% center;
 }
 
 .portrait::after {
@@ -1280,7 +1280,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   }
   .hero-actions { flex-wrap: wrap; }
   .portrait { min-height: 28rem; border-top: 1px solid var(--ink); border-left: 0; }
-  .portrait img { object-position: 58% 25%; }
+  .portrait img { object-position: 50% center; }
   .discipline-strip { grid-template-columns: repeat(2, 1fr); }
   .discipline-strip span { border-bottom: 1px solid var(--ink); }
   .discipline-strip span:nth-child(2n) { border-right: 0; }
