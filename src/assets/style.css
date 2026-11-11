@@ -785,6 +785,21 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .credential-list strong { font-size: clamp(1.15rem, 2vw, 1.65rem); letter-spacing: -0.035em; }
 
+.credential-group-label {
+  margin: 0 0 1rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.credential-list + .credential-group-label { margin-top: 3rem; }
+.credential-list--featured a { grid-template-columns: minmax(150px, 0.7fr) minmax(300px, 1.5fr) 9rem 2rem; min-height: 6.5rem; }
+.credential-list--featured a:hover { background: var(--blue); color: white; }
+.credential-list--featured strong { font-weight: 900; }
+
 .contact-section {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
@@ -1280,7 +1295,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .skill-group, .skill-group:nth-child(2) { min-height: 0; border-right: 0; border-bottom: 1px solid var(--ink); }
   .skill-group:last-child { border-bottom: 0; }
   .skill-group h3 { min-height: 0; margin: 2rem 0; }
-  .credential-list a { grid-template-columns: 1fr auto; gap: 0.4rem 1rem; min-height: 7.5rem; padding: 1rem 0; }
+  .credential-list a, .credential-list--featured a { grid-template-columns: 1fr auto; gap: 0.4rem 1rem; min-height: 7.5rem; padding: 1rem 0; }
   .credential-list a:hover { padding-right: 0; padding-left: 0; }
   .credential-list strong { grid-column: 1; }
   .credential-year { grid-column: 1; }

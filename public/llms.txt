@@ -50,7 +50,12 @@ UFRO Sustentable: open Kotlin/Firebase Android team project with maps, QR, rewar
 
 Reliable API integrations start by assuming delivery will fail: a practical blueprint for transactional outbox delivery, stable idempotency keys, failure classification, observability, and auditable replay. It clearly separates implemented public CAP evidence from the proposed Integration Suite boundary: https://billyflin.dev/writing/reliable-api-integrations/
 
-## Verified credentials
+## SAP certifications
+
+SAP Certified - Solution Architect - SAP Business AI Platform (C_BAIPA, 2026, valid until 2027-11-12): https://www.credly.com/badges/b1714db2-7ff6-4de8-b710-e5e6bdfcf6ad/public_url
+SAP Certified - SAP Business Data Cloud (C_BCBDC, 2026, valid until 2027-11-12): https://www.credly.com/badges/23e95a72-aea5-4499-a4a1-ce075dd47773/public_url
+
+## Verified courses (not certification exams)
 
 AWS / Coursera — Cloud Technology Consultant (2024): https://coursera.org/share/b6c862b295cf8f33acf3bfacf1a1f34d
 AWS / Coursera — Cloud Solutions Architect (2024): https://coursera.org/share/e39b52b82410a6d0327ac715e3fb971c
