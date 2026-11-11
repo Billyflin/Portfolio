@@ -291,6 +291,36 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .portrait figcaption span { display: flex; align-items: center; gap: 0.35rem; }
 
+/* Photo carousel: the first slide stays in flow to size the frame; the rest
+   stack on top. The incoming slide fades in above the outgoing one, so the
+   background never shows through mid-transition. */
+.portrait--carousel .portrait-slide {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 900ms ease;
+}
+.portrait--carousel .portrait-slide:first-of-type { position: relative; }
+.portrait--carousel .portrait-slide.is-prev { z-index: 1; opacity: 1; transition: none; }
+.portrait--carousel .portrait-slide.is-active { z-index: 2; opacity: 1; }
+.portrait--carousel::after { z-index: 3; }
+.portrait--carousel figcaption { z-index: 4; align-items: center; }
+
+.portrait-dots { gap: 0.5rem; }
+.portrait-dots button {
+  width: 0.6rem;
+  height: 0.6rem;
+  padding: 0;
+  border: 1px solid white;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+.portrait-dots button:hover { transform: scale(1.25); }
+.portrait-dots button.is-active { background: white; }
+
 .discipline-strip {
   grid-column: 1 / -1;
   display: grid;
