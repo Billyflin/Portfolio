@@ -83,15 +83,15 @@ const content = {
     hero: {
       status: 'Available now · SAP Certified · Business AI & Business Data Cloud',
       title: <>SAP BTP engineer who turns business requirements <span>into systems that ship.</span></>,
-      intro: 'SAP Certified Solution Architect for the SAP Business AI Platform and certified in SAP Business Data Cloud. Since 2023 I have taken functional requirements to architecture, code, automated tests, and release: SAP BTP at BeCloud, full-stack Kotlin/Spring + Vue at HappRent.',
+      intro: 'SAP Certified Solution Architect for the SAP Business AI Platform and certified in SAP Business Data Cloud. As an SAP BTP consultant at BeCloud I took functional requirements to architecture, CAP/CDS services, Fiori/UI5 apps, automated tests, and release.',
       primaryCta: 'See selected work',
-      resumeCta: 'SAP BTP CV', resumeCtaAlt: 'Full-stack CV',
+      resumeCta: 'Download CV', resumeCtaAlt: 'Full-stack CV',
       portraitAlt: 'Billy Martínez with Oliver outdoors in Temuco',
       disciplines: ['SAP BTP & CAP', 'SAP Business AI', 'Backend & APIs', 'System architecture', 'Full-stack delivery', 'Quality automation'],
     },
     proof: [
       { value: '2× SAP Certified', label: 'Business AI Platform architect · Business Data Cloud' },
-      { value: 'Since 2023', label: 'Shipping professionally · SAP BTP & full-stack' },
+      { value: 'SAP BTP', label: 'Consultant at BeCloud · CAP/CDS · Fiori/UI5 · HANA' },
       { value: 'End to end', label: 'Requirement → architecture → build → QA → release' },
     ],
     work: {
@@ -186,7 +186,6 @@ const content = {
       intro: 'I create the most value between a functional requirement and a production release: I challenge the first solution, choose a defensible architecture, build it, and lead validation until it ships.',
       roles: [
         { period: 'Jan 2025 — Sep 2026', company: 'BeCloud Consulting', title: 'SAP BTP Consultant · CAP/CDS, Node.js/TypeScript, Fiori/UI5', body: 'Requirement refinement with a functional consultant; SAP CAP/CDS services on Node.js/TypeScript, REST/OData integrations on HANA, Fiori/UI5 in Work Zone, automated testing and a formal QA stage, Scrum/Kanban.' },
-        { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Full-Stack Developer · Kotlin/Spring Boot, Vue 3', body: 'As part of the team: Kotlin + Spring Boot 3 API (Spring Security/JWT, JPA, email), Vue 3 + Pinia frontend for leases, properties, brokers and KPIs, contract PDF generation and templates, Docker images published on AWS.' },
         { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Coursework completed', body: 'Coursework completed in 2026.' },
       ],
     },
@@ -208,10 +207,10 @@ const content = {
         'Tools change faster than fundamentals. My edge is not one stack: it is understanding the whole system—business process, data, integrations, failure modes—making a clear decision, and learning whatever the delivery requires. The SAP certifications are recent proof of how fast I ramp up.',
         'I am based in Temuco, Chile, and seeking salaried software roles with immediate availability. I am open to remote, hybrid, or on-site work and relocation within Chile. Spanish is native; English is B2 and operational for technical conversations.',
       ],
-      facts: [['Role fit', 'SAP BTP · Business AI · Backend · Full-stack'], ['Certified', 'SAP C_BAIPA · SAP C_BCBDC · Fortinet NSE 1'], ['Professional stack', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Education', 'Ingeniería Informática · Coursework completed']],
+      facts: [['Role fit', 'SAP BTP · Business AI · Backend · Full-stack'], ['Certified', 'SAP C_BAIPA · SAP C_BCBDC · Fortinet NSE 1'], ['Professional stack', 'SAP CAP/CDS · Fiori/UI5 · HANA · Node.js/TypeScript'], ['Education', 'Ingeniería Informática · Coursework completed']],
     },
     credentials: { kicker: '05 / Certifications', title: 'SAP certified. Verifiable.', intro: 'Current SAP certifications in Business AI architecture and Business Data Cloud, valid to November 2027, plus Fortinet cybersecurity and cloud and data coursework. Every item links to a verifiable record.', certsLabel: 'SAP certifications', securityLabel: 'Cybersecurity · Fortinet', coursesLabel: 'Courses · not certification exams' },
-    contact: { kicker: '06 / Contact', title: 'Need an SAP BTP engineer who understands the business and ships the solution?', note: 'SAP Certified · Temuco, Chile · Spanish native · English B2 · Remote, hybrid or on-site · Immediate availability', backendCv: 'SAP BTP CV', fullstackCv: 'Full-stack CV', recruiterProfile: 'Recruiter profile' },
+    contact: { kicker: '06 / Contact', title: 'Need an SAP BTP engineer who understands the business and ships the solution?', note: 'SAP Certified · Temuco, Chile · Spanish native · English B2 · Remote, hybrid or on-site · Immediate availability', backendCv: 'Download SAP BTP CV', fullstackCv: 'Full-stack CV', recruiterProfile: 'Recruiter profile' },
   },
   es: {
     nav: { work: 'Trabajo', experience: 'Experiencia', capabilities: 'Capacidades', certifications: 'Certificaciones', writing: 'Artículo', contact: 'Conversemos' },
@@ -220,15 +219,15 @@ const content = {
     hero: {
       status: 'Disponible ya · SAP Certified · Business AI y Business Data Cloud',
       title: <>Ingeniero SAP BTP que convierte requisitos del negocio <span>en sistemas que llegan a producción.</span></>,
-      intro: 'SAP Certified Solution Architect en SAP Business AI Platform y certificado en SAP Business Data Cloud. Desde 2023 llevo requerimientos funcionales a arquitectura, código, pruebas automatizadas y producción: SAP BTP en BeCloud y full stack Kotlin/Spring + Vue en HappRent.',
+      intro: 'SAP Certified Solution Architect en SAP Business AI Platform y certificado en SAP Business Data Cloud. Como consultor SAP BTP en BeCloud llevé requerimientos funcionales a arquitectura, servicios CAP/CDS, apps Fiori/UI5, pruebas automatizadas y producción.',
       primaryCta: 'Ver trabajo',
-      resumeCta: 'CV SAP BTP', resumeCtaAlt: 'CV Full Stack',
+      resumeCta: 'Descargar CV', resumeCtaAlt: 'CV Full Stack',
       portraitAlt: 'Billy Martínez junto a Oliver al aire libre en Temuco',
       disciplines: ['SAP BTP y CAP', 'SAP Business AI', 'Backend y APIs', 'Arquitectura de sistemas', 'Entrega full-stack', 'Calidad automatizada'],
     },
     proof: [
       { value: '2× SAP Certified', label: 'Arquitecto Business AI Platform · Business Data Cloud' },
-      { value: 'Desde 2023', label: 'Entregando software · SAP BTP y full stack' },
+      { value: 'SAP BTP', label: 'Consultor en BeCloud · CAP/CDS · Fiori/UI5 · HANA' },
       { value: 'De punta a punta', label: 'Requisito → arquitectura → desarrollo → QA → producción' },
     ],
     work: {
@@ -276,7 +275,6 @@ const content = {
       kicker: '02 / Experiencia', title: 'Amplitud de ingeniería en dominios complejos.', intro: 'Aporto más valor entre un requerimiento funcional y una entrega productiva: cuestionando la solución inicial, eligiendo una arquitectura defendible, implementándola y guiando su validación.',
       roles: [
         { period: 'Ene 2025 — Sep 2026', company: 'BeCloud Consulting', title: 'Consultor SAP BTP · CAP/CDS, Node.js/TypeScript, Fiori/UI5', body: 'Refinamiento de requerimientos con el consultor funcional; servicios SAP CAP/CDS sobre Node.js/TypeScript, integraciones REST/OData sobre HANA, Fiori/UI5 en Work Zone, pruebas automatizadas y etapa formal de QA, Scrum/Kanban.' },
-        { period: 'Oct 2023 — Sep 2024', company: 'Happ Rent', title: 'Desarrollador Full Stack · Kotlin/Spring Boot, Vue 3', body: 'Dentro del equipo: API en Kotlin + Spring Boot 3 (Spring Security/JWT, JPA, correo), frontend Vue 3 + Pinia para contratos, propiedades, corredoras e indicadores, generación de contratos PDF y plantillas, imágenes Docker publicadas en AWS.' },
         { period: '2020 — 2026', company: 'Universidad de La Frontera', title: 'Ingeniería Informática · Egresado', body: 'Plan de estudios completado en 2026.' },
       ],
     },
@@ -293,23 +291,23 @@ const content = {
     about: {
       kicker: '04 / Forma de trabajo', quote: 'No me quedo con el ticket: cuestiono la arquitectura, el flujo y los modos de falla.',
       paragraphs: ['Las herramientas cambian más rápido que los fundamentos. Mi ventaja no es un stack: es entender el sistema completo (proceso de negocio, datos, integraciones, modos de falla), tomar una decisión clara y aprender lo que la entrega necesite. Las certificaciones SAP son una prueba reciente de lo rápido que aprendo.', 'Vivo en Temuco, Chile, y busco empleo asalariado con contrato en software, con disponibilidad inmediata. Acepto trabajo remoto, híbrido o presencial y puedo trasladarme dentro de Chile. Español nativo; inglés B2 operativo para conversaciones técnicas.'],
-      facts: [['Roles objetivo', 'SAP BTP · Business AI · Backend · Full stack'], ['Certificaciones', 'SAP C_BAIPA · SAP C_BCBDC · Fortinet NSE 1'], ['Stack laboral', 'SAP CAP/Fiori · Node.js/TypeScript · Kotlin/Spring · Vue'], ['Formación', 'Ingeniería Informática · Egresado']],
+      facts: [['Roles objetivo', 'SAP BTP · Business AI · Backend · Full stack'], ['Certificaciones', 'SAP C_BAIPA · SAP C_BCBDC · Fortinet NSE 1'], ['Stack laboral', 'SAP CAP/CDS · Fiori/UI5 · HANA · Node.js/TypeScript'], ['Formación', 'Ingeniería Informática · Egresado']],
     },
     credentials: { kicker: '05 / Certificaciones', title: 'Certificado por SAP. Verificable.', intro: 'Certificaciones SAP vigentes en arquitectura de Business AI y Business Data Cloud, válidas hasta noviembre de 2027, más ciberseguridad con Fortinet y formación en cloud y datos. Cada elemento enlaza a un registro verificable.', certsLabel: 'Certificaciones SAP', securityLabel: 'Ciberseguridad · Fortinet', coursesLabel: 'Cursos · no son exámenes de certificación' },
-    contact: { kicker: '06 / Contacto', title: '¿Buscas un ingeniero SAP BTP que entienda el negocio y entregue la solución?', note: 'SAP Certified · Temuco, Chile · Español nativo · Inglés B2 · Remoto, híbrido o presencial · Disponibilidad inmediata', backendCv: 'CV SAP BTP', fullstackCv: 'CV Full Stack', recruiterProfile: 'Perfil para reclutamiento' },
+    contact: { kicker: '06 / Contacto', title: '¿Buscas un ingeniero SAP BTP que entienda el negocio y entregue la solución?', note: 'SAP Certified · Temuco, Chile · Español nativo · Inglés B2 · Remoto, híbrido o presencial · Disponibilidad inmediata', backendCv: 'Descargar CV SAP BTP', fullstackCv: 'CV Full Stack', recruiterProfile: 'Perfil para reclutamiento' },
   },
 } as const;
 
 function Header({ locale }: { locale: Locale }) {
   const t = content[locale];
-  return <header className="site-header"><a className="brand" href="#top" aria-label={locale === 'en' ? 'Go to the top' : 'Ir al inicio'}>BM<span>/26</span></a><nav className="desktop-nav" aria-label={locale === 'en' ? 'Primary navigation' : 'Navegación principal'}><a href="#work">{t.nav.work}</a><a href="#experience">{t.nav.experience}</a><a href="#capabilities">{t.nav.capabilities}</a><a href="#credentials">{t.nav.certifications}</a><a href="/writing/reliable-api-integrations/">{t.nav.writing}</a></nav><div className="header-actions"><a className="locale-link" href={t.localeHref} lang={locale === 'en' ? 'es' : 'en'}>{t.localeLabel}</a><a className="header-cta" href="mailto:hello@billyflin.dev">{t.nav.contact}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></header>;
+  return <header className="site-header"><a className="brand" href="#top" aria-label={locale === 'en' ? 'Go to the top' : 'Ir al inicio'}>BM<span>/26</span></a><nav className="desktop-nav" aria-label={locale === 'en' ? 'Primary navigation' : 'Navegación principal'}><a href="#work">{t.nav.work}</a><a href="#experience">{t.nav.experience}</a><a href="#capabilities">{t.nav.capabilities}</a><a href="#credentials">{t.nav.certifications}</a><a href="/writing/reliable-api-integrations/">{t.nav.writing}</a></nav><div className="header-actions"><a className="locale-link" href={t.localeHref} lang={locale === 'en' ? 'es' : 'en'}>{t.localeLabel}</a><a className="header-cta header-cta--cv" href={locale === 'en' ? '/Billy_Martinez_CV_SAP-BTP_EN.pdf' : '/Billy_Martinez_CV_SAP-BTP_ES.pdf'} download>CV<span className="icon-arrow" aria-hidden="true">↓</span></a><a className="header-cta header-cta--contact" href="mailto:hello@billyflin.dev">{t.nav.contact}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></header>;
 }
 
 function Hero({ locale }: { locale: Locale }) {
   const t = content[locale];
   const resumeHref = locale === 'en' ? '/Billy_Martinez_CV_SAP-BTP_EN.pdf' : '/Billy_Martinez_CV_SAP-BTP_ES.pdf';
   const resumeAltHref = locale === 'en' ? '/Billy_Martinez_CV_FullStack_EN.pdf' : '/Billy_Martinez_CV_FullStack_ES.pdf';
-  return <><section className={`hero hero--${locale}`} id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeHref} target="_blank" rel="noreferrer">{t.hero.resumeCta}<span className="icon-arrow" aria-hidden="true">↗</span></a><a className="text-link" href={resumeAltHref} target="_blank" rel="noreferrer">{t.hero.resumeCtaAlt}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></div></div><PortraitCarousel locale={locale} /><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
+  return <><section className={`hero hero--${locale}`} id="top"><div className="hero-copy"><div className="eyebrow hero-enter hero-enter--1"><span className="status-dot" aria-hidden="true" />{t.hero.status}</div><h1 className="hero-title hero-enter hero-enter--2">{t.hero.title}</h1><div className="hero-bottom hero-enter hero-enter--3"><p>{t.hero.intro}</p><div className="hero-actions"><a className="button button--primary button--cv" href={resumeHref} download>{t.hero.resumeCta}<span className="cv-tag">SAP BTP · PDF</span><span className="icon-arrow" aria-hidden="true">↓</span></a><a className="button button--light" href="#work">{t.hero.primaryCta}<span className="icon-arrow" aria-hidden="true">↘</span></a><a className="text-link" href={resumeAltHref} download>{t.hero.resumeCtaAlt}<span className="icon-arrow" aria-hidden="true">↓</span></a></div></div></div><PortraitCarousel locale={locale} /><div className="discipline-strip" aria-label={locale === 'en' ? 'Areas of work' : 'Áreas de trabajo'}>{t.hero.disciplines.map((item) => <span key={item}>{item}</span>)}</div></section><section className="proof-strip" aria-label={locale === 'en' ? 'Profile snapshot' : 'Resumen del perfil'}>{t.proof.map((item) => <div key={item.value}><strong>{item.value}</strong><span>{item.label}</span></div>)}</section></>;
 }
 
 function WorkSection({ locale }: { locale: Locale }) {
@@ -339,7 +337,7 @@ function CredentialsSection({ locale }: { locale: Locale }) {
 
 function ContactSection({ locale }: { locale: Locale }) {
   const t = content[locale].contact;
-  return <footer className="contact-section" id="contact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><a className="contact-email" href="mailto:hello@billyflin.dev">hello@billyflin.dev<span className="icon-arrow" aria-hidden="true">↗</span></a><p className="contact-note">{t.note}</p><div className="footer-row"><p>© {new Date().getFullYear()} Billy Martínez</p><div className="social-links"><a href="https://github.com/Billyflin" target="_blank" rel="me noreferrer">GitHub</a><a href="https://www.linkedin.com/in/billyflin" target="_blank" rel="me noreferrer">LinkedIn</a><a href="/writing/reliable-api-integrations/">{locale === 'en' ? 'Writing' : 'Artículo técnico'}</a><a href={locale === 'en' ? '/plain/' : '/es/plain/'}>{t.recruiterProfile}</a><a href={locale === 'en' ? '/Billy_Martinez_CV_SAP-BTP_EN.pdf' : '/Billy_Martinez_CV_SAP-BTP_ES.pdf'} target="_blank" rel="noreferrer">{t.backendCv}</a><a href={locale === 'en' ? '/Billy_Martinez_CV_FullStack_EN.pdf' : '/Billy_Martinez_CV_FullStack_ES.pdf'} target="_blank" rel="noreferrer">{t.fullstackCv}</a><a href="mailto:hello@billyflin.dev">Email</a></div></div></footer>;
+  return <footer className="contact-section" id="contact"><p className="section-kicker">{t.kicker}</p><h2>{t.title}</h2><a className="contact-email" href="mailto:hello@billyflin.dev">hello@billyflin.dev<span className="icon-arrow" aria-hidden="true">↗</span></a><div className="contact-cv"><a className="button button--primary" href={locale === 'en' ? '/Billy_Martinez_CV_SAP-BTP_EN.pdf' : '/Billy_Martinez_CV_SAP-BTP_ES.pdf'} download>{t.backendCv}<span className="icon-arrow" aria-hidden="true">↓</span></a><a className="button button--light" href={locale === 'en' ? '/Billy_Martinez_CV_FullStack_EN.pdf' : '/Billy_Martinez_CV_FullStack_ES.pdf'} download>{t.fullstackCv}<span className="icon-arrow" aria-hidden="true">↓</span></a></div><p className="contact-note">{t.note}</p><div className="footer-row"><p>© {new Date().getFullYear()} Billy Martínez</p><div className="social-links"><a href="https://github.com/Billyflin" target="_blank" rel="me noreferrer">GitHub</a><a href="https://www.linkedin.com/in/billyflin" target="_blank" rel="me noreferrer">LinkedIn</a><a href="/writing/reliable-api-integrations/">{locale === 'en' ? 'Writing' : 'Artículo técnico'}</a><a href={locale === 'en' ? '/plain/' : '/es/plain/'}>{t.recruiterProfile}</a><a href={locale === 'en' ? '/Billy_Martinez_CV_SAP-BTP_EN.pdf' : '/Billy_Martinez_CV_SAP-BTP_ES.pdf'} target="_blank" rel="noreferrer">{t.backendCv}</a><a href={locale === 'en' ? '/Billy_Martinez_CV_FullStack_EN.pdf' : '/Billy_Martinez_CV_FullStack_ES.pdf'} target="_blank" rel="noreferrer">{t.fullstackCv}</a><a href="mailto:hello@billyflin.dev">Email</a></div></div></footer>;
 }
 
 function NotFoundPage() {

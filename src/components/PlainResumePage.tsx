@@ -3,12 +3,11 @@ import type { Locale } from '../App';
 const pages = {
   en: {
     label: 'Plain-text recruiter profile',
-    headline: 'SAP Certified · SAP BTP & Business AI Engineer · Full-Stack · Node.js/TypeScript · Kotlin/Spring · Vue',
-    summary: 'SAP Certified Solution Architect (SAP Business AI Platform) and SAP Business Data Cloud certified. Professional experience since 2023: SAP BTP at BeCloud (CAP/CDS on Node.js/TypeScript, Fiori/UI5, HANA, OData) and full-stack Kotlin/Spring Boot + Vue 3 at HappRent. I refine functional requirements into architecture and working systems, and stay through automated testing, QA coordination, and delivery. Available immediately.',
+    headline: 'SAP Certified · SAP BTP & Business AI Engineer · CAP/CDS · Fiori/UI5 · Node.js/TypeScript',
+    summary: 'SAP Certified Solution Architect (SAP Business AI Platform) and SAP Business Data Cloud certified. SAP BTP consultant at BeCloud (CAP/CDS on Node.js/TypeScript, Fiori/UI5, HANA, OData). I refine functional requirements into architecture and working systems, and stay through automated testing, QA coordination, and delivery. Available immediately.',
     sectionExperience: 'Experience',
     roles: [
       ['BeCloud Consulting · SAP BTP Consultant', 'Jan 2025 — Sep 2026', 'Requirement refinement with a functional consultant; solution architecture, Fiori/UI5 UX, full-stack SAP delivery, automated testing, QA and design coordination, deployment, and platform troubleshooting.'],
-      ['Happ Rent · Full-Stack Developer', 'Oct 2023 — Sep 2024', 'As part of the team: Kotlin + Spring Boot 3 API (Spring Security/JWT, JPA, email), Vue 3 + Pinia frontend for leases, properties, brokers and KPIs, contract PDF generation and templates, Docker images published on AWS. Scrum/Kanban.'],
     ],
     sectionEvidence: 'Selected evidence',
     evidence: [
@@ -36,12 +35,11 @@ const pages = {
   },
   es: {
     label: 'Perfil simple para reclutamiento',
-    headline: 'SAP Certified · Ingeniero SAP BTP y Business AI · Full Stack · Node.js/TypeScript · Kotlin/Spring · Vue',
-    summary: 'SAP Certified Solution Architect (SAP Business AI Platform) y certificado en SAP Business Data Cloud. Experiencia profesional desde 2023: SAP BTP en BeCloud (CAP/CDS sobre Node.js/TypeScript, Fiori/UI5, HANA, OData) y full stack Kotlin/Spring Boot + Vue 3 en HappRent. Convierto requerimientos funcionales en arquitectura y sistemas funcionando, y sigo hasta las pruebas automatizadas, la coordinación de QA y la entrega. Disponibilidad inmediata.',
+    headline: 'SAP Certified · Ingeniero SAP BTP y Business AI · CAP/CDS · Fiori/UI5 · Node.js/TypeScript',
+    summary: 'SAP Certified Solution Architect (SAP Business AI Platform) y certificado en SAP Business Data Cloud. Consultor SAP BTP en BeCloud (CAP/CDS sobre Node.js/TypeScript, Fiori/UI5, HANA, OData). Convierto requerimientos funcionales en arquitectura y sistemas funcionando, y sigo hasta las pruebas automatizadas, la coordinación de QA y la entrega. Disponibilidad inmediata.',
     sectionExperience: 'Experiencia',
     roles: [
       ['BeCloud Consulting · Consultor SAP BTP', 'Ene 2025 — Sep 2026', 'Refinamiento de requerimientos con un consultor funcional; arquitectura, UX Fiori/UI5, entrega SAP full-stack, pruebas automatizadas, coordinación de QA y diseño, despliegue y resolución de problemas de plataforma.'],
-      ['Happ Rent · Desarrollador Full Stack', 'Oct 2023 — Sep 2024', 'Dentro del equipo: API en Kotlin + Spring Boot 3 (Spring Security/JWT, JPA, correo), frontend Vue 3 + Pinia para contratos, propiedades, corredoras e indicadores, generación de contratos PDF y plantillas, imágenes Docker publicadas en AWS. Scrum/Kanban.'],
     ],
     sectionEvidence: 'Evidencia seleccionada',
     evidence: [
