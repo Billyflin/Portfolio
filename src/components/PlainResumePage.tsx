@@ -3,8 +3,8 @@ import type { Locale } from '../App';
 const pages = {
   en: {
     label: 'Plain-text recruiter profile',
-    headline: 'SAP BTP Developer · Full-Stack · Node.js/TypeScript · Kotlin/Spring · Vue',
-    summary: '32 months of professional experience: SAP BTP at BeCloud (CAP/CDS on Node.js/TypeScript, Fiori/UI5, HANA, OData) and full-stack Kotlin/Spring Boot + Vue 3 at HappRent. I refine functional requirements into architecture and working systems, and stay through automated testing, QA coordination, and delivery. Available immediately.',
+    headline: 'SAP Certified · SAP BTP & Business AI Engineer · Full-Stack · Node.js/TypeScript · Kotlin/Spring · Vue',
+    summary: 'SAP Certified Solution Architect (SAP Business AI Platform) and SAP Business Data Cloud certified. Professional experience since 2023: SAP BTP at BeCloud (CAP/CDS on Node.js/TypeScript, Fiori/UI5, HANA, OData) and full-stack Kotlin/Spring Boot + Vue 3 at HappRent. I refine functional requirements into architecture and working systems, and stay through automated testing, QA coordination, and delivery. Available immediately.',
     sectionExperience: 'Experience',
     roles: [
       ['BeCloud Consulting · SAP BTP Consultant', 'Jan 2025 — Sep 2026', 'Requirement refinement with a functional consultant; solution architecture, Fiori/UI5 UX, full-stack SAP delivery, automated testing, QA and design coordination, deployment, and platform troubleshooting.'],
@@ -19,8 +19,15 @@ const pages = {
       ['Clinipets', 'Designed a multi-tenant veterinary platform with scheduling, auditable clinical records, payments, secure attachments, notifications, web/mobile clients, and infrastructure.'],
       ['UFRO Sustentable', 'Kotlin/Firebase Android project with QR and location flows, 83 JVM tests, 89.23% line coverage, and 77.88% branch coverage reported in the repository.'],
     ],
+    sectionCertifications: 'Certifications',
+    certifications: [
+      'SAP Certified – Solution Architect – SAP Business AI Platform (C_BAIPA) · 2026 · valid to Nov 2027',
+      'SAP Certified – SAP Business Data Cloud (C_BCBDC) · 2026 · valid to Nov 2027',
+      'Fortinet NSE 1 Certified in Cybersecurity · 2026',
+      'Fortinet Cybersecurity and Cloud Fundamentals 1.0 · 2026',
+    ],
     sectionCapabilities: 'Capabilities',
-    capabilities: 'Systems architecture · Domain modeling · API and integration design · Kotlin/Spring · Node.js/TypeScript · REST/OpenAPI · PostgreSQL · Multi-tenant systems · React/Next.js · Automated testing · CI/CD · Observability · SAP BTP · CAP/CDS · Fiori/UI5 · Work Zone · HANA · Google Cloud · AWS · Docker',
+    capabilities: 'Systems architecture · Domain modeling · API and integration design · Kotlin/Spring · Node.js/TypeScript · REST/OpenAPI · PostgreSQL · Multi-tenant systems · React/Next.js · Automated testing · CI/CD · Observability · SAP BTP · CAP/CDS · Fiori/UI5 · Work Zone · HANA · SAP Business AI · SAP Business Data Cloud · Google Cloud · AWS · Docker',
     sectionEducation: 'Education & languages',
     education: 'Ingeniería Informática, Universidad de La Frontera · 2020–2026 · Coursework completed',
     languages: 'Spanish: Native · English: B2 professional working proficiency · Temuco, Chile · Seeking salaried employment · Immediate availability · Remote, hybrid, or on-site · Open to relocation within Chile',
@@ -29,8 +36,8 @@ const pages = {
   },
   es: {
     label: 'Perfil simple para reclutamiento',
-    headline: 'Desarrollador SAP BTP · Full Stack · Node.js/TypeScript · Kotlin/Spring · Vue',
-    summary: '32 meses de experiencia profesional: SAP BTP en BeCloud (CAP/CDS sobre Node.js/TypeScript, Fiori/UI5, HANA, OData) y full stack Kotlin/Spring Boot + Vue 3 en HappRent. Convierto requerimientos funcionales en arquitectura y sistemas funcionando, y sigo hasta las pruebas automatizadas, la coordinación de QA y la entrega. Disponibilidad inmediata.',
+    headline: 'SAP Certified · Ingeniero SAP BTP y Business AI · Full Stack · Node.js/TypeScript · Kotlin/Spring · Vue',
+    summary: 'SAP Certified Solution Architect (SAP Business AI Platform) y certificado en SAP Business Data Cloud. Experiencia profesional desde 2023: SAP BTP en BeCloud (CAP/CDS sobre Node.js/TypeScript, Fiori/UI5, HANA, OData) y full stack Kotlin/Spring Boot + Vue 3 en HappRent. Convierto requerimientos funcionales en arquitectura y sistemas funcionando, y sigo hasta las pruebas automatizadas, la coordinación de QA y la entrega. Disponibilidad inmediata.',
     sectionExperience: 'Experiencia',
     roles: [
       ['BeCloud Consulting · Consultor SAP BTP', 'Ene 2025 — Sep 2026', 'Refinamiento de requerimientos con un consultor funcional; arquitectura, UX Fiori/UI5, entrega SAP full-stack, pruebas automatizadas, coordinación de QA y diseño, despliegue y resolución de problemas de plataforma.'],
@@ -45,8 +52,15 @@ const pages = {
       ['Clinipets', 'Diseñé una plataforma veterinaria multi-tenant con agenda, fichas clínicas auditables, pagos, archivos seguros, notificaciones, aplicaciones web/móvil e infraestructura.'],
       ['UFRO Sustentable', 'Proyecto Android Kotlin/Firebase con flujos QR y ubicación, 83 pruebas JVM, 89,23% de cobertura de líneas y 77,88% de ramas reportadas en el repositorio.'],
     ],
+    sectionCertifications: 'Certificaciones',
+    certifications: [
+      'SAP Certified – Solution Architect – SAP Business AI Platform (C_BAIPA) · 2026 · vigente a nov 2027',
+      'SAP Certified – SAP Business Data Cloud (C_BCBDC) · 2026 · vigente a nov 2027',
+      'Fortinet NSE 1 Certified in Cybersecurity · 2026',
+      'Fortinet Cybersecurity and Cloud Fundamentals 1.0 · 2026',
+    ],
     sectionCapabilities: 'Capacidades',
-    capabilities: 'Arquitectura de sistemas · Modelado de dominio · Diseño de APIs e integraciones · Kotlin/Spring · Node.js/TypeScript · REST/OpenAPI · PostgreSQL · Sistemas multi-tenant · React/Next.js · Pruebas automatizadas · CI/CD · Observabilidad · SAP BTP · CAP/CDS · Fiori/UI5 · Work Zone · HANA · Google Cloud · AWS · Docker',
+    capabilities: 'Arquitectura de sistemas · Modelado de dominio · Diseño de APIs e integraciones · Kotlin/Spring · Node.js/TypeScript · REST/OpenAPI · PostgreSQL · Sistemas multi-tenant · React/Next.js · Pruebas automatizadas · CI/CD · Observabilidad · SAP BTP · CAP/CDS · Fiori/UI5 · Work Zone · HANA · SAP Business AI · SAP Business Data Cloud · Google Cloud · AWS · Docker',
     sectionEducation: 'Formación e idiomas',
     education: 'Ingeniería Informática, Universidad de La Frontera · 2020–2026 · Egresado',
     languages: 'Español: Nativo · Inglés: B2 profesional · Temuco, Chile · Busco empleo asalariado con contrato · Disponibilidad inmediata · Remoto, híbrido o presencial · Posibilidad de traslado dentro de Chile',
@@ -75,6 +89,7 @@ export function PlainResumePage({ locale }: { locale: Locale }) {
             <a href={home}>{t.back}</a>
           </div>
         </header>
+        <section className="plain-section"><h2>{t.sectionCertifications}</h2><ul>{t.certifications.map((item) => <li key={item}>{item}</li>)}</ul></section>
         <section className="plain-section"><h2>{t.sectionExperience}</h2>{t.roles.map(([title, period, body]) => <article key={title}><h3>{title}</h3><p className="plain-period">{period}</p><p>{body}</p></article>)}</section>
         <section className="plain-section"><h2>{t.sectionEvidence}</h2>{t.evidence.map(([title, body]) => <article key={title}><h3>{title}</h3><p>{body}</p></article>)}</section>
         <section className="plain-section"><h2>{t.sectionCapabilities}</h2><p>{t.capabilities}</p></section>

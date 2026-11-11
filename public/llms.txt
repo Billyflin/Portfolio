@@ -1,6 +1,6 @@
 # Billy Martínez
 
-> Stack-flexible software engineer based in Temuco, Chile. Works across backend, platform, full-stack, cloud, and enterprise SAP systems; seeking salaried employment with immediate availability. Open to remote, hybrid, or on-site work and relocation within Chile.
+> SAP Certified SAP BTP and Business AI engineer (Solution Architect – SAP Business AI Platform; SAP Business Data Cloud) based in Temuco, Chile, with full-stack depth and professional experience since 2023. Works across SAP BTP, backend, full-stack, and cloud; seeking salaried employment with immediate availability. Open to remote, hybrid, or on-site work and relocation within Chile.
 
 Canonical profile: https://billyflin.dev/
 Spanish profile: https://billyflin.dev/es/
@@ -14,7 +14,7 @@ Email: hello@billyflin.dev
 Billy works between functional requirements and technical delivery. A functional consultant handles client communication; Billy refines the resulting requirements, challenges the proposed solution, improves architecture, process flow, and UX, and remains involved through implementation, automated testing, QA, deployment, and troubleshooting. SAP BTP is his current enterprise domain, not the boundary of his engineering profile.
 
 Primary target roles: Backend Engineer, Platform Engineer, Software Engineer, Full-Stack Engineer, Solutions Engineer, Technical Delivery Engineer.
-Enterprise specialization: SAP BTP Technical Consultant, SAP Fiori/CAP Developer, SAP Full-Stack Engineer.
+Enterprise specialization: SAP BTP Technical Consultant, SAP Business AI Engineer, SAP Fiori/CAP Developer, SAP Full-Stack Engineer. Holds current SAP certifications C_BAIPA and C_BCBDC (valid to 2027-11-12).
 Languages: Spanish (native), English (B2 professional working proficiency).
 
 ## Technology transfer

@@ -77,7 +77,7 @@ const content = {
     hero: {
       status: 'Available now · SAP Certified · Business AI & Business Data Cloud',
       title: <>SAP BTP engineer who turns business requirements <span>into systems that ship.</span></>,
-      intro: 'SAP Certified Solution Architect for the SAP Business AI Platform and certified in SAP Business Data Cloud, with 32 months of professional delivery: SAP BTP at BeCloud (CAP/CDS on Node.js/TypeScript, Fiori/UI5, HANA, OData) and full-stack Kotlin/Spring Boot + Vue 3 at HappRent. I own the path from functional requirement to architecture, code, automated tests, and release.',
+      intro: 'SAP Certified Solution Architect for the SAP Business AI Platform and certified in SAP Business Data Cloud, shipping professionally since 2023: SAP BTP at BeCloud (CAP/CDS on Node.js/TypeScript, Fiori/UI5, HANA, OData) and full-stack Kotlin/Spring Boot + Vue 3 at HappRent. I own the path from functional requirement to architecture, code, automated tests, and release.',
       primaryCta: 'See selected work',
       resumeCta: 'SAP BTP CV', resumeCtaAlt: 'Full-stack CV',
       portraitAlt: 'Billy Martínez with Oliver outdoors in Temuco',
@@ -85,7 +85,7 @@ const content = {
     },
     proof: [
       { value: '2× SAP Certified', label: 'Business AI Platform architect · Business Data Cloud' },
-      { value: '32 months', label: 'Professional delivery · SAP BTP & full-stack' },
+      { value: 'Since 2023', label: 'Shipping professionally · SAP BTP & full-stack' },
       { value: 'End to end', label: 'Requirement → architecture → build → QA → release' },
     ],
     work: {
@@ -210,7 +210,7 @@ const content = {
     hero: {
       status: 'Disponible ya · SAP Certified · Business AI y Business Data Cloud',
       title: <>Ingeniero SAP BTP que convierte requisitos del negocio <span>en sistemas que llegan a producción.</span></>,
-      intro: 'SAP Certified Solution Architect en SAP Business AI Platform y certificado en SAP Business Data Cloud, con 32 meses de experiencia profesional: SAP BTP en BeCloud (CAP/CDS sobre Node.js/TypeScript, Fiori/UI5, HANA, OData) y full stack Kotlin/Spring Boot + Vue 3 en HappRent. Me hago cargo del camino completo: del requerimiento funcional a la arquitectura, el código, las pruebas automatizadas y la salida a producción.',
+      intro: 'SAP Certified Solution Architect en SAP Business AI Platform y certificado en SAP Business Data Cloud, entregando software profesionalmente desde 2023: SAP BTP en BeCloud (CAP/CDS sobre Node.js/TypeScript, Fiori/UI5, HANA, OData) y full stack Kotlin/Spring Boot + Vue 3 en HappRent. Me hago cargo del camino completo: del requerimiento funcional a la arquitectura, el código, las pruebas automatizadas y la salida a producción.',
       primaryCta: 'Ver trabajo',
       resumeCta: 'CV SAP BTP', resumeCtaAlt: 'CV Full Stack',
       portraitAlt: 'Billy Martínez junto a Oliver al aire libre en Temuco',
@@ -218,7 +218,7 @@ const content = {
     },
     proof: [
       { value: '2× SAP Certified', label: 'Arquitecto Business AI Platform · Business Data Cloud' },
-      { value: '32 meses', label: 'Experiencia profesional · SAP BTP y full stack' },
+      { value: 'Desde 2023', label: 'Entregando software · SAP BTP y full stack' },
       { value: 'De punta a punta', label: 'Requisito → arquitectura → desarrollo → QA → producción' },
     ],
     work: {

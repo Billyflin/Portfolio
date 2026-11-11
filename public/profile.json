@@ -2,6 +2,8 @@
   "$schema": "https://schema.org/Person",
   "name": "Billy Martínez",
   "alternateName": "Billyflin",
+  "headline": "SAP Certified SAP BTP and Business AI engineer with full-stack depth (Kotlin/Spring, Node.js/TypeScript, Vue)",
+  "professionalSince": "2023-10",
   "url": "https://billyflin.dev/",
   "email": "mailto:hello@billyflin.dev",
   "location": "Temuco, Chile",
@@ -12,7 +14,7 @@
     "startDate": "2025-01",
     "endDate": "2026"
   },
-  "targetRoles": ["Backend Engineer", "Platform Engineer", "Software Engineer", "Full-Stack Engineer", "Solutions Engineer", "Technical Delivery Engineer", "SAP BTP Technical Consultant", "SAP Fiori / CAP Developer"],
+  "targetRoles": ["SAP BTP Technical Consultant", "SAP Business AI Engineer", "SAP Solution Architect (Business AI)", "Backend Engineer", "Platform Engineer", "Software Engineer", "Full-Stack Engineer", "Solutions Engineer", "Technical Delivery Engineer", "SAP Fiori / CAP Developer"],
   "workPreference": {
     "engagement": "Seeking salaried employment",
     "locationPreference": "Temuco, Chile; open to remote, hybrid, or on-site work and relocation within Chile",
