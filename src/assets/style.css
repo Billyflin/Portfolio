@@ -294,7 +294,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .discipline-strip {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   border-top: 1px solid var(--ink);
   background: var(--acid);
 }
@@ -1284,7 +1284,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
   .discipline-strip { grid-template-columns: repeat(2, 1fr); }
   .discipline-strip span { border-bottom: 1px solid var(--ink); }
   .discipline-strip span:nth-child(2n) { border-right: 0; }
-  .discipline-strip span:last-child { grid-column: 1 / -1; border-bottom: 0; }
+  .discipline-strip span:nth-last-child(-n+2) { border-bottom: 0; }
   .proof-strip { grid-template-columns: 1fr; }
   .proof-strip > div { min-height: 0; border-right: 0; border-bottom: 1px solid var(--ink); }
   .proof-strip > div:last-child { border-bottom: 0; }
