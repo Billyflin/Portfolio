@@ -56,7 +56,7 @@ const credentials = [
 
 const content = {
   en: {
-    nav: { work: 'Selected work', experience: 'Experience', capabilities: 'Capabilities', writing: 'Writing', contact: 'Let’s talk' },
+    nav: { work: 'Selected work', experience: 'Experience', capabilities: 'Capabilities', certifications: 'Certifications', writing: 'Writing', contact: 'Let’s talk' },
     localeLabel: 'ES',
     localeHref: '/es/',
     hero: {
@@ -189,7 +189,7 @@ const content = {
     contact: { kicker: '06 / Contact', title: 'Need someone who can understand the operation and build the solution?', note: 'Temuco, Chile · Spanish native · English B2 · Salaried roles · Immediate availability', backendCv: 'SAP BTP CV', fullstackCv: 'Full-stack CV', recruiterProfile: 'Recruiter profile' },
   },
   es: {
-    nav: { work: 'Trabajo', experience: 'Experiencia', capabilities: 'Capacidades', writing: 'Artículo', contact: 'Conversemos' },
+    nav: { work: 'Trabajo', experience: 'Experiencia', capabilities: 'Capacidades', certifications: 'Certificaciones', writing: 'Artículo', contact: 'Conversemos' },
     localeLabel: 'EN',
     localeHref: '/',
     hero: {
@@ -277,7 +277,7 @@ const content = {
 
 function Header({ locale }: { locale: Locale }) {
   const t = content[locale];
-  return <header className="site-header"><a className="brand" href="#top" aria-label={locale === 'en' ? 'Go to the top' : 'Ir al inicio'}>BM<span>/26</span></a><nav className="desktop-nav" aria-label={locale === 'en' ? 'Primary navigation' : 'Navegación principal'}><a href="#work">{t.nav.work}</a><a href="#experience">{t.nav.experience}</a><a href="#capabilities">{t.nav.capabilities}</a><a href="/writing/reliable-api-integrations/">{t.nav.writing}</a></nav><div className="header-actions"><a className="locale-link" href={t.localeHref} lang={locale === 'en' ? 'es' : 'en'}>{t.localeLabel}</a><a className="header-cta" href="mailto:hello@billyflin.dev">{t.nav.contact}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></header>;
+  return <header className="site-header"><a className="brand" href="#top" aria-label={locale === 'en' ? 'Go to the top' : 'Ir al inicio'}>BM<span>/26</span></a><nav className="desktop-nav" aria-label={locale === 'en' ? 'Primary navigation' : 'Navegación principal'}><a href="#work">{t.nav.work}</a><a href="#experience">{t.nav.experience}</a><a href="#capabilities">{t.nav.capabilities}</a><a href="#credentials">{t.nav.certifications}</a><a href="/writing/reliable-api-integrations/">{t.nav.writing}</a></nav><div className="header-actions"><a className="locale-link" href={t.localeHref} lang={locale === 'en' ? 'es' : 'en'}>{t.localeLabel}</a><a className="header-cta" href="mailto:hello@billyflin.dev">{t.nav.contact}<span className="icon-arrow" aria-hidden="true">↗</span></a></div></header>;
 }
 
 function Hero({ locale }: { locale: Locale }) {

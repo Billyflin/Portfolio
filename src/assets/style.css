@@ -79,6 +79,15 @@ button, a { -webkit-tap-highlight-color: transparent; }
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 1100px) {
+  .desktop-nav { gap: 1rem; font-size: 0.7rem; letter-spacing: 0.05em; }
+}
+
+@media (min-width: 761px) and (max-width: 1000px) {
+  .desktop-nav a[href^="/writing"] { display: none; }
 }
 
 .desktop-nav a, .text-link, .social-links a { position: relative; }
